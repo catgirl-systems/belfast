@@ -1,0 +1,18 @@
+{
+  "resources": [
+    {"id": 1, "amount": 3000},
+    {"id": 2, "amount": 500},
+    {"id": 5, "amount": 5},
+    {"id": 7, "amount": 5},
+    {"id": 8, "amount": 4000}
+  ],
+  "items": [
+    {"id": 20001, "count": 5},
+    {"id": 15003, "count": 10},
+    {"id": 50002, "count": 10},
+    {"id": 50001, "count": 10}
+  ],
+  "ships": [106011],
+  "fleets": [1, 2, 11, 12],
+  "commissions": 5
+}
