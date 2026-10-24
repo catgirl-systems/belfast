@@ -1,0 +1,14 @@
+{
+"1":{"id":1,"name":"NY","open_condition":[[1,0],[2,0]],"port_bg":"port_niuyue","port_camp":1,"port_entrance_icon":"port_niuyue","scan_desc":"이글 유니온 소속의 중요 항구"},
+"2":{"id":2,"name":"리버풀","open_condition":[[1,0],[2,0]],"port_bg":"port_liwupu","port_camp":1,"port_entrance_icon":"port_liwupu","scan_desc":"로열 네이비 소속의 중요 항구"},
+"3":{"id":3,"name":"지브롤터","open_condition":[[1,0],[2,0]],"port_bg":"port_zhibuluotuo","port_camp":1,"port_entrance_icon":"port_zhibuluotuo","scan_desc":"로열 네이비 소속의 중요 항구"},
+"4":{"id":4,"name":"상트페테르부르크","open_condition":[[1,0],[2,0]],"port_bg":"port_shenbidebao","port_camp":1,"port_entrance_icon":"port_shenbidebao","scan_desc":"노스 유니온 소속의 중요 항구"},
+"5":{"id":5,"name":"홀슈타인","open_condition":[[1,0],[2,0]],"port_bg":"port_jier","port_camp":2,"port_entrance_icon":"port_jier","scan_desc":"메탈 블러드 소속의 중요 항구"},
+"6":{"id":6,"name":"타란토","open_condition":[[1,0],[2,0]],"port_bg":"port_talantuo","port_camp":2,"port_entrance_icon":"port_talantuo","scan_desc":"샤르데냐 제국 소속의 중요 항구"},
+"7":{"id":7,"name":"브레스트","open_condition":[[1,0],[2,0]],"port_bg":"port_buleisite","port_camp":2,"port_entrance_icon":"port_buleisite","scan_desc":"비시아 성좌 소속의 중요 항구"},
+"8":{"id":8,"name":"다카르","open_condition":[[1,0],[2,0]],"port_bg":"port_dakaer","port_camp":2,"port_entrance_icon":"port_dakaer","scan_desc":"비시아 성좌 소속의 중요 항구"},
+"20":{"id":20,"name":"작전 항구","open_condition":[[1,0],[2,0]],"port_bg":"port_zuozhangangkou","port_camp":1,"port_entrance_icon":"","scan_desc":"작전에 참여한 함대 이곳에 집결"},
+"30":{"id":30,"name":"핵심 구역 전초기지","open_condition":[[1,0],[2,0]],"port_bg":"port_zuozhangangkou","port_camp":1,"port_entrance_icon":"","scan_desc":"작전에 참여한 함대 이곳에 집결"},
+"100":{"id":100,"name":"해역 보급 상점","open_condition":[[1,0],[2,0]],"port_bg":"port_chuanwu1","port_camp":0,"port_entrance_icon":"","scan_desc":""},
+"301":{"id":301,"name":"웜홀 상점","open_condition":[[1,0],[2,0]],"port_bg":"port_chongdong","port_camp":0,"port_entrance_icon":"","scan_desc":""}
+}

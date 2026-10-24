@@ -1,0 +1,14 @@
+{
+"1":{"constellation_icon":"Capricorn","id":1,"stage":[10022,10023,10024]},
+"2":{"constellation_icon":"Aquarius","id":2,"stage":[10025,10026,10027]},
+"3":{"constellation_icon":"Pisces","id":3,"stage":[10028,10029,10030]},
+"4":{"constellation_icon":"Aries","id":4,"stage":[10031,10032,10033]},
+"5":{"constellation_icon":"Taurus","id":5,"stage":[10034,10035,10036]},
+"6":{"constellation_icon":"Gemini","id":6,"stage":[10001,10002,10003]},
+"7":{"constellation_icon":"Cancer","id":7,"stage":[10004,10005,10006]},
+"8":{"constellation_icon":"Leo","id":8,"stage":[10007,10008,10009]},
+"9":{"constellation_icon":"Virgo","id":9,"stage":[10010,10011,10012]},
+"10":{"constellation_icon":"Libra","id":10,"stage":[10013,10014,10015]},
+"11":{"constellation_icon":"Scorpio","id":11,"stage":[10016,10017,10018]},
+"12":{"constellation_icon":"Sagittarius","id":12,"stage":[10019,10020,10021]}
+}

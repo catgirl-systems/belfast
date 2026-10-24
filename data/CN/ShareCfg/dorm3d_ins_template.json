@@ -1,0 +1,17 @@
+{
+"10517201":{"background":"ins_199032_bg","discuss":[9,10],"group_id":1,"id":10517201,"message":"xinzexi_1","name":"BlackDragon","npc_discuss":"","picture":"ins_105171","sculpture":"xinzexi_4","ship_group":10517},
+"10517202":{"background":"ins_199032_bg","discuss":[11,12],"group_id":1,"id":10517202,"message":"xinzexi_2","name":"BlackDragon","npc_discuss":"","picture":"ins_105172","sculpture":"xinzexi_4","ship_group":10517},
+"10517203":{"background":"ins_199032_bg","discuss":[13,14],"group_id":1,"id":10517203,"message":"xinzexi_3","name":"BlackDragon","npc_discuss":"","picture":"ins_105173","sculpture":"xinzexi_4","ship_group":10517},
+"19903201":{"background":"ins_199031_bg","discuss":[5,6],"group_id":1,"id":19903201,"message":"ankeleiqi_1","name":"Anchorage","npc_discuss":"","picture":"ins_199031","sculpture":"ankeleiqi_3","ship_group":19903},
+"19903202":{"background":"ins_199032_bg","discuss":[7,8],"group_id":1,"id":19903202,"message":"ankeleiqi_2","name":"Anchorage","npc_discuss":"","picture":"ins_199032","sculpture":"ankeleiqi_3","ship_group":19903},
+"20220201":{"background":"ins_202201_bg","discuss":[1,2],"group_id":1,"id":20220201,"message":"tianlangxing_1","name":"forMaster_Sirius","npc_discuss":"","picture":"ins_202201","sculpture":"tianlangxing_5","ship_group":20220},
+"20707201":{"background":"ins_199032_bg","discuss":[27,28],"group_id":1,"id":20707201,"message":"yuanchou_1","name":"Implacable","npc_discuss":"","picture":"Ins_207071","sculpture":"yuanchou","ship_group":20707},
+"20707202":{"background":"ins_199032_bg","discuss":[29,30],"group_id":1,"id":20707202,"message":"yuanchou_2","name":"Implacable","npc_discuss":"","picture":"Ins_207072","sculpture":"yuanchou","ship_group":20707},
+"30221201":{"background":"ins_302211_bg","discuss":[3,4],"group_id":1,"id":30221201,"message":"nengdai_1","name":"Nshiro","npc_discuss":"","picture":"ins_302211","sculpture":"nengdai_idol","ship_group":30221},
+"30707201":{"background":"ins_199032_bg","discuss":[15,16],"group_id":1,"id":30707201,"message":"dafeng_1","name":"Taiho","npc_discuss":"","picture":"ins_307071","sculpture":"dafeng_2","ship_group":30707},
+"30707202":{"background":"ins_199032_bg","discuss":[17,18],"group_id":1,"id":30707202,"message":"dafeng_2","name":"Taiho","npc_discuss":"","picture":"ins_307072","sculpture":"dafeng_2","ship_group":30707},
+"49905201":{"background":"ins_199032_bg","discuss":[19,20],"group_id":1,"id":49905201,"message":"aijier_1","name":"Ägir","npc_discuss":"","picture":"Ins_499051","sculpture":"aijier","ship_group":49905},
+"49905202":{"background":"ins_199032_bg","discuss":[21,22],"group_id":1,"id":49905202,"message":"aijier_2","name":"Ägir","npc_discuss":"","picture":"Ins_499052","sculpture":"aijier","ship_group":49905},
+"79902201":{"background":"ins_199032_bg","discuss":[23,24],"group_id":1,"id":79902201,"message":"naximofu_1","name":"Admiral Nakhimov","npc_discuss":"","picture":"Ins_799021","sculpture":"naximofu","ship_group":79902},
+"79902202":{"background":"ins_199032_bg","discuss":[25,26],"group_id":1,"id":79902202,"message":"naximofu_2","name":"Admiral Nakhimov","npc_discuss":"","picture":"Ins_799022","sculpture":"naximofu","ship_group":79902}
+}

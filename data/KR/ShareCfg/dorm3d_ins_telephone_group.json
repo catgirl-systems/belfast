@@ -1,0 +1,12 @@
+{
+"10517301":{"background":"voice_placeholder","content":[11,110602],"id":10517301,"name":"영상 통화·뉴저지","ship_group":10517,"type":1,"unlock_desc":"뉴저지 룸에 진입"},
+"10517302":{"background":"voice_placeholder","content":[11,110603],"id":10517302,"name":"영상 통화·뉴저지","ship_group":10517,"type":1,"unlock_desc":"뉴저지 친밀도 Lv12 달성 시 오픈"},
+"20707301":{"background":"voice_placeholder","content":[22,220601],"id":20707301,"name":"영상 통화·임플래커블","ship_group":20707,"type":1,"unlock_desc":"함선 「임플래커블」 획득"},
+"20707302":{"background":"voice_placeholder","content":[22,220602],"id":20707302,"name":"영상 통화·임플래커블","ship_group":20707,"type":1,"unlock_desc":"임플래커블 친밀도 Lv12 달성 시 오픈"},
+"30707301":{"background":"voice_placeholder","content":[12,120601],"id":30707301,"name":"영상 통화·다이호","ship_group":30707,"type":1,"unlock_desc":"함선 「다이호」 획득"},
+"30707302":{"background":"voice_placeholder","content":[12,120602],"id":30707302,"name":"영상 통화·다이호","ship_group":30707,"type":1,"unlock_desc":"다이호 친밀도 Lv12 달성 시 오픈"},
+"49905301":{"background":"voice_placeholder","content":[14,140601],"id":49905301,"name":"영상 통화·에기르","ship_group":49905,"type":1,"unlock_desc":"함선 「에기르」 획득"},
+"49905302":{"background":"voice_placeholder","content":[14,140602],"id":49905302,"name":"영상 통화·에기르","ship_group":49905,"type":1,"unlock_desc":"에기르 친밀도 Lv12 달성 시 오픈"},
+"79902301":{"background":"voice_placeholder","content":[21,210601],"id":79902301,"name":"영상 통화·아드미랄 나히모프","ship_group":79902,"type":1,"unlock_desc":"함선 「아드미랄 나히모프」 획득"},
+"79902302":{"background":"voice_placeholder","content":[21,210602],"id":79902302,"name":"영상 통화·아드미랄 나히모프","ship_group":79902,"type":1,"unlock_desc":"아드미랄 나히모프 친밀도 Lv12 달성 시 오픈"}
+}

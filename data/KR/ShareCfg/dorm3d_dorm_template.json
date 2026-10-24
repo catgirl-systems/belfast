@@ -1,0 +1,10 @@
+{
+"10517":{"asset_name":"Xinzexi_DB","bind_room":11,"default_appellation":"지휘관","id":10517,"name":"뉴저지","skin_model":105171},
+"19903":{"asset_name":"Ankeleiqi_DB","bind_room":3,"default_appellation":"선생님","id":19903,"name":"앵커리지","skin_model":199031},
+"20220":{"asset_name":"tianlangxing_db","bind_room":1,"default_appellation":"주인님","id":20220,"name":"시리우스","skin_model":202201},
+"20707":{"asset_name":"Yuanchou_DB","bind_room":22,"default_appellation":"지휘관","id":20707,"name":"임플래커블","skin_model":207071},
+"30221":{"asset_name":"nengdai_db","bind_room":2,"default_appellation":"지휘관","id":30221,"name":"","skin_model":302211},
+"30707":{"asset_name":"Dafeng_DB","bind_room":12,"default_appellation":"지휘관님","id":30707,"name":"다이호","skin_model":307071},
+"49905":{"asset_name":"Aijier_DB","bind_room":14,"default_appellation":"지휘관","id":49905,"name":"에기르","skin_model":499051},
+"79902":{"asset_name":"Naximofu_DB","bind_room":21,"default_appellation":"지휘관","id":79902,"name":"아드미랄 나히모프","skin_model":799021}
+}

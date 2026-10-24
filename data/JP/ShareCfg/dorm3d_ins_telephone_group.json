@@ -1,0 +1,12 @@
+{
+"10517301":{"background":"voice_placeholder","content":[11,110602],"id":10517301,"name":"ビデオ通話・ニュージャージー","ship_group":10517,"type":1,"unlock_desc":"艦船「ニュージャージー」を入手する"},
+"10517302":{"background":"voice_placeholder","content":[11,110603],"id":10517302,"name":"ビデオ通話・ニュージャージー","ship_group":10517,"type":1,"unlock_desc":"ニュージャージー親愛度Lv12で解放"},
+"20707301":{"background":"voice_placeholder","content":[22,220601],"id":20707301,"name":"ビデオ通話・インプラカブル","ship_group":20707,"type":1,"unlock_desc":"艦船「インプラカブル」を入手す"},
+"20707302":{"background":"voice_placeholder","content":[22,220602],"id":20707302,"name":"ビデオ通話・インプラカブル","ship_group":20707,"type":1,"unlock_desc":"インプラカブル親愛度Lv12で解放"},
+"30707301":{"background":"voice_placeholder","content":[12,120601],"id":30707301,"name":"ビデオ通話・大鳳","ship_group":30707,"type":1,"unlock_desc":"艦船「大鳳」を入手する"},
+"30707302":{"background":"voice_placeholder","content":[12,120602],"id":30707302,"name":"ビデオ通話・大鳳","ship_group":30707,"type":1,"unlock_desc":"大鳳親愛度Lv12で解放"},
+"49905301":{"background":"voice_placeholder","content":[14,140601],"id":49905301,"name":"ビデオ通話・エーギル","ship_group":49905,"type":1,"unlock_desc":"艦船「エーギル」を入手する"},
+"49905302":{"background":"voice_placeholder","content":[14,140602],"id":49905302,"name":"ビデオ通話・エーギル","ship_group":49905,"type":1,"unlock_desc":"エーギル親愛度Lv12で解放"},
+"79902301":{"background":"voice_placeholder","content":[21,210601],"id":79902301,"name":"ビデオ通話・アドミラル・ナヒーモフ","ship_group":79902,"type":1,"unlock_desc":"艦船「アドミラル・ナヒーモフ」を入手す"},
+"79902302":{"background":"voice_placeholder","content":[21,210602],"id":79902302,"name":"ビデオ通話・アドミラル・ナヒーモフ","ship_group":79902,"type":1,"unlock_desc":"アドミラル・ナヒーモフ親愛度Lv12で解放"}
+}

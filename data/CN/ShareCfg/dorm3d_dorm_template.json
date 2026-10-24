@@ -1,0 +1,10 @@
+{
+"10517":{"asset_name":"Xinzexi_DB","bind_room":11,"default_appellation":"指挥官","id":10517,"name":"新泽西","skin_model":105171},
+"19903":{"asset_name":"Ankeleiqi_DB","bind_room":3,"default_appellation":"老师","id":19903,"name":"安克雷奇","skin_model":199031},
+"20220":{"asset_name":"tianlangxing_db","bind_room":1,"default_appellation":"主人","id":20220,"name":"天狼星","skin_model":202201},
+"20707":{"asset_name":"Yuanchou_DB","bind_room":22,"default_appellation":"指挥官","id":20707,"name":"怨仇","skin_model":207071},
+"30221":{"asset_name":"nengdai_db","bind_room":2,"default_appellation":"指挥官","id":30221,"name":"能代","skin_model":302211},
+"30707":{"asset_name":"Dafeng_DB","bind_room":12,"default_appellation":"指挥官大人 ","id":30707,"name":"大凤","skin_model":307071},
+"49905":{"asset_name":"Aijier_DB","bind_room":14,"default_appellation":"指挥官","id":49905,"name":"埃吉尔","skin_model":499051},
+"79902":{"asset_name":"Naximofu_DB","bind_room":21,"default_appellation":"指挥官","id":79902,"name":"纳希莫夫海军上将","skin_model":799021}
+}

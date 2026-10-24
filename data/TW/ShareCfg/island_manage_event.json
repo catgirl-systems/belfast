@@ -1,0 +1,5 @@
+{
+"1":{"banner":0,"desc":"啾啾旅行團拜訪島嶼開發區，在$1訂餐","event_effect":[[10,3]],"id":1,"influence_bonus":10,"name":"啾啾旅行團"},
+"2":{"banner":0,"desc":"島嶼開發團隊準備一起在$1聚餐","event_effect":[[20,2]],"id":2,"influence_bonus":20,"name":"健康開發日"},
+"3":{"banner":0,"desc":"今日的島嶼最佳美食已經選出，快去$1嚐嚐吧","event_effect":[[30,1]],"id":3,"influence_bonus":30,"name":"美食評審"}
+}

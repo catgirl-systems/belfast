@@ -1,0 +1,14 @@
+{
+"1":{"id":1,"name":"NYシティ","open_condition":[[1,0],[2,0]],"port_bg":"port_niuyue","port_camp":1,"port_entrance_icon":"port_niuyue","scan_desc":"ユニオン所領の港です"},
+"2":{"id":2,"name":"リバープール","open_condition":[[1,0],[2,0]],"port_bg":"port_liwupu","port_camp":1,"port_entrance_icon":"port_liwupu","scan_desc":"ロイヤル所領の港です"},
+"3":{"id":3,"name":"ジブラルタル","open_condition":[[1,0],[2,0]],"port_bg":"port_zhibuluotuo","port_camp":1,"port_entrance_icon":"port_zhibuluotuo","scan_desc":"ロイヤル所領の港です"},
+"4":{"id":4,"name":"ペテルブルク","open_condition":[[1,0],[2,0]],"port_bg":"port_shenbidebao","port_camp":1,"port_entrance_icon":"port_shenbidebao","scan_desc":"北方連合所領の港です"},
+"5":{"id":5,"name":"キール","open_condition":[[1,0],[2,0]],"port_bg":"port_jier","port_camp":2,"port_entrance_icon":"port_jier","scan_desc":"鉄血所領の港です"},
+"6":{"id":6,"name":"タラント","open_condition":[[1,0],[2,0]],"port_bg":"port_talantuo","port_camp":2,"port_entrance_icon":"port_talantuo","scan_desc":"サディア所領の港です"},
+"7":{"id":7,"name":"ブレスト","open_condition":[[1,0],[2,0]],"port_bg":"port_buleisite","port_camp":2,"port_entrance_icon":"port_buleisite","scan_desc":"ヴィシア所領の港です"},
+"8":{"id":8,"name":"ダカール","open_condition":[[1,0],[2,0]],"port_bg":"port_dakaer","port_camp":2,"port_entrance_icon":"port_dakaer","scan_desc":"ヴィシア所領の港です"},
+"20":{"id":20,"name":"作戦集結拠点","open_condition":[[1,0],[2,0]],"port_bg":"port_zuozhangangkou","port_camp":1,"port_entrance_icon":"","scan_desc":"作戦に参加する艦隊はこの拠点に集結されます"},
+"30":{"id":30,"name":"中心海域前哨基地","open_condition":[[1,0],[2,0]],"port_bg":"port_zuozhangangkou","port_camp":1,"port_entrance_icon":"","scan_desc":"NA海域中心部への反攻作戦の前哨基地"},
+"100":{"id":100,"name":"海域补给商店","open_condition":[[1,0],[2,0]],"port_bg":"port_chuanwu1","port_camp":0,"port_entrance_icon":"","scan_desc":""},
+"301":{"id":301,"name":"虫洞商店","open_condition":[[1,0],[2,0]],"port_bg":"port_chongdong","port_camp":0,"port_entrance_icon":"","scan_desc":""}
+}

@@ -1,0 +1,14 @@
+{
+"1":{"id":1,"name":"NY","open_condition":[[1,0],[2,0]],"port_bg":"port_niuyue","port_camp":1,"port_entrance_icon":"port_niuyue","scan_desc":"一处白鹰所属的重要港口。"},
+"2":{"id":2,"name":"利维浦","open_condition":[[1,0],[2,0]],"port_bg":"port_liwupu","port_camp":1,"port_entrance_icon":"port_liwupu","scan_desc":"一处皇家所属的重要港口。"},
+"3":{"id":3,"name":"直布罗特","open_condition":[[1,0],[2,0]],"port_bg":"port_zhibuluotuo","port_camp":1,"port_entrance_icon":"port_zhibuluotuo","scan_desc":"一处皇家所属的重要港口。"},
+"4":{"id":4,"name":"圣彼得伯格","open_condition":[[1,0],[2,0]],"port_bg":"port_shenbidebao","port_camp":1,"port_entrance_icon":"port_shenbidebao","scan_desc":"一处北方联合所属的重要港口。"},
+"5":{"id":5,"name":"霍尔斯坦","open_condition":[[1,0],[2,0]],"port_bg":"port_jier","port_camp":2,"port_entrance_icon":"port_jier","scan_desc":"一处铁血所属的重要港口。"},
+"6":{"id":6,"name":"塔伦托","open_condition":[[1,0],[2,0]],"port_bg":"port_talantuo","port_camp":2,"port_entrance_icon":"port_talantuo","scan_desc":"一处撒丁帝国所属的重要港口。"},
+"7":{"id":7,"name":"布勒斯特","open_condition":[[1,0],[2,0]],"port_bg":"port_buleisite","port_camp":2,"port_entrance_icon":"port_buleisite","scan_desc":"一处维希教廷所属的重要港口。"},
+"8":{"id":8,"name":"达咯尔","open_condition":[[1,0],[2,0]],"port_bg":"port_dakaer","port_camp":2,"port_entrance_icon":"port_dakaer","scan_desc":"一处维希教廷所属的重要港口。"},
+"20":{"id":20,"name":"作战港口","open_condition":[[1,0],[2,0]],"port_bg":"port_zuozhangangkou","port_camp":1,"port_entrance_icon":"","scan_desc":"参与作战的舰队在此集结"},
+"30":{"id":30,"name":"核心区前哨站","open_condition":[[1,0],[2,0]],"port_bg":"port_zuozhangangkou","port_camp":1,"port_entrance_icon":"","scan_desc":"参与作战的舰队在此集结"},
+"100":{"id":100,"name":"海域补给商店","open_condition":[[1,0],[2,0]],"port_bg":"port_chuanwu1","port_camp":0,"port_entrance_icon":"","scan_desc":""},
+"301":{"id":301,"name":"虫洞商店","open_condition":[[1,0],[2,0]],"port_bg":"port_chongdong","port_camp":0,"port_entrance_icon":"","scan_desc":""}
+}

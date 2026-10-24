@@ -1,0 +1,7 @@
+{
+"0":{"activity_type":0,"count":[1,1],"id":0,"key":"test_room","viewer_count":5},
+"101":{"activity_type":801,"count":[1,1,1,1],"id":101,"key":"scammer_tavern","viewer_count":5},
+"105":{"activity_type":0,"count":[1,1,1,1],"id":105,"key":"竞拍低级场","viewer_count":0},
+"106":{"activity_type":0,"count":[1,1,1,1],"id":106,"key":"竞拍中级场","viewer_count":0},
+"107":{"activity_type":0,"count":[1,1,1,1],"id":107,"key":"竞拍高级场","viewer_count":0}
+}

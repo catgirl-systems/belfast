@@ -1,0 +1,10 @@
+{
+"1":{"effect":25,"gather_effect":7,"id":1,"manage_effect":10000,"name":"SSS","range":[500,999]},
+"2":{"effect":23,"gather_effect":6,"id":2,"manage_effect":8400,"name":"SS","range":[320,499]},
+"3":{"effect":20,"gather_effect":5,"id":3,"manage_effect":7200,"name":"S","range":[200,319]},
+"4":{"effect":15,"gather_effect":4,"id":4,"manage_effect":5600,"name":"A","range":[120,199]},
+"5":{"effect":10,"gather_effect":3,"id":5,"manage_effect":4200,"name":"B","range":[80,119]},
+"6":{"effect":5,"gather_effect":2,"id":6,"manage_effect":3000,"name":"C","range":[50,79]},
+"7":{"effect":2,"gather_effect":1,"id":7,"manage_effect":1600,"name":"D","range":[25,49]},
+"8":{"effect":0,"gather_effect":0,"id":8,"manage_effect":500,"name":"E","range":[0,24]}
+}
