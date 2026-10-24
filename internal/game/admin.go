@@ -113,3 +113,18 @@ func (game *Game) NotifyMail(ctx context.Context, id uint32) error {
 	game.deliver(nil, id, counts)
 	return nil
 }
+
+// NotifyCompensations tells a commander playing that its compensations
+// changed (SC_30101, as at login): CompensateProxy shows the main screen's
+// button and reloads the list on entering, without a relogin.
+func (game *Game) NotifyCompensations(ctx context.Context, id uint32) error {
+	if !game.isOnline(id) {
+		return nil
+	}
+	state, err := compensationState(ctx, game.DB.Queries, id, time.Now())
+	if err != nil {
+		return err
+	}
+	game.deliver(nil, id, state)
+	return nil
+}

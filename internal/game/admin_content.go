@@ -24,8 +24,8 @@ import (
 
 // Broadcast sends mail to each commander of ids in one transaction, as a
 // compensation expiring at expires when it isn't zero, and tells the ones
-// playing their mailbox changed (compensations are listed apart, as
-// handleMail sends them, without a push). It returns how many were sent.
+// playing their mailbox (or compensations) changed. It returns how many were
+// sent.
 func (game *Game) Broadcast(ctx context.Context, ids []uint32, mail Mail, expires time.Time) (int, error) {
 	if _, err := mail.check(); err != nil {
 		return 0, err
@@ -51,11 +51,13 @@ func (game *Game) Broadcast(ctx context.Context, ids []uint32, mail Mail, expire
 	if err != nil {
 		return 0, err
 	}
-	if expires.IsZero() {
-		for _, id := range ids {
-			if err := game.NotifyMail(ctx, id); err != nil {
-				return len(ids), err
-			}
+	notify := game.NotifyMail
+	if !expires.IsZero() {
+		notify = game.NotifyCompensations
+	}
+	for _, id := range ids {
+		if err := notify(ctx, id); err != nil {
+			return len(ids), err
 		}
 	}
 	return len(ids), nil

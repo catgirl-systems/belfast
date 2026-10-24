@@ -295,6 +295,9 @@ func (server *Server) handleMail(r *http.Request) (any, error) {
 			return nil, badRequest(err.Error())
 		}
 		server.Game.Live.Publish(live.Event{Kind: live.Commander, ID: commander.ID})
+		if err := server.Game.NotifyCompensations(r.Context(), commander.ID); err != nil {
+			return nil, err
+		}
 		return map[string]any{"id": id, "kind": "compensation"}, nil
 	}
 	id, err := game.SendMail(r.Context(), server.Store.Queries, commander.ID, mail, now)

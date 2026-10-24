@@ -25,7 +25,8 @@ import (
 
 // SendCompensation delivers mail to a commander as a compensation sent at now
 // and gone at expires, and returns its id. Attachments are refused as for
-// SendMail. The client only learns of it from its next login (SC_30101).
+// SendMail. The client only learns of it from the next SC_30101: its next
+// login, or Game.NotifyCompensations.
 func SendCompensation(ctx context.Context, queries *db.Queries, commanderID uint32, mail Mail, now, expires time.Time) (uint32, error) {
 	attachments, err := mail.check()
 	if err != nil {
@@ -58,7 +59,8 @@ func compensationCounts(list []db.Compensation) (number, latest uint32) {
 	return number, latest
 }
 
-// compensationState is SC_30101, pushed at login.
+// compensationState is SC_30101, pushed at login and by
+// NotifyCompensations.
 func compensationState(ctx context.Context, queries *db.Queries, commanderID uint32, now time.Time) (*protobuf.SC_30101, error) {
 	list, err := queries.ListCompensations(ctx, db.ListCompensationsParams{CommanderID: commanderID, Now: now.Unix()})
 	if err != nil {
