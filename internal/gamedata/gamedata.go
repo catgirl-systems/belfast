@@ -1,10 +1,10 @@
-// Package gamedata reads the client's config tables, at runtime and never from
-// the repository: <data dir>/<region>/{sharecfgdata,ShareCfg}/<table>.json, as
-// written by belfast-data's bump.sh (a list of rows with their id) or in the
-// AzurLaneData layout (an object keyed by id, what the al-data skill's
-// table.sh writes under .cache/al-data/<commit>). The data dir is ./data
-// unless $BELFAST_DATA says otherwise. Content the official server sends that
-// no table has lives next to the tables, in <data dir>/<region>/server.
+// Package gamedata reads the client's config tables at runtime, never embedded
+// in the binary: <data dir>/<region>/{sharecfgdata,ShareCfg}/<table>.json,
+// either an object keyed by id (the AzurLaneData layout, which the repo's
+// data/ uses) or a list of rows with their id (the old belfast-data layout).
+// The data dir is ./data, the one committed with the code, unless
+// $BELFAST_DATA says otherwise. Content the official server sends that no
+// table has lives next to the tables, in <data dir>/<region>/server.
 package gamedata
 
 import (
