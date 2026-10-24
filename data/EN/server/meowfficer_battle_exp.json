@@ -1,0 +1,35 @@
+{
+  "_source": "Server-side meowfficer battle EXP (SC_40004 commander_exp), in no client table or Lua: the client only adds what the server sends (FinishStageCommand.GenerateCommanderExp). From the BWIKI's datamined formula (wiki.biligame.com/blhx/公式合集, 指挥喵经验公式): per ship ship_types + rarities + its star; per battle floor(sum over the fleet's ships x enemy_rates) + the map's bonus, the same for the command and the support cat. Checked against the page's example (3 rainbow CAs + 3 rainbow BBs in a chapter 12 normal battle: 28). No capture has a meowfficer in a sortie.",
+  "ship_types": {
+    "_source": "by ship_data_statistics type (ShipType). The wiki's 舰种补正: DD 0; CL / BM / AR / SS 1; CA / CVL 2; CV 3; BC 4; BB 5. CB (18) as a CA: the page's example counts 超巡 as 重巡. Types the page doesn't list (BBV, SSV, AE, DDG, IX...) count 0",
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "4": 4,
+    "5": 5,
+    "6": 2,
+    "7": 3,
+    "8": 1,
+    "12": 1,
+    "13": 1,
+    "18": 2
+  },
+  "rarities": {
+    "_source": "by ship_data_statistics rarity (the config's, before a retrofit): the wiki's 稀有度补正, white 0, blue 1, purple 2, gold 3, rainbow 4",
+    "2": 0,
+    "3": 1,
+    "4": 2,
+    "5": 3,
+    "6": 4
+  },
+  "enemy_rates": {
+    "_source": "the wiki's 道中boss补正: 0.3 for a normal enemy, 0.5 for a boss",
+    "normal": 0.3,
+    "boss": 0.5
+  },
+  "maps": {
+    "_source": "the wiki's 地图补正 by expedition_data_by_map type (1 normal, 2 hard) as [first chapter, bonus]: normal 1-5 0, 6-8 1, 9-10 2, 11 3, 12-14 4; hard 1-3 0, 4-6 1, 7-8 2, 9-10 3, 11-12 4. The later chapters keep the last bonus; event maps get none",
+    "1": [[1, 0], [6, 1], [9, 2], [11, 3], [12, 4]],
+    "2": [[1, 0], [4, 1], [7, 2], [9, 3], [11, 4]]
+  }
+}

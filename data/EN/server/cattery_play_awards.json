@@ -1,0 +1,45 @@
+{
+ "_source": "What playing with one housed meowfficer gives (cattery play), by commander_home teast_level[2]: entries [DROP_TYPE, id, count, chance in %]. azurlane.koumakan.jp Meowfficer (Comf-Forts, 2026-03-28): base 1 Cat Box Quick Finisher per cat; the first upgrade (Lv6) adds a possible 1 Dorm Token (furniture coin, resource 6) per cat; the second (Lv14) 2 Quick Finishers and 1-2 possible Dorm Tokens per cat. Matches wiki.biligame.com/blhx/指挥喵 (oldid 395224). The chances are not published: 50% per possible token is a guess.",
+ "55000": [
+  [
+   2,
+   20010,
+   1,
+   100
+  ]
+ ],
+ "55001": [
+  [
+   2,
+   20010,
+   1,
+   100
+  ],
+  [
+   1,
+   6,
+   1,
+   50
+  ]
+ ],
+ "55002": [
+  [
+   2,
+   20010,
+   2,
+   100
+  ],
+  [
+   1,
+   6,
+   1,
+   100
+  ],
+  [
+   1,
+   6,
+   1,
+   50
+  ]
+ ]
+}

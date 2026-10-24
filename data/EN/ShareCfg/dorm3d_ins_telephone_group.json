@@ -1,0 +1,12 @@
+{
+"10517301":{"background":"voice_placeholder","content":[11,110602],"id":10517301,"name":"Video Call - New Jersey","ship_group":10517,"type":1,"unlock_desc":"Visit New Jersey's private quarters."},
+"10517302":{"background":"voice_placeholder","content":[11,110603],"id":10517302,"name":"Video Call - New Jersey","ship_group":10517,"type":1,"unlock_desc":"Reach New Jersey Intimacy Lv. 14"},
+"20707301":{"background":"voice_placeholder","content":[22,220601],"id":20707301,"name":"Video Call - Implacable","ship_group":20707,"type":1,"unlock_desc":"Visit Implacable's private quarters."},
+"20707302":{"background":"voice_placeholder","content":[22,220602],"id":20707302,"name":"Video Call - Implacable","ship_group":20707,"type":1,"unlock_desc":"Reach Implacable Intimacy Lv. 12"},
+"30707301":{"background":"voice_placeholder","content":[12,120601],"id":30707301,"name":"Video Call – Taihou","ship_group":30707,"type":1,"unlock_desc":"Visit Taihou's private quarters."},
+"30707302":{"background":"voice_placeholder","content":[12,120602],"id":30707302,"name":"Video Call – Taihou","ship_group":30707,"type":1,"unlock_desc":"Reach Taihou Intimacy Lv. 12"},
+"49905301":{"background":"voice_placeholder","content":[14,140601],"id":49905301,"name":"Video Call – Ägir","ship_group":49905,"type":1,"unlock_desc":"Visit Ägir's private quarters."},
+"49905302":{"background":"voice_placeholder","content":[14,140602],"id":49905302,"name":"Video Call – Ägir","ship_group":49905,"type":1,"unlock_desc":"Reach Ägir Intimacy Lv. 12"},
+"79902301":{"background":"voice_placeholder","content":[21,210601],"id":79902301,"name":"Video Call - Admiral Nakhimov","ship_group":79902,"type":1,"unlock_desc":"Visit Admiral Nakhimov's private quarters 1 time."},
+"79902302":{"background":"voice_placeholder","content":[21,210602],"id":79902302,"name":"Video Call - Admiral Nakhimov","ship_group":79902,"type":1,"unlock_desc":"Reach Admiral Nakhimov Intimacy Lv.12"}
+}

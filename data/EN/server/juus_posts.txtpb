@@ -1,0 +1,3039 @@
+# Juus posts as the official EN server pushes them (SC_11702 replies to
+# CS_11701 cmd 1 in the tutorial capture): their text, comments and replies
+# are server-side data, absent from the client's activity_ins_* tables.
+
+ins_message_list: {
+  id: 20001
+  time: 1774512000
+  text: "Thank you for following Juu Port Updates!\nWe bring you breaking news stories, funny anecdotes, and everyday conversations! \nWe also welcome anonymous submissions.\nEnable push notifications and stay tuned for more!"
+  picture: "https://blhxusstatic.yo-star.com/pic/260326_OA4bigldklYOjgVP5SyeJa.png"
+  player_discuss: {
+    id: 20001
+    time: 0
+    text_list: "Anyone here you can publish anonymously to?"
+    text_list: "Well, congratulations on the new channel!"
+    text: ""
+  }
+  npc_discuss: {
+    id: 100020
+    time: 1774558697
+    text: "Wait, I can send ANYTHING I want?! Then I'm going to post a treasure map so we can all look for it together!"
+    npc_reply: 100021
+  }
+  npc_discuss: {
+    id: 100019
+    time: 1774558457
+    text: "What's everyone eaten today? What did you have for breakfast, lunch, and dinner?"
+  }
+  npc_discuss: {
+    id: 100018
+    time: 1774558337
+    text: "Shameless self-promotion? Don't mind if I do! We're 1 person short for a 4-player game. Anyone available to come right now?"
+  }
+  npc_discuss: {
+    id: 100016
+    time: 1774557917
+    text: "I look forward to any updates."
+    npc_reply: 100017
+  }
+  npc_discuss: {
+    id: 100015
+    time: 1774557797
+    text: "An Shan confiscated Fu Shun's phone, so Lady Yuen will be posting on her behalf from now on!"
+  }
+  npc_discuss: {
+    id: 100014
+    time: 1774557617
+    text: "So we can expect all kinds of news and info here, huh? Sounds exciting!"
+  }
+  npc_discuss: {
+    id: 100013
+    time: 1774557377
+    text: "Got anything worth the read? If not, I'm unfollowing now."
+  }
+  npc_discuss: {
+    id: 100011
+    time: 1774557077
+    text: "We have a new channel?"
+    npc_reply: 100012
+  }
+  npc_discuss: {
+    id: 100010
+    time: 1774556957
+    text: "How boldly you're pushing this feature. Magnificent! I love to see some ambition!"
+  }
+  npc_discuss: {
+    id: 100009
+    time: 1774556777
+    text: "Feature request! Please let me submit articles under my real name!"
+  }
+  npc_discuss: {
+    id: 100008
+    time: 1774556597
+    text: "A new feature, you say?!"
+  }
+  npc_discuss: {
+    id: 100007
+    time: 1774556477
+    text: "This is sick. Feels like I've discovered a whole new world!"
+  }
+  npc_discuss: {
+    id: 100006
+    time: 1774556357
+    text: "Huzzah! Also, have you girls heard? There's gonna be some spicy gossip!"
+  }
+  npc_discuss: {
+    id: 100004
+    time: 1774556057
+    text: "We worked hard on this thing. Hope you all like it."
+    npc_reply: 100005
+  }
+  npc_discuss: {
+    id: 100001
+    time: 1774555337
+    text: "the new juu port updates feature has now launched."
+    npc_reply: 100002
+    npc_reply: 100003
+  }
+  npc_reply: {
+    id: 100021
+    time: 1774558817
+    text: "Brilliant idea! Reckon you could send it to just me? I'll do some preliminary scouting to save everyone else time!"
+  }
+  npc_reply: {
+    id: 100017
+    time: 1774558157
+    text: "Port News has been updated! If you've got any comments or suggestions, send them in!"
+  }
+  npc_reply: {
+    id: 100012
+    time: 1774557197
+    text: "How strange. I don't remember following it... And it seems I can't UNfollow it either."
+  }
+  npc_reply: {
+    id: 100005
+    time: 1774556237
+    text: "Hats off to you folks! Say goodbye to boredom, cause loads of fun articles are on the way!"
+  }
+  npc_reply: {
+    id: 100003
+    time: 1774555817
+    text: "Great work! Now that it's in healthy working order, all you who helped develop it should get some rest."
+  }
+  npc_reply: {
+    id: 100002
+    time: 1774555577
+    text: "The project is finished! Time to celebrate!"
+  }
+  good: 918
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/260326_OA4small8EQug8e3sX1bYtqN.png"
+}
+ins_message_list: {
+  id: 20002
+  time: 1774512300
+  text: "Yesterday, Saratoga Film Studios officially announced an innovative project aimed at gamifying cinema.\nThis plan will reportedly break down the boundaries of traditional film production, opening up new horizons for interactive storytelling and immersive experiences.\nProducer Saratoga stated in an interview, \"Yes, we've done it!\"\nShe emphasized that this project will be both a technological leap forward and a redefinition of content presentation."
+  picture: "https://blhxusstatic.yo-star.com/pic/260326_OA2bigMMwdfawHI7buhdmj.png"
+  player_discuss: {
+    id: 20002
+    time: 0
+    text_list: "Yes, we've done it!"
+    text_list: "Can I sign up to try it?"
+    text: ""
+  }
+  npc_discuss: {
+    id: 100046
+    time: 1774557917
+    text: "Interactive experience, you say? Do you mean a kind of bodily, physical interaction with my Commander? If so, I've already had the pleasure of doing it♡"
+    npc_reply: 100047
+    npc_reply: 100048
+    npc_reply: 100049
+    npc_reply: 100050
+    npc_reply: 100051
+  }
+  npc_discuss: {
+    id: 100044
+    time: 1774557557
+    text: "Allow me to post a space for advertisements here..."
+    npc_reply: 100045
+  }
+  npc_discuss: {
+    id: 100042
+    time: 1774557257
+    text: "Come on Sara! You gotta do something or people won't take you seriously!"
+    npc_reply: 100043
+  }
+  npc_discuss: {
+    id: 100040
+    time: 1774556837
+    text: ">innovative project\n>look inside\n>tech from decades ago"
+    npc_reply: 100041
+  }
+  npc_discuss: {
+    id: 100039
+    time: 1774556597
+    text: "This has \"interactive movie game\" written all over it..."
+  }
+  npc_discuss: {
+    id: 100038
+    time: 1774556417
+    text: "Sounds kinda like an interactive movie game to me."
+  }
+  npc_discuss: {
+    id: 100037
+    time: 1774556237
+    text: "Isn't this just an interactive movie game?"
+  }
+  npc_discuss: {
+    id: 100035
+    time: 1774555817
+    text: "If it's able to enhance interactive experiences, can't it also be used to add more tactical elements to naval exercises?"
+    npc_reply: 100036
+  }
+  npc_discuss: {
+    id: 100034
+    time: 1774555697
+    text: "Wow, sounds incredible!"
+  }
+  npc_reply: {
+    id: 100051
+    time: 1774558697
+    text: "Same!"
+  }
+  npc_reply: {
+    id: 100050
+    time: 1774558457
+    text: "Hehehe I love my teacher!"
+  }
+  npc_reply: {
+    id: 100049
+    time: 1774558337
+    text: "Heh..."
+  }
+  npc_reply: {
+    id: 100048
+    time: 1774558157
+    text: "Likewise."
+  }
+  npc_reply: {
+    id: 100047
+    time: 1774558037
+    text: "As have I."
+  }
+  npc_reply: {
+    id: 100045
+    time: 1774557797
+    text: "Tell me if you need technical support, nya! I'll give you a nice estimate, nya!"
+  }
+  npc_reply: {
+    id: 100043
+    time: 1774557437
+    text: "What's this about?"
+  }
+  npc_reply: {
+    id: 100041
+    time: 1774557017
+    text: "In a certain sense, it's a renaissance."
+  }
+  npc_reply: {
+    id: 100036
+    time: 1774556057
+    text: "Good idea."
+  }
+  good: 824
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/260326_OA2smallzjwgEh1GPcCiOpgZ.png"
+}
+ins_message_list: {
+  id: 20003
+  time: 1775768417
+  text: "Three hours after the renowned port explorer, Fu Shun, went missing after embarking on a long-anticipated expedition, we finally received a message from her confirming her safety...\nThe following is an excerpt from her account––\n*\n\"I goofed up! Like, royally! They say curiosity killed the cat and all, but in that instant when I pushed open the ventilation shaft and jumped down, I thought I was ready for anything!\nBut when I looked up, there was the Commander looking back at me, coffee cup in hand, even calmer than during an exercise debriefing!\nCommander just said, 'Oh, you came at just the right time, Fu Shun. I have a report here I'd like you to look over.'\nAnd that's how I ended up stuck behind the desk for the next three hours!! Exercise logs, supply lists, the roster for next month's duties... I can practically see those words even with my eyes closed!\nWait, Commander's totally focused on the coffee machine! This is probably my last chance! Please, someone, come save me! Or at least bring me some late-night snacks!\nJust as I clasped my hands together in prayer, Commander suddenly turned around to look at me! HEEEELP!\"\n*\nAccording to \"Yuen Fei\", an involved party, Fu Shun has yet to return to her lodgings.\nWill Fu Shun's bizarre adventure, already plagued with so many trials and tribulations even since the very outset, meet its end here?\nPlease follow Port Tales to read about the latest developments!"
+  picture: "https://blhxusstatic.yo-star.com/pic/260409_OA5bigBXL6ARzz6bGlGjjD.png"
+  player_discuss: {
+    id: 20003
+    time: 0
+    text_list: "You're welcome to come explore my office again, any time."
+    text_list: "No worries. I can always use another set of helping hands."
+    text: ""
+  }
+  npc_discuss: {
+    id: 100083
+    time: 1775771657
+    text: "yoooo! Fu Shun has defeated the Demon Lord of Overwork and survived to tell the tale!!!!"
+    npc_reply: 100084
+    npc_reply: 100085
+    npc_reply: 100086
+    npc_reply: 100087
+  }
+  npc_discuss: {
+    id: 100078
+    time: 1775770757
+    text: "Oh my, Commander must be working overtime again. I wonder if I should take some late-night snacks over..."
+    npc_reply: 100079
+    npc_reply: 100080
+    npc_reply: 100081
+    npc_reply: 100082
+  }
+  npc_discuss: {
+    id: 100074
+    time: 1775769857
+    text: "Interesting. Looks pretty ambitious. I've gotta give it a try myself next time!"
+    npc_reply: 100075
+    npc_reply: 100076
+    npc_reply: 100077
+  }
+  npc_discuss: {
+    id: 100071
+    time: 1775769377
+    text: "more importantly, where are the ventilation ducts that lead straight to the office?"
+    npc_reply: 100072
+    npc_reply: 100073
+  }
+  npc_discuss: {
+    id: 100068
+    time: 1775768897
+    text: "Allow me to apologize on her behalf for causing everyone trouble..."
+    npc_reply: 100069
+    npc_reply: 100070
+  }
+  npc_discuss: {
+    id: 100066
+    time: 1775768537
+    text: "\"Yuen Fei\"? Isn't that a bit too on-the-nose...?"
+    npc_reply: 100067
+  }
+  npc_reply: {
+    id: 100087
+    time: 1775772377
+    text: "wooooah, slow down! I can barely follow the chat! why's everyone asking about the vents? is nobody worried about ME?!"
+  }
+  npc_reply: {
+    id: 100086
+    time: 1775772257
+    text: "Sent. Check your DMs."
+  }
+  npc_reply: {
+    id: 100085
+    time: 1775772017
+    text: "Perfect timing. Mind showing me which vents lead right into the office?"
+  }
+  npc_reply: {
+    id: 100084
+    time: 1775771777
+    text: "Perfect timing. Mind showing me which vents lead right into the office?"
+  }
+  npc_reply: {
+    id: 100082
+    time: 1775771477
+    text: "Haha. In that case, let's leave the decision to Commander~"
+  }
+  npc_reply: {
+    id: 100081
+    time: 1775771357
+    text: "I'd recommend a piping-hot bowl of borscht~♪"
+  }
+  npc_reply: {
+    id: 100080
+    time: 1775771117
+    text: "A small batch of sweets that do not upset the stomach would also be a sensible choice."
+  }
+  npc_reply: {
+    id: 100079
+    time: 1775770877
+    text: "I brought some sushi over last time, the sort that doesn't get your hands dirty. It was well-received."
+  }
+  npc_reply: {
+    id: 100077
+    time: 1775770517
+    text: "uh huh, what she said!"
+  }
+  npc_reply: {
+    id: 100076
+    time: 1775770277
+    text: "i don't think the calculation is the issue... it sounds safer to just stay at home..."
+  }
+  npc_reply: {
+    id: 100075
+    time: 1775770097
+    text: "I would recommend against jumping down the shaft until you calculate how fast you'll be falling. Incidentally, I am willing to help you with that."
+  }
+  npc_reply: {
+    id: 100073
+    time: 1775769617
+    text: "Agree."
+  }
+  npc_reply: {
+    id: 100072
+    time: 1775769497
+    text: "i wanna know too! the next updates needs to come sooner!"
+  }
+  npc_reply: {
+    id: 100070
+    time: 1775769197
+    text: "I can vouch for her! I brought her some late-night snacks, and she started tearing up and blinking while chowing down! She really must've liked the food!"
+  }
+  npc_reply: {
+    id: 100069
+    time: 1775769017
+    text: "Don't worry, friends. Fu Shun is safe and sound under Commander's protective gaze."
+  }
+  npc_reply: {
+    id: 100067
+    time: 1775768717
+    text: "Nwoooh! I was tricked!!"
+  }
+  good: 515
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/260409_OA5smallspbhyPHdJ8DVP2ip.png"
+}
+ins_message_list: {
+  id: 20004
+  time: 1776448817
+  text: "Announcement! The swimsuit fashion survey hosted by the Port Fashion Collection Editorial Team has officially come to a close!\nThis time, there were no judges or awards, just blunt, honest reviews from the editorial team!\nBased on the results, both sporty and elegant styles are neck-and-neck, offering a true feast for the eyes! But that's not all – the wild, edgy aesthetic is bursting onto the scene as well, setting the stage for a blazing-hot summer!\nWhich swimsuit style will come out on top? Stay tuned to find out!"
+  picture: "https://blhxusstatic.yo-star.com/pic/260417_OA6bigobP4JHtJyCjXOBfO.png"
+  player_discuss: {
+    id: 20004
+    time: 0
+    text_list: "Sporty and elegant make sense to me, but what does \"wild and edgy\" swimwear look like?"
+    text_list: "Speaking of which, when was there a swimsuit survey? I don't recall anything of the sort being sent out..."
+    text: ""
+  }
+  npc_discuss: {
+    id: 100114
+    time: 1776451757
+    text: "How wonderful it would be to bask in the summer sun on the beach in a swimsuit right now..."
+    npc_reply: 100115
+    npc_reply: 100116
+    npc_reply: 100117
+  }
+  npc_discuss: {
+    id: 100110
+    time: 1776450857
+    text: "Indeed. Practicality should always be top of mind when it comes to choosing swimwear."
+    npc_reply: 100111
+    npc_reply: 100112
+    npc_reply: 100113
+  }
+  npc_discuss: {
+    id: 100108
+    time: 1776450497
+    text: "I've heard that the less fabric you wear, the faster you swim..."
+    npc_reply: 100109
+  }
+  npc_discuss: {
+    id: 100106
+    time: 1776450197
+    text: "isn't it, like, a bit early to be talking about swimsuits?"
+    npc_reply: 100107
+  }
+  npc_discuss: {
+    id: 100103
+    time: 1776449717
+    text: "Objection! School swimsuits are the best. Always have, always will."
+    npc_reply: 100104
+    npc_reply: 100105
+  }
+  npc_discuss: {
+    id: 100099
+    time: 1776448997
+    text: "Question: So, of these options, which style do you prefer most?"
+    npc_reply: 100100
+    npc_reply: 100101
+    npc_reply: 100102
+  }
+  npc_reply: {
+    id: 100117
+    time: 1776452357
+    text: "Rolling around on an air mattress... super comfy... I like it"
+  }
+  npc_reply: {
+    id: 100116
+    time: 1776452117
+    text: "Maintaining the dignity and elegance of one's nobility can be considered a form of fashion in and of itself."
+  }
+  npc_reply: {
+    id: 100115
+    time: 1776451877
+    text: "Sitting atop a floaty ring like a throne, casting your gaze down across your domain... What a wonderful sight that would be."
+  }
+  npc_reply: {
+    id: 100113
+    time: 1776451517
+    text: "hahaha! when Enty gets serious, there isn't a soul who can swim faster than her. doesn't matter what she's wearing!"
+  }
+  npc_reply: {
+    id: 100112
+    time: 1776451277
+    text: "Huh? Isn't that the point...?"
+  }
+  npc_reply: {
+    id: 100111
+    time: 1776451097
+    text: "So you're going swimming too, Enterprise?"
+  }
+  npc_reply: {
+    id: 100109
+    time: 1776450617
+    text: "OMG, you absolutely speak the truth, sister! When I tried jumping into the water wearing my old swimsuit, it felt as if there was nothing between me and the water, nothing to get in my way! I kept cutting through the water, gliding through it effortlessly"
+  }
+  npc_reply: {
+    id: 100107
+    time: 1776450377
+    text: "How could you say such an appalling thing?! Fashion is all about staying ahead of the curve!"
+  }
+  npc_reply: {
+    id: 100105
+    time: 1776450017
+    text: "If you're going to swim, wouldn't something more standard and functional be better...?"
+  }
+  npc_reply: {
+    id: 100104
+    time: 1776449897
+    text: "hear, hear!"
+  }
+  npc_reply: {
+    id: 100102
+    time: 1776449537
+    text: "Yes, but it's that dissonance between elegant and edgy that truly makes your appeal pop."
+  }
+  npc_reply: {
+    id: 100101
+    time: 1776449417
+    text: "I prefer something more reserved and elegant. The attentiveness to detail that goes into the swimsuit's design really adds to the appeal."
+  }
+  npc_reply: {
+    id: 100100
+    time: 1776449177
+    text: "It's gotta be the athletic type, right? That kind of look, brimming with energy, basically makes you a walking spotlight!"
+  }
+  good: 502
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/260417_OA6small8rO4TfMdf28PDddb.png"
+}
+ins_message_list: {
+  id: 20005
+  time: 1778781617
+  text: "Nyahaha! Did you hear the latest from today's vacation prep meeting? \nThe Commander was \"lucky\" and \"won\" the prize! But it was all that green cat's scheme! \nI bet it goes deeper than her profiting off it somehow! \nI've heard this channel's followers are smart and well-informed. If you know anything, please share!"
+  picture: "https://blhxusstatic.yo-star.com/pic/260514_OA7bigbdxMVgnLZVbd7ax3.png"
+  player_discuss: {
+    id: 20005
+    time: 0
+    text_list: "Don't forget to pack, everyone."
+    text_list: "Let's go find Akashi, everyone!"
+    text: ""
+  }
+  npc_discuss: {
+    id: 100152
+    time: 1778785697
+    text: "Since you're all so curious, I'm gonna zoom over there and take a look!"
+    npc_reply: 100153
+    npc_reply: 100154
+    npc_reply: 100155
+  }
+  npc_discuss: {
+    id: 100147
+    time: 1778784797
+    text: "Changing the subject here! I heard the symbol of Luxury Bay is a huge sparkly gem!"
+    npc_reply: 100148
+    npc_reply: 100149
+    npc_reply: 100150
+    npc_reply: 100151
+  }
+  npc_discuss: {
+    id: 100145
+    time: 1778784437
+    text: "So this all has something to do with shopping? Speaking of, how about some retail therapy, @Maya!"
+    npc_reply: 100146
+  }
+  npc_discuss: {
+    id: 100144
+    time: 1778784197
+    text: "I think St. Louis is on to something!"
+  }
+  npc_discuss: {
+    id: 100142
+    time: 1778783897
+    text: "Akashi came asking about luxury goods recently. Maybe that's related?"
+    npc_reply: 100143
+  }
+  npc_discuss: {
+    id: 100141
+    time: 1778783717
+    text: "So, is there anything new? Come on, everyone."
+  }
+  npc_discuss: {
+    id: 100139
+    time: 1778783477
+    text: "Don't let her get away!"
+    npc_reply: 100140
+  }
+  npc_discuss: {
+    id: 100138
+    time: 1778783297
+    text: "No, nya! Absolutely not! I'm not that greedy at all, nya!"
+  }
+  npc_discuss: {
+    id: 100136
+    time: 1778782937
+    text: "I do think that money is Akashi's motive. It isn't that difficult a deduction."
+    npc_reply: 100137
+  }
+  npc_discuss: {
+    id: 100133
+    time: 1778782397
+    text: "As a sponsor, I'm proud that the meeting ended most harmoniously."
+    npc_reply: 100134
+    npc_reply: 100135
+  }
+  npc_discuss: {
+    id: 100132
+    time: 1778782277
+    text: "i wanna know too! @akashi_TUUHAN"
+  }
+  npc_discuss: {
+    id: 100131
+    time: 1778782157
+    text: "why is no one here @akashi_TUUHAN"
+  }
+  npc_discuss: {
+    id: 100130
+    time: 1778782037
+    text: "Same here!"
+  }
+  npc_discuss: {
+    id: 100129
+    time: 1778781857
+    text: "Looks like I got here too early! I'll be waiting for the tea!"
+  }
+  npc_reply: {
+    id: 100155
+    time: 1778786177
+    text: "Catch you all later!"
+  }
+  npc_reply: {
+    id: 100154
+    time: 1778785997
+    text: "Z52 just dashed right out of here..."
+  }
+  npc_reply: {
+    id: 100153
+    time: 1778785877
+    text: "What the heck are you doing?!"
+  }
+  npc_reply: {
+    id: 100151
+    time: 1778785517
+    text: "Sparkly?! I bet it's worth a fortune!"
+  }
+  npc_reply: {
+    id: 100150
+    time: 1778785337
+    text: "Sparkly?! That's got to be super stylish!"
+  }
+  npc_reply: {
+    id: 100149
+    time: 1778785097
+    text: "Sparkly?! I bet it's beautiful!"
+  }
+  npc_reply: {
+    id: 100148
+    time: 1778784977
+    text: "Sparkly?! I bet it's really pretty!"
+  }
+  npc_reply: {
+    id: 100146
+    time: 1778784557
+    text: "Where did that even come from..."
+  }
+  npc_reply: {
+    id: 100143
+    time: 1778784017
+    text: "I smell a rat! We've got to look in to this!"
+  }
+  npc_reply: {
+    id: 100140
+    time: 1778783597
+    text: "(I'm out of here, nya!)"
+  }
+  npc_reply: {
+    id: 100137
+    time: 1778783177
+    text: "She might be after a huge sum this time..."
+  }
+  npc_reply: {
+    id: 100135
+    time: 1778782757
+    text: "Wait a minute... why wasn't I even quoted? Wasn't I supposed to be the star of the meeting?!"
+  }
+  npc_reply: {
+    id: 100134
+    time: 1778782577
+    text: "Crumbs, Valiant... Did you even read the post?"
+  }
+  good: 727
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/260514_OA7smallbTSn1Lu5HSfW7Hb7.png"
+}
+ins_message_list: {
+  id: 20006
+  time: 1780002017
+  text: "\"When you fail, you can always find another starting point to get back on your feet.\" – That's explorer Fu Shun's motto!\nHaving overcome her latest tribulations, she heads for the unexplored volcano near the port, launching her adventure into a new chapter!\n\n\"My adventure in the Commander's office was a wash, but I found someplace that'll really rouse my adventurous spirit!\" – Specifically, the crater of a volcano.\n\nThere's no such thing as giving up for an explorer! All they know is to step forth, right now, without delay!\n––\nEverything went super smooth at first. I found some strange-shaped volcanic rocks and decided to bring them back for Tai Yuan.\n\nBut when I got halfway up the volcano, it got reeeally foggy and I couldn't see a thing! Before I knew it, I couldn't find the way I just came from!\n\nI was seriously wondering if you could eat volcanic rocks for dinner when... Wait! \n\nFootsteps?! And someone's calling my name?!\nGuess what? An Shan, Tai Yuan, and Chang Chun have come looking for me! Waaah! I'm saved!"
+  picture: "https://blhxusstatic.yo-star.com/pic/260528_OA8bigi5sZESxn8ofVpPzn.png"
+  player_discuss: {
+    id: 20006
+    time: 0
+    text_list: "Make sure you bring plenty of provisions on your next adventure."
+    text_list: "Why don't we make the crater a new tourist attraction, since everyone's so interested?"
+    text: ""
+  }
+  npc_discuss: {
+    id: 100182
+    time: 1780004537
+    text: "It's hot...and that means getting all sticky and sweaty... What if I invited the Commander?"
+    npc_reply: 100183
+    npc_reply: 100184
+  }
+  npc_discuss: {
+    id: 100180
+    time: 1780004177
+    text: "anyone who sees chi an's gotta stop her! she just took lung wu's pan and ingredients and headed for the volcano!"
+    npc_reply: 100181
+  }
+  npc_discuss: {
+    id: 100179
+    time: 1780004057
+    text: "Are craters really that hot? That would make them perfect for cooking!"
+  }
+  npc_discuss: {
+    id: 100175
+    time: 1780003397
+    text: "Can you actually... eat volcanic rocks?"
+    npc_reply: 100176
+    npc_reply: 100177
+    npc_reply: 100178
+  }
+  npc_discuss: {
+    id: 100171
+    time: 1780002737
+    text: "The geothermal environment within that crater will be perfect for testing our heat resistant equipment. I'm sure we can collect some valuable data there."
+    npc_reply: 100172
+    npc_reply: 100173
+    npc_reply: 100174
+  }
+  npc_discuss: {
+    id: 100170
+    time: 1780002617
+    text: "You went WHERE?! Shouldn't we put a no-entry sign up? What if somebody wanders in and gets hurt?"
+  }
+  npc_discuss: {
+    id: 100168
+    time: 1780002257
+    text: "Sneaking out and walking across burning-hot coals... The thought alone is thrilling!"
+    npc_reply: 100169
+  }
+  npc_discuss: {
+    id: 100167
+    time: 1780002137
+    text: "A volcanic crater huh? I guess I should give you props for the courage to go there unprepared."
+  }
+  npc_reply: {
+    id: 100184
+    time: 1780004957
+    text: "Is that why everyone ran for the Commander's office with those crazy looks on their faces?"
+  }
+  npc_reply: {
+    id: 100183
+    time: 1780004717
+    text: "Comrade Commander went to the sauna with just a towel last time."
+  }
+  npc_reply: {
+    id: 100181
+    time: 1780004357
+    text: "I managed to stop her JUST in time. I'm never letting my pans out of my sight ever again!"
+  }
+  npc_reply: {
+    id: 100178
+    time: 1780003937
+    text: "Good girls don't go somewhere so dangerous. I have some extra accessories with jewels in them. You can play with those~"
+  }
+  npc_reply: {
+    id: 100177
+    time: 1780003817
+    text: "Pretty gems! I want them!"
+  }
+  npc_reply: {
+    id: 100176
+    time: 1780003637
+    text: "don't eat them! this picture book says volcanic rocks are pretty gems that fell from the fiery demon lord's throne when he was defeated!"
+  }
+  npc_reply: {
+    id: 100174
+    time: 1780003157
+    text: "What?! My treasures!"
+  }
+  npc_reply: {
+    id: 100173
+    time: 1780003037
+    text: "So that splendid workshop is yours? I did wonder why it was there. Thanks for the parts!"
+  }
+  npc_reply: {
+    id: 100172
+    time: 1780002857
+    text: "I've actually already put my genius to use and secured a perfect workspace underneath!"
+  }
+  npc_reply: {
+    id: 100169
+    time: 1780002497
+    text: "i got a game rec for you: \"nature hike simulator\""
+  }
+  good: 365
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/260528_OA8small5DjOEcf18Sk7CAo3.png"
+}
+ins_message_list: {
+  id: 20007
+  time: 1781302620
+  text: "It has been more than four hours since Fu Shun once again landed on the volcanic island. From the peak, she shared with us words befitting a true explorer.\n——*\nI counted 123 steps when the volcano decided to wake up and I felt the heat under my feet!\nThe smell of sulfur stung my eyes and I rubbed them with my sleeve as I climbed. I kept telling myself the whole way that this was a real adventure! One that meant something!\n——\nAnd then I saw the peak!\nIt was quieter than I thought it'd be. I couldn't hear the grumble of erupting magma. Only the wind whistled between the gaps in the rocks.\nI got on the ground and peeked into the open orange crater. Something was moving down there. Something slow and heavy, like a giant turning in its sleep. A light came up from the abyss and flashed as it lit up my face.\nI don't know why, but my fear totally disappeared then. The volcano knew I was there, and it shall prove it!"
+  picture: "https://blhxusstatic.yo-star.com/pic/260612_OA9bigNVUIHu6v1uLB01qw.png"
+  player_discuss: {
+    id: 20007
+    time: 0
+    text_list: "It's too dangerous out there. Come back and help me with my work."
+    text_list: "Does anyone need this guide on safe volcano hiking?"
+    text: ""
+  }
+  npc_discuss: {
+    id: 100219
+    time: 1781219700
+    text: "What happened after that? When's the next episode coming out? I can't wait anymore!"
+    npc_reply: 100220
+    npc_reply: 100221
+  }
+  npc_discuss: {
+    id: 100215
+    time: 1781218920
+    text: "anyone who sees chi an's gotta stop her! she just took lung wu's pan and ingredients and headed for the volcano again!"
+    npc_reply: 100216
+    npc_reply: 100217
+    npc_reply: 100218
+  }
+  npc_discuss: {
+    id: 100214
+    time: 1781218800
+    text: "Has anyone seen my pan? I only found a note with a picture of a volcano on it when I checked the usual spot!"
+  }
+  npc_discuss: {
+    id: 100209
+    time: 1781217660
+    text: "You are proof of the volcano's existence in turn, for you revived it from its slumber."
+    npc_reply: 100210
+    npc_reply: 100211
+    npc_reply: 100212
+    npc_reply: 100213
+  }
+  npc_discuss: {
+    id: 100207
+    time: 1781217420
+    text: "When you say the volcano \"woke up\", does that mean it's active now? Isn't that really dangerous...?"
+    npc_reply: 100208
+  }
+  npc_discuss: {
+    id: 100203
+    time: 1781216760
+    text: "I didn't realise adventuring could be so harrowing. I thought it was nothing more than firing one's main gun."
+    npc_reply: 100204
+    npc_reply: 100205
+    npc_reply: 100206
+  }
+  npc_discuss: {
+    id: 100202
+    time: 1781216580
+    text: "Give me a heads-up next time you're going to the volcano. I'll buy you some heat-resistant hiking boots!"
+  }
+  npc_discuss: {
+    id: 100201
+    time: 1781216460
+    text: "That's some adventurous spirit you got there! No wonder they call you the Queen of Adventure!"
+  }
+  npc_reply: {
+    id: 100221
+    time: 1781220060
+    text: "Stop spreading spoilers!"
+  }
+  npc_reply: {
+    id: 100220
+    time: 1781219820
+    text: "I'll tell you in secret! Fu Shun told me exactly what happens next!"
+  }
+  npc_reply: {
+    id: 100218
+    time: 1781219520
+    text: "Uwaaah! I'm sorry, Lung Wu! I won't ever do it again! ;A;"
+  }
+  npc_reply: {
+    id: 100217
+    time: 1781219400
+    text: "I found it! It looks like Fu Po hid it! I'll bring it to you now."
+  }
+  npc_reply: {
+    id: 100216
+    time: 1781219160
+    text: "I haven't done anything! I haven't even touched anything yet!"
+  }
+  npc_reply: {
+    id: 100213
+    time: 1781218560
+    text: "You must be joking! Please take your health more seriously!"
+  }
+  npc_reply: {
+    id: 100212
+    time: 1781218320
+    text: "I don't think one minute over will kill you..."
+  }
+  npc_reply: {
+    id: 100211
+    time: 1781218140
+    text: "What about snacks that are one minute out of date?"
+  }
+  npc_reply: {
+    id: 100210
+    time: 1781217900
+    text: "Does anyone know how to revive snacks that are a day out of date?"
+  }
+  npc_reply: {
+    id: 100208
+    time: 1781217540
+    text: "You're taking this too seriously, girl."
+  }
+  npc_reply: {
+    id: 100206
+    time: 1781217240
+    text: "The better you prepare the fewer accidents you'll have!"
+  }
+  npc_reply: {
+    id: 100205
+    time: 1781217060
+    text: "I'm just happy being able to help Master!"
+  }
+  npc_reply: {
+    id: 100204
+    time: 1781216940
+    text: "No wonder Belfast and the others have their hands full tidying up after you..."
+  }
+  good: 353
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/260612_OA9smallVsd9h0QWwtHZM6il.png"
+}
+ins_message_list: {
+  id: 20008
+  time: 1782428400
+  text: "The New Dream Circus recently opened its first show at the port. The wonderful performance attracted a huge response, with repeat ticket sales rate at an astounding 63.7%!\nThe PR team said \"We never expected the show to be so popular. And we will surely hone our skills even more going forward. Right now, we're recruiting team members to join our training for the new program, so we ask anyone who's interested to check our newsletter.\""
+  picture: "https://blhxusstatic.yo-star.com/pic/260625_OA9bigkgqyh8fPVcIWoFLN.png"
+  player_discuss: {
+    id: 20008
+    time: 0
+    text_list: "I want to see the performance again. Are there any tickets left?"
+    text_list: "I appreciate the support for the circus!"
+    text: ""
+  }
+  npc_discuss: {
+    id: 100249
+    time: 1782431700
+    text: "I wanna join in with the kung-fu performance! Can I get paid in steamed buns?"
+    npc_reply: 100250
+  }
+  npc_discuss: {
+    id: 100247
+    time: 1782431340
+    text: "Thanks so much for coming everyone! Let's go out there and have more fun together!"
+    npc_reply: 100248
+  }
+  npc_discuss: {
+    id: 100245
+    time: 1782430860
+    text: "Looks like it's time for that speed you're so proud of to come in handy, @Bremerton!"
+    npc_reply: 100246
+  }
+  npc_discuss: {
+    id: 100243
+    time: 1782430440
+    text: "The archery performance was really good... I want to see it again!"
+    npc_reply: 100244
+  }
+  npc_discuss: {
+    id: 100240
+    time: 1782429960
+    text: "I saw the show today, and it was really something! Actually I couldn't get a ticket, so I climbed up a tree and watched from up there. It was still amazing, though!"
+    npc_reply: 100241
+    npc_reply: 100242
+  }
+  npc_discuss: {
+    id: 100237
+    time: 1782429480
+    text: "It was okay. I only saw it four times."
+    npc_reply: 100238
+    npc_reply: 100239
+  }
+  npc_discuss: {
+    id: 100235
+    time: 1782429120
+    text: "I want to do a performance where I stand on the stage and shoot apples with a musket!"
+    npc_reply: 100236
+  }
+  npc_discuss: {
+    id: 100233
+    time: 1782428760
+    text: "The performance with everyone jumping through that ring of fire looked real tasty. Huh, did I say \"tasty\"? Nrghhh... I dunno how to put it!"
+    npc_reply: 100234
+  }
+  npc_discuss: {
+    id: 100232
+    time: 1782428580
+    text: "It really was a fantastic performance! Do be sure to prioritise your safety while in the ring, everyone."
+  }
+  npc_reply: {
+    id: 100250
+    time: 1782431940
+    text: "finally, a chance for us sisters to shine! a-and definitely not just because i want steamed buns too!"
+  }
+  npc_reply: {
+    id: 100248
+    time: 1782431460
+    text: "Check your messages, nya! I just sent you a joint business proposal!"
+  }
+  npc_reply: {
+    id: 100246
+    time: 1782431100
+    text: "I'm good at typing is all! Snagging tickets is way beyond me!"
+  }
+  npc_reply: {
+    id: 100244
+    time: 1782430680
+    text: "Hey, I'm good at archery too! Come see me perform next time!"
+  }
+  npc_reply: {
+    id: 100242
+    time: 1782430200
+    text: "Lemme know where that tree is too! I'll make it a priority patrol spot and put up a \"No Climbing\" sign while I'm at it!"
+  }
+  npc_reply: {
+    id: 100241
+    time: 1782430080
+    text: "Can ya lemme know where that tree is? I couldn't get a ticket either. If you could teach me how to climb trees while you're at it, that'd be a huge help!"
+  }
+  npc_reply: {
+    id: 100239
+    time: 1782429780
+    text: "Aaah! You can't post that!"
+  }
+  npc_reply: {
+    id: 100238
+    time: 1782429600
+    text: "Oh, so it was just OKAY? What about this message you sent me asking for an extra ticket?"
+  }
+  npc_reply: {
+    id: 100236
+    time: 1782429300
+    text: "Let's go and sign up!"
+  }
+  npc_reply: {
+    id: 100234
+    time: 1782429000
+    text: "Thank you for your support! Tell us your name the next time you come, and you'll get three times the meat!"
+  }
+  good: 383
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/260625_OA9small0rVEMlSHvsYmPWoH.png"
+}
+ins_message_list: {
+  id: 20009
+  time: 1783620000
+  text: "Have you all noticed?\nThe little ones who freeze when they see dessert are behaving way better now!\nThey still gobble up treats like before, but now they're really enthusiastic about brushing their teeth for some reason – as soon as they're done eating, every time.\nIt wasn't long ago that they needed a reminder, but now we're starting to run out of toothpaste! What on earth happened?!"
+  picture: "https://blhxusstatic.yo-star.com/pic/260709_OA9bigbY6yfRk6vShrOrJN.png"
+  player_discuss: {
+    id: 20009
+    time: 0
+    text_list: "Everyone should pay attention to their oral health."
+    text_list: "I'm just glad they're brushing their teeth by themselves."
+    text: ""
+  }
+  npc_discuss: {
+    id: 100280
+    time: 1783622940
+    text: "I wouldn't get too curious about that building if I were you!"
+    npc_reply: 100281
+    npc_reply: 100282
+    npc_reply: 100283
+    npc_reply: 100284
+  }
+  npc_discuss: {
+    id: 100277
+    time: 1783622400
+    text: "My reading also points toward that new building..."
+    npc_reply: 100278
+    npc_reply: 100279
+  }
+  npc_discuss: {
+    id: 100276
+    time: 1783622280
+    text: "The movement of the stars has shown me a potential glimpse into the truth... It has something to do with the new building that appeared in the port."
+  }
+  npc_discuss: {
+    id: 100273
+    time: 1783621920
+    text: "It's a good thing. But something feels... off."
+    npc_reply: 100274
+    npc_reply: 100275
+  }
+  npc_discuss: {
+    id: 100272
+    time: 1783621800
+    text: "(Created with voice input) I won't tell either so don't ask me"
+  }
+  npc_discuss: {
+    id: 100271
+    time: 1783621680
+    text: "Quit coming to me, all of you! I'm never gonna tell! Ooh..."
+  }
+  npc_discuss: {
+    id: 100267
+    time: 1783620900
+    text: "I remember... Radford was in her bed the other day, but then she suddenly got up to go brush her teeth..."
+    npc_reply: 100268
+    npc_reply: 100269
+    npc_reply: 100270
+  }
+  npc_discuss: {
+    id: 100266
+    time: 1783620720
+    text: "The truth is retreating into the darkness..."
+  }
+  npc_discuss: {
+    id: 100265
+    time: 1783620480
+    text: "Maybe there's a reason they HAVE TO brush their teeth."
+  }
+  npc_discuss: {
+    id: 100264
+    time: 1783620360
+    text: "But they are just as naughty when it comes to things other than brushing teeth."
+  }
+  npc_discuss: {
+    id: 100263
+    time: 1783620180
+    text: "Hmm... Perhaps they have simply grown."
+  }
+  npc_reply: {
+    id: 100284
+    time: 1783623660
+    text: "It's like they're model kids now..."
+  }
+  npc_reply: {
+    id: 100283
+    time: 1783623420
+    text: "Wait, am I reading this right? Fu Shun and Fei Yuen are being cautious?!"
+  }
+  npc_reply: {
+    id: 100282
+    time: 1783623300
+    text: "That's very smart. I wish my sisters thought like you. Then they wouldn't worry me so much."
+  }
+  npc_reply: {
+    id: 100281
+    time: 1783623180
+    text: "You should always stay away from anything that looks dangerous!"
+  }
+  npc_reply: {
+    id: 100279
+    time: 1783622760
+    text: "Don't worry. I'm serious when it comes to my dental health."
+  }
+  npc_reply: {
+    id: 100278
+    time: 1783622580
+    text: "Huan Ch'ang, you need to take better care of your teeth too, okay?"
+  }
+  npc_reply: {
+    id: 100275
+    time: 1783622160
+    text: "That just makes me even more curious!"
+  }
+  npc_reply: {
+    id: 100274
+    time: 1783622040
+    text: "I'm not going to share the details, but I assure you there's nothing untoward going on. New Jersey, everyone, please rest assured."
+  }
+  npc_reply: {
+    id: 100270
+    time: 1783621560
+    text: "I dunno what happened, but let's just be happy that Radford's keeping up with her oral hygiene!"
+  }
+  npc_reply: {
+    id: 100269
+    time: 1783621320
+    text: "No she couldn't! It's important to brush morning AND night!"
+  }
+  npc_reply: {
+    id: 100268
+    time: 1783621140
+    text: "Huh, I remember too. I mean, she could just brush her teeth the next morning, right? What a hassle..."
+  }
+  good: 372
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/260709_OA9smallfae4rvBSFN5JOfO3.png"
+}
+ins_message_list: {
+  id: 20010
+  time: 1784837700
+  text: "Strange and supernatural happenings have been occurring all over the port one after another. We spoke to ghost-story author Prinz Moritz, who is said to have a full understanding of the port's shadowy secrets, to see if we could solve the mystery.\nHere is a transcript of the interview.\n––\nS: As a writer of ghost stories, do you think there's a link between your tales and these spooky occurrences?\nM: Rather than a link, I think these events are best understood as a manifestation of ghost stories. We're already in a huge world of terrifying tales, and... (long explanation cut for brevity).\nS: By the way, there's been a recent rise in reported ghost sightings at night. What's that all about?\nM: (Immediately) It's that ghost doctor looking for patients! I just know it!\nS: Then what about the dormitory doors opening by themselves?! Are the dorms haunted?\nM: For sure. That's the ghost head nurse doing her midnight rounds...\nS: How are you so sure that this is all the work of ghosts? It's not like you were there, right? Unless...\nM: Oh, you know! Heehehehe! I think the head nurse wants to give you a checkup, reporter!\n––\nThe transcript ends here."
+  picture: "https://blhxusstatic.yo-star.com/pic/260723_OA10bigZCgkmw5jYod5t5Jr.png"
+  player_discuss: {
+    id: 20010
+    time: 0
+    text_list: "Are ghost stories actually real?"
+    text_list: "The other night, the office door opened by itself..."
+    text: ""
+  }
+  npc_discuss: {
+    id: 100311
+    time: 1784841060
+    text: "Has anyone seen Santa Fe? I haven't seen her since she sent over the interview transcript."
+    npc_reply: 100312
+  }
+  npc_discuss: {
+    id: 100307
+    time: 1784840400
+    text: "Anyone want a safe route that avoids all supernatural phenomena? I've got one right here!"
+    npc_reply: 100308
+    npc_reply: 100309
+    npc_reply: 100310
+  }
+  npc_discuss: {
+    id: 100304
+    time: 1784839800
+    text: "I've met a ghost at night too! I just swore it was something else at the time!"
+    npc_reply: 100305
+    npc_reply: 100306
+  }
+  npc_discuss: {
+    id: 100302
+    time: 1784839440
+    text: "Oh, so the white shadow I saw floating down the dorm hallway the other night was a ghost. I thought it was someone's bedsheets caught in the wind."
+    npc_reply: 100303
+  }
+  npc_discuss: {
+    id: 100300
+    time: 1784839020
+    text: "Wait, so there really are nurses who chase you around with a needle?"
+    npc_reply: 100301
+  }
+  npc_discuss: {
+    id: 100298
+    time: 1784838600
+    text: "Incidentally, I wonder why a nurse is patrolling the dormitories..."
+    npc_reply: 100299
+  }
+  npc_discuss: {
+    id: 100296
+    time: 1784838300
+    text: "I-I know about this! That's \"Nurse of Nighttime Spooks Grins\"!"
+    npc_reply: 100297
+  }
+  npc_discuss: {
+    id: 100295
+    time: 1784838180
+    text: "I once read a ghost story about an old hospital. I see now that Prinz Moritz must have written it."
+  }
+  npc_discuss: {
+    id: 100294
+    time: 1784838000
+    text: "I wonder if the reporter came out unscathed..."
+  }
+  npc_discuss: {
+    id: 100293
+    time: 1784837820
+    text: "That was way too terrifying!"
+  }
+  npc_reply: {
+    id: 100312
+    time: 1784841180
+    text: "She's still having her examination. Try not to get in the way."
+  }
+  npc_reply: {
+    id: 100310
+    time: 1784840940
+    text: "And me!"
+  }
+  npc_reply: {
+    id: 100309
+    time: 1784840820
+    text: "Me too please!"
+  }
+  npc_reply: {
+    id: 100308
+    time: 1784840640
+    text: "Over here."
+  }
+  npc_reply: {
+    id: 100306
+    time: 1784840160
+    text: "Ghosts... are real. Just look at Foo..."
+  }
+  npc_reply: {
+    id: 100305
+    time: 1784840040
+    text: "same! aaand it spoke to me!"
+  }
+  npc_reply: {
+    id: 100303
+    time: 1784839620
+    text: "Sheets don't fold themselves at the corners..."
+  }
+  npc_reply: {
+    id: 100301
+    time: 1784839200
+    text: "Nurses do not give shots without consent."
+  }
+  npc_reply: {
+    id: 100299
+    time: 1784838780
+    text: "who knows? maybe every building looks like a hospital to her."
+  }
+  npc_reply: {
+    id: 100297
+    time: 1784838480
+    text: "I met her too... and I don't want her to catch me ever again... *sniffle*..."
+  }
+  good: 352
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/260723_OA10smallIhj80FNN8DLXvBpS.png"
+}
+ins_message_list: {
+  id: 20011
+  time: 1786039200
+  text: "Read all about it! The Eagle Union is planning a new racing event!\nRevving engines will dominate the shore as the curtain opens on a high-octane tournament greater than any other! Each team will race it out on the coastal circuit in a fierce bid to become the champion!\nApplications are now open, and priority spectator tickets are on sale! Watch this space for more updates!"
+  picture: "https://blhxusstatic.yo-star.com/pic/260806_OA11biggTZXOUOvr1fMzT7u.png"
+  player_discuss: {
+    id: 20011
+    time: 0
+    text_list: "I got a notification saying I got tickets, though I didn't register for any. Weird..."
+    text_list: "Feels like we're in for some impressive racing."
+    text: ""
+  }
+  npc_discuss: {
+    id: 100353
+    time: 1786044420
+    text: "Don't feel bad if you didn't get a ticket, nya! I know a secret way you can still watch the race! First come, first served!"
+    npc_reply: 100354
+    npc_reply: 100355
+    npc_reply: 100356
+  }
+  npc_discuss: {
+    id: 100345
+    time: 1786043100
+    text: "Has anyone actually secured a ticket? They sold out as soon as they went live, and now my schedule is a mess..."
+    npc_reply: 100346
+    npc_reply: 100347
+    npc_reply: 100348
+    npc_reply: 100349
+    npc_reply: 100350
+    npc_reply: 100351
+    npc_reply: 100352
+  }
+  npc_discuss: {
+    id: 100339
+    time: 1786042080
+    text: "Ha-ha-haah! The Northern Parliament team will be the last one standing!"
+    npc_reply: 100340
+    npc_reply: 100341
+    npc_reply: 100342
+    npc_reply: 100343
+    npc_reply: 100344
+  }
+  npc_discuss: {
+    id: 100336
+    time: 1786041600
+    text: "I'm gonna give it everything I've got this time to get that fourth place!"
+    npc_reply: 100337
+    npc_reply: 100338
+  }
+  npc_discuss: {
+    id: 100332
+    time: 1786040940
+    text: "Is there any team that will have me? I promise not to cause any trouble this time round..."
+    npc_reply: 100333
+    npc_reply: 100334
+    npc_reply: 100335
+  }
+  npc_discuss: {
+    id: 100328
+    time: 1786040280
+    text: "Calling all elite racers for Team Thunderheart! Anyone wanna enter with me?"
+    npc_reply: 100329
+    npc_reply: 100330
+    npc_reply: 100331
+  }
+  npc_discuss: {
+    id: 100325
+    time: 1786039680
+    text: "I'm leading the Eagle Union team, so let me know if you want in!"
+    npc_reply: 100326
+    npc_reply: 100327
+  }
+  npc_discuss: {
+    id: 100324
+    time: 1786039440
+    text: "We're looking forward to your participation!"
+  }
+  npc_reply: {
+    id: 100356
+    time: 1786044840
+    text: "Is this... the legendary pay-to-work scheme?"
+  }
+  npc_reply: {
+    id: 100355
+    time: 1786044720
+    text: "I'm not reselling anything, nya! I just wanted to help people get hired as part-time staff at the event! For a fee, nya..."
+  }
+  npc_reply: {
+    id: 100354
+    time: 1786044540
+    text: "Any form of ticket reselling will be strictly punished by the event organizer."
+  }
+  npc_reply: {
+    id: 100352
+    time: 1786044180
+    text: "You mean it?! Thank you!"
+  }
+  npc_reply: {
+    id: 100351
+    time: 1786044000
+    text: "So I saved up a little cash to become a sponsor and get a box seat. There's still space if you want to join me, Zenker."
+  }
+  npc_reply: {
+    id: 100350
+    time: 1786043820
+    text: "No, I missed out too."
+  }
+  npc_reply: {
+    id: 100349
+    time: 1786043640
+    text: "Am I the ONLY one who didn't get a ticket?"
+  }
+  npc_reply: {
+    id: 100348
+    time: 1786043520
+    text: "I got one easy thanks to the machine I made that can tap ten phones at once♪"
+  }
+  npc_reply: {
+    id: 100347
+    time: 1786043400
+    text: "I must've tapped my phone with my face while I slept, I had a ticket when I woke up"
+  }
+  npc_reply: {
+    id: 100346
+    time: 1786043280
+    text: "Griffy nabbed mine for me! She's super fast!"
+  }
+  npc_reply: {
+    id: 100344
+    time: 1786042860
+    text: "Are you kidding me?! Do you know how much work I put into that car? IT'S PERFECT!!"
+  }
+  npc_reply: {
+    id: 100343
+    time: 1786042620
+    text: "A three-wheeled vehicle doesn't comply with the regulations."
+  }
+  npc_reply: {
+    id: 100342
+    time: 1786042500
+    text: "Sorry to interrupt when you're so excited, but I'm afraid the Northern Parliament's car didn't pass inspection."
+  }
+  npc_reply: {
+    id: 100341
+    time: 1786042320
+    text: "I equipped it with a detonation-powered propulsion unit, super alloy deflectors, AND a punching robot to stop you falling asleep at the wheel!"
+  }
+  npc_reply: {
+    id: 100340
+    time: 1786042200
+    text: "You said it! The ultra-battle car we put together is the GREATEST!"
+  }
+  npc_reply: {
+    id: 100338
+    time: 1786041960
+    text: "Mmm, but fourth's more symbolic! You should go for that top spot, Cleveland!"
+  }
+  npc_reply: {
+    id: 100337
+    time: 1786041720
+    text: "Aren't you meant to aim for first? :o"
+  }
+  npc_reply: {
+    id: 100335
+    time: 1786041480
+    text: "I keep telling you! I'm not a demon!"
+  }
+  npc_reply: {
+    id: 100334
+    time: 1786041300
+    text: "Barrier expansion complete! She won't get away this time!"
+  }
+  npc_reply: {
+    id: 100333
+    time: 1786041180
+    text: "Here comes the vehicle-destroying demon! Quickly, seal her away!"
+  }
+  npc_reply: {
+    id: 100331
+    time: 1786040700
+    text: "Doesn't say anywhere that you gotta DRIVE the car! I’m just gonna carry it and run!"
+  }
+  npc_reply: {
+    id: 100330
+    time: 1786040580
+    text: "Don't sweat it! Neither can I!"
+  }
+  npc_reply: {
+    id: 100329
+    time: 1786040400
+    text: "I want to take part with everyone... but I can't drive..."
+  }
+  npc_reply: {
+    id: 100327
+    time: 1786040040
+    text: "Of course you are. Teams can be made up of members from different factions."
+  }
+  npc_reply: {
+    id: 100326
+    time: 1786039800
+    text: "Am I okay to apply?"
+  }
+  good: 451
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/260806_OA11smallLkIQN4V1zudtYidj.png"
+}
+ins_message_list: {
+  id: 20012
+  time: 1786658400
+  text: "The port will soon be filled with roaring race cars. Have you got your racewear ready yet?\nAfter a heated discussion, the editorial department put together a comprehensive checklist.\nOne-piece race suit: You can't get much more awesome, but they're a pain to take off! Maybe there's someone (the Commander) you could ask for help?\nTwo-piece race suit with jacket: glamorous and refined. Try putting the jacket around a certain someone's shoulders (the Commander) so you can share the joy of victory!\nOf course, if you'd rather enhance the charms you've already got, feel free to try a different approach."
+  picture: "https://blhxusstatic.yo-star.com/pic/260813_OA12bigzm6ZjifVJDQrGZvQ.png"
+  player_discuss: {
+    id: 20012
+    time: 0
+    text_list: "The outfits that stand out are the ones that balance style with practicality."
+    text_list: "What does \"different approach\" mean, anyway?"
+    text: ""
+  }
+  npc_discuss: {
+    id: 100385
+    time: 1786662000
+    text: "There are some outfits that are perfect for driving and for certain other activities too."
+    npc_reply: 100386
+    npc_reply: 100387
+    npc_reply: 100388
+    npc_reply: 100389
+  }
+  npc_discuss: {
+    id: 100380
+    time: 1786661040
+    text: "Racewear has to be suitable for driving! Getting a one-piece that fits just right is the way to go!"
+    npc_reply: 100381
+    npc_reply: 100382
+    npc_reply: 100383
+    npc_reply: 100384
+  }
+  npc_discuss: {
+    id: 100377
+    time: 1786660380
+    text: "Looks are super important when picking an outfit for something like this right? Not that I'm an expert."
+    npc_reply: 100378
+    npc_reply: 100379
+  }
+  npc_discuss: {
+    id: 100375
+    time: 1786660080
+    text: "It's fine for you to focus on selecting your outfits, but don't forget to check the condition of your cars too."
+    npc_reply: 100376
+  }
+  npc_discuss: {
+    id: 100370
+    time: 1786659180
+    text: "I've received several orders for outfits for the competition, but I've never made clothing with these materials..."
+    npc_reply: 100371
+    npc_reply: 100372
+    npc_reply: 100373
+    npc_reply: 100374
+  }
+  npc_discuss: {
+    id: 100367
+    time: 1786658580
+    text: "One-piece suits CAN get a bit stuffy. I guess I'll try out the two-piece this time."
+    npc_reply: 100368
+    npc_reply: 100369
+  }
+  npc_reply: {
+    id: 100389
+    time: 1786662780
+    text: "I see the race is not limited to cars going around the track... Perhaps it is time to test the results of my training."
+  }
+  npc_reply: {
+    id: 100388
+    time: 1786662600
+    text: "I believe you would be well suited to confer the awards..."
+  }
+  npc_reply: {
+    id: 100387
+    time: 1786662420
+    text: "You're talking about cheering, right? Right??"
+  }
+  npc_reply: {
+    id: 100386
+    time: 1786662240
+    text: "You're so right~ There's more to a race than just driving. Lots more~"
+  }
+  npc_reply: {
+    id: 100384
+    time: 1786661820
+    text: "I was just helping the Commander relax!"
+  }
+  npc_reply: {
+    id: 100383
+    time: 1786661580
+    text: "You were SUPPOSED to be doing maintenance till you ended up playing in the water with the Commander..."
+  }
+  npc_reply: {
+    id: 100382
+    time: 1786661400
+    text: "That wasn't for driving! That was so I could do maintenance more easily!"
+  }
+  npc_reply: {
+    id: 100381
+    time: 1786661280
+    text: "Hm? I wouldn't say what you wore earlier WAS very suitable, Essex..."
+  }
+  npc_reply: {
+    id: 100379
+    time: 1786660800
+    text: "A bolt of red lightning whizzing by – I could dominate everyone's attention if I aim for that!"
+  }
+  npc_reply: {
+    id: 100378
+    time: 1786660560
+    text: "You betcha! Anyone's first thought is gonna be \"whoa, that's awesome!\" when they see ya speed by like a hero in your car, right?"
+  }
+  npc_reply: {
+    id: 100376
+    time: 1786660260
+    text: "Do stop by the pits if you need us."
+  }
+  npc_reply: {
+    id: 100374
+    time: 1786659900
+    text: "I'd really appreciate that! Let's do it together, the three of us!"
+  }
+  npc_reply: {
+    id: 100373
+    time: 1786659720
+    text: "I got lots of requests too... Can I make the outfits with you?"
+  }
+  npc_reply: {
+    id: 100372
+    time: 1786659480
+    text: "I'm always here to lend a hand if you need it."
+  }
+  npc_reply: {
+    id: 100371
+    time: 1786659360
+    text: "Material can influence the design a great deal, but I'm sure you'll have no problem, Watarase. You're fantastic at making patterns."
+  }
+  npc_reply: {
+    id: 100369
+    time: 1786658940
+    text: "That's a great idea! I'm off to go pick out a new jacket!"
+  }
+  npc_reply: {
+    id: 100368
+    time: 1786658820
+    text: "Why not use the opportunity to show a different side of yourself and offer the Commander your passenger seat?"
+  }
+  good: 373
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/260813_OA12small6Yg1ZotUTatztOUi.png"
+}
+ins_message_list: {
+  id: 20013
+  time: 1788555600
+  text: "Today marks the establishment of the Port Happiness and Peace of Mind Committee!\nAccording to our intel, surveys have been distributed to residents of the port! They cover various aspects of daily life, culinary satisfaction, sleeping arrangements, entertainment, facilities, and more, with the aim of understanding everybody's sources of happiness and worry alike!\nIf you receive a survey, please answer it sincerely! Your wish is our command."
+  picture: "https://blhxusstatic.yo-star.com/pic/260904_OA13bigsdAygMVb481n9ng0.png"
+  player_discuss: {
+    id: 20013
+    time: 0
+    text_list: "I'll do my best to make everyone happy."
+    text_list: "Great work. I've submitted my response."
+    text: ""
+  }
+  npc_discuss: {
+    id: 100420
+    time: 1788559200
+    text: "My worries? That would be how the Commander won't drink my milk~"
+    npc_reply: 100421
+    npc_reply: 100422
+  }
+  npc_discuss: {
+    id: 100417
+    time: 1788558660
+    text: "Please add a question asking if we know the hidden secrets of the port! I'll answer honestly~"
+    npc_reply: 100418
+    npc_reply: 100419
+  }
+  npc_discuss: {
+    id: 100415
+    time: 1788558180
+    text: "Wait, that thing I got was a happiness survey?"
+    npc_reply: 100416
+  }
+  npc_discuss: {
+    id: 100414
+    time: 1788558000
+    text: "Can you open the underground warehouse for tours next weekend? That sure would make me happy!"
+  }
+  npc_discuss: {
+    id: 100410
+    time: 1788557340
+    text: "Before I fill this out, can we define \"happiness\"?"
+    npc_reply: 100411
+    npc_reply: 100412
+    npc_reply: 100413
+  }
+  npc_discuss: {
+    id: 100407
+    time: 1788556800
+    text: "If this is a serious inquiry, then I will respond truthfully and thoroughly."
+    npc_reply: 100408
+    npc_reply: 100409
+  }
+  npc_discuss: {
+    id: 100405
+    time: 1788556440
+    text: "Hold it! Ausburne isn't a member of the PHPMC!"
+    npc_reply: 100406
+  }
+  npc_discuss: {
+    id: 100403
+    time: 1788556020
+    text: "If I write \"more holidays with my Owner\" in the Other section, will I get extra attention?"
+    npc_reply: 100404
+  }
+  npc_discuss: {
+    id: 100401
+    time: 1788555720
+    text: "What's with the sudden interrogation? Suspicious... Wait, is this some kind of loyalty test?!"
+    npc_reply: 100402
+  }
+  npc_reply: {
+    id: 100422
+    time: 1788559620
+    text: "You'd better listen to them, Commander. Drinking milk and getting ample sleep are good for you."
+  }
+  npc_reply: {
+    id: 100421
+    time: 1788559440
+    text: "Drinking milk... makes you taller! Teacher... Be good!"
+  }
+  npc_reply: {
+    id: 100419
+    time: 1788559020
+    text: "Um... Seconded?"
+  }
+  npc_reply: {
+    id: 100418
+    time: 1788558900
+    text: "Can you please make the responses public?"
+  }
+  npc_reply: {
+    id: 100416
+    time: 1788558420
+    text: "To be honest, I stopped reading as soon as I saw that I'd get paid to fill it out..."
+  }
+  npc_reply: {
+    id: 100413
+    time: 1788557880
+    text: "I made a lavish sea urchin feast! Let's all eat it together!"
+  }
+  npc_reply: {
+    id: 100412
+    time: 1788557700
+    text: "Yeah, what WILL we eat?"
+  }
+  npc_reply: {
+    id: 100411
+    time: 1788557520
+    text: "I think it means what we'll eat for our next meal, right?"
+  }
+  npc_reply: {
+    id: 100409
+    time: 1788557100
+    text: "Can you add more space in the response sections? There's nowhere near enough space for me as-is."
+  }
+  npc_reply: {
+    id: 100408
+    time: 1788556980
+    text: "I can also attach a list of suggestions, should you require it."
+  }
+  npc_reply: {
+    id: 100406
+    time: 1788556560
+    text: "We take our work very seriously. Please help us out, everyone!"
+  }
+  npc_reply: {
+    id: 100404
+    time: 1788556200
+    text: "Noted!"
+  }
+  npc_reply: {
+    id: 100402
+    time: 1788555900
+    text: "Noted!"
+  }
+  good: 327
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/260904_OA13smallEz426XgVncm438HV.png"
+}
+ins_message_list: {
+  id: 669
+  time: 1788906600
+  text: "I'm in the mood for a different kind of musical ensemble today. Join me, stars!"
+  picture: "https://blhxusstatic.yo-star.com/pic/260908_huC6fJIPyL8kxAq0Ze.png"
+  player_discuss: {
+    id: 669
+    time: 0
+    text_list: "I look forward to the concert."
+    text_list: "How exactly do stars play instruments...?"
+    text: ""
+  }
+  npc_discuss: {
+    id: 7447
+    time: 1788907680
+    text: "I can't help but feel like something is missing from this band..."
+    npc_reply: 7448
+    npc_reply: 7449
+    npc_reply: 7450
+  }
+  npc_discuss: {
+    id: 7443
+    time: 1788906720
+    text: "Can stars play instruments, too? That's amazing."
+    npc_reply: 7444
+    npc_reply: 7445
+    npc_reply: 7446
+  }
+  npc_reply: {
+    id: 7450
+    time: 1788908220
+    text: "The star playing bass just happens to be hidden behind a cloud. It'll show itself once the performance begins."
+  }
+  npc_reply: {
+    id: 7449
+    time: 1788908100
+    text: "I think you need an instrument with a low, deep tone."
+  }
+  npc_reply: {
+    id: 7448
+    time: 1788907920
+    text: "Agreed. What is it, though?"
+  }
+  npc_reply: {
+    id: 7446
+    time: 1788907440
+    text: "Thank you. We'd best get back to my rehearsal."
+  }
+  npc_reply: {
+    id: 7445
+    time: 1788907200
+    text: "How romantic! I'll get front-row seats for the show!"
+  }
+  npc_reply: {
+    id: 7444
+    time: 1788906960
+    text: "That's right. Stars can be used for more than just fortune-telling."
+  }
+  good: 1714
+  is_good: 0
+  is_read: 0
+  oalist_pic: ""
+}
+ins_message_list: {
+  id: 670
+  time: 1788989100
+  text: "Let's skip the formalities. As they say, shut up and take my money!"
+  picture: "https://blhxusstatic.yo-star.com/pic/260908_antum47khkGBLgnkajkq.png"
+  player_discuss: {
+    id: 670
+    time: 0
+    text_list: "How does it feel to use?"
+    text_list: "Any other inventions you liked?"
+    text: ""
+  }
+  npc_discuss: {
+    id: 7466
+    time: 1788990960
+    text: "Ms. Azuchi, my team is developing an even more advanced and multi-functional automatic barbecuer, nya!"
+    npc_reply: 7467
+    npc_reply: 7468
+    npc_reply: 7469
+    npc_reply: 7470
+  }
+  npc_discuss: {
+    id: 7463
+    time: 1788990540
+    text: "Not bad! Bring it next time we go out for a meal!"
+    npc_reply: 7464
+    npc_reply: 7465
+  }
+  npc_discuss: {
+    id: 7456
+    time: 1788989340
+    text: "Did you buy a new robot?"
+    npc_reply: 7457
+    npc_reply: 7458
+    npc_reply: 7459
+    npc_reply: 7460
+    npc_reply: 7461
+    npc_reply: 7462
+  }
+  npc_reply: {
+    id: 7470
+    time: 1788991680
+    text: "Because it's not innovative. It isn't NEW."
+  }
+  npc_reply: {
+    id: 7469
+    time: 1788991560
+    text: "Why not, nya?!"
+  }
+  npc_reply: {
+    id: 7468
+    time: 1788991380
+    text: "Not really."
+  }
+  npc_reply: {
+    id: 7467
+    time: 1788991140
+    text: "It doesn't just grill, nya. It can fry skewers, it can make ramen... Wanna invest yet, nya?"
+  }
+  npc_reply: {
+    id: 7465
+    time: 1788990840
+    text: "It's practically night and day! Restaurants don't instill the flavors of innovation!"
+  }
+  npc_reply: {
+    id: 7464
+    time: 1788990720
+    text: "How is that any different from just going to a barbecue restaurant?"
+  }
+  npc_reply: {
+    id: 7462
+    time: 1788990360
+    text: "Lovely! If you're in need of more funds, say the word."
+  }
+  npc_reply: {
+    id: 7461
+    time: 1788990240
+    text: "Thanks for the funding. I'm almost done installing the virtual pet module on it."
+  }
+  npc_reply: {
+    id: 7460
+    time: 1788990120
+    text: "That's right! These groundbreaking inventions are exactly what I live for!"
+  }
+  npc_reply: {
+    id: 7459
+    time: 1788990000
+    text: "That sounds amazing! Does that mean you can eat freshly grilled barbecue whenever you want?"
+  }
+  npc_reply: {
+    id: 7458
+    time: 1788989820
+    text: "I found it at the tech exposition. It's an automated barbecuer!"
+  }
+  npc_reply: {
+    id: 7457
+    time: 1788989580
+    text: "I didn't buy it. I INVESTED in it."
+  }
+  good: 1697
+  is_good: 0
+  is_read: 0
+  oalist_pic: ""
+}
+ins_message_list: {
+  id: 671
+  time: 1789069800
+  text: "Lots of bubbles to get the dishes clean..."
+  picture: "https://blhxusstatic.yo-star.com/pic/260908_i149DPTUrujhjwM35Du.png"
+  player_discuss: {
+    id: 671
+    time: 0
+    text_list: "I'm amazed how clean they've come out."
+    text_list: "Bubbles are more versatile than I expected."
+    text: ""
+  }
+  npc_discuss: {
+    id: 7485
+    time: 1789071600
+    text: "Wow! Bubbles?"
+    npc_reply: 7486
+    npc_reply: 7487
+    npc_reply: 7488
+    npc_reply: 7489
+  }
+  npc_discuss: {
+    id: 7478
+    time: 1789070340
+    text: "If our honourable Master will permit it, the Royal Maids could learn from such a... unique method."
+    npc_reply: 7479
+    npc_reply: 7480
+    npc_reply: 7481
+    npc_reply: 7482
+    npc_reply: 7483
+    npc_reply: 7484
+  }
+  npc_discuss: {
+    id: 7476
+    time: 1789070040
+    text: "I should wash Seiran some time soon!"
+    npc_reply: 7477
+  }
+  npc_reply: {
+    id: 7489
+    time: 1789072440
+    text: "Um, maybe not that one."
+  }
+  npc_reply: {
+    id: 7488
+    time: 1789072200
+    text: "Really?! What about underwater mines?!"
+  }
+  npc_reply: {
+    id: 7487
+    time: 1789072020
+    text: "I can."
+  }
+  npc_reply: {
+    id: 7486
+    time: 1789071780
+    text: "That's impressive... Can you blow bunny-shaped bubbles, too?"
+  }
+  npc_reply: {
+    id: 7484
+    time: 1789071420
+    text: "I would like the Commander's final word on this subject."
+  }
+  npc_reply: {
+    id: 7483
+    time: 1789071240
+    text: "That sounds fun! Count me in!"
+  }
+  npc_reply: {
+    id: 7482
+    time: 1789071000
+    text: "In favour~"
+  }
+  npc_reply: {
+    id: 7481
+    time: 1789070880
+    text: "Against."
+  }
+  npc_reply: {
+    id: 7480
+    time: 1789070700
+    text: "Against."
+  }
+  npc_reply: {
+    id: 7479
+    time: 1789070580
+    text: "Who's in favour, and who's against?"
+  }
+  npc_reply: {
+    id: 7477
+    time: 1789070220
+    text: "I know it isn't what you meant, but... if you need a hand, I can blow bubbles for you."
+  }
+  good: 1608
+  is_good: 0
+  is_read: 0
+  oalist_pic: ""
+}
+ins_message_list: {
+  id: 672
+  time: 1789144560
+  text: "You've already fallen for my spell~ Now... Smile! You will like, subscribe, and share this post!"
+  picture: "https://blhxusstatic.yo-star.com/pic/260908_congmangoj36lbDIdwgf1ZYT.png"
+  player_discuss: {
+    id: 672
+    time: 0
+    text_list: "Liked and shared."
+    text_list: "What a crazy strategy."
+    text: ""
+  }
+  npc_discuss: {
+    id: 7501
+    time: 1789145640
+    text: "I had no idea you could boost subscriber counts like this! I'd better learn hypnotism, too~"
+    npc_reply: 7502
+    npc_reply: 7503
+    npc_reply: 7504
+    npc_reply: 7505
+  }
+  npc_discuss: {
+    id: 7495
+    time: 1789144740
+    text: "You think that child's play will work on me? I won't let you win!"
+    npc_reply: 7496
+    npc_reply: 7497
+    npc_reply: 7498
+    npc_reply: 7499
+    npc_reply: 7500
+  }
+  npc_reply: {
+    id: 7505
+    time: 1789146360
+    text: "Huh? Is it just me, or are you all not actually interested in getting more followers...?"
+  }
+  npc_reply: {
+    id: 7504
+    time: 1789146240
+    text: "Combining aromas with hypnosis could be even more potent."
+  }
+  npc_reply: {
+    id: 7503
+    time: 1789146000
+    text: "I'd love to~"
+  }
+  npc_reply: {
+    id: 7502
+    time: 1789145760
+    text: "Me, too!"
+  }
+  npc_reply: {
+    id: 7500
+    time: 1789145460
+    text: "Aww, your smiles are all wonderful~"
+  }
+  npc_reply: {
+    id: 7499
+    time: 1789145340
+    text: "Happy, happy, happyyy!"
+  }
+  npc_reply: {
+    id: 7498
+    time: 1789145220
+    text: ">w<"
+  }
+  npc_reply: {
+    id: 7497
+    time: 1789145100
+    text: "LOL! LMAO!"
+  }
+  npc_reply: {
+    id: 7496
+    time: 1789144860
+    text: "Hah, haha... What's going on? Why do I suddenly feel so... Hahaha..."
+  }
+  good: 1648
+  is_good: 0
+  is_read: 0
+  oalist_pic: ""
+}
+ins_message_list: {
+  id: 673
+  time: 1789268400
+  text: "All visitors to the Commander's office must undergo a security check."
+  picture: "https://blhxusstatic.yo-star.com/pic/260908_diduizemwC6nQJfkJTfuU.png"
+  player_discuss: {
+    id: 673
+    time: 0
+    text_list: "Do I need to be checked, too?"
+    text_list: "Thanks for your hard work. Anything suspicious today?"
+    text: ""
+  }
+  npc_discuss: {
+    id: 7519
+    time: 1789270200
+    text: "I made snacks for everyone~ I'd like to give one to the Commander. May I come in?"
+    npc_reply: 7520
+    npc_reply: 7521
+    npc_reply: 7522
+    npc_reply: 7523
+  }
+  npc_discuss: {
+    id: 7515
+    time: 1789269480
+    text: "I don't usually have anything on me... So I'm totally harmless, see? Can I go in now?"
+    npc_reply: 7516
+    npc_reply: 7517
+    npc_reply: 7518
+  }
+  npc_discuss: {
+    id: 7511
+    time: 1789268640
+    text: "We must all work together to maintain order! I've brought caution tape, an alarm, and a No Trespassing sign!"
+    npc_reply: 7512
+    npc_reply: 7513
+    npc_reply: 7514
+  }
+  npc_reply: {
+    id: 7523
+    time: 1789270860
+    text: "Clap clap clap~"
+  }
+  npc_reply: {
+    id: 7522
+    time: 1789270680
+    text: "You've really saved us all today, Hostile."
+  }
+  npc_reply: {
+    id: 7521
+    time: 1789270560
+    text: "Once I confiscate them, you may enter."
+  }
+  npc_reply: {
+    id: 7520
+    time: 1789270320
+    text: "According to the hazardous-item list, your snacks are classified as highly dangerous."
+  }
+  npc_reply: {
+    id: 7518
+    time: 1789269960
+    text: "Yes. You are, too."
+  }
+  npc_reply: {
+    id: 7517
+    time: 1789269780
+    text: "Heehee, good move. By the way, is anybody else on that list?"
+  }
+  npc_reply: {
+    id: 7516
+    time: 1789269600
+    text: "Verifying identity... Confirmed. Mogador is on the restricted list."
+  }
+  npc_reply: {
+    id: 7514
+    time: 1789269300
+    text: "Huh? Even me?!"
+  }
+  npc_reply: {
+    id: 7513
+    time: 1789269060
+    text: "Security personnel must undergo checks, too."
+  }
+  npc_reply: {
+    id: 7512
+    time: 1789268820
+    text: "I'll help, too! Leave the perimeter patrols to me!"
+  }
+  good: 1636
+  is_good: 0
+  is_read: 0
+  oalist_pic: ""
+}
+ins_message_list: {
+  id: 20014
+  time: 1789678800
+  text: "The Sakura Empire Hot Springs are holding a limited-time promotion starting today! Our reporter Alfredo was invited to cover the event. What was supposed to be a relaxing trip to the hot springs turned into a scene of panic when cries for help were suddenly heard.\n\"Th-there's a ghost!\"\nWhen she rushed to the scene, she found Owari in a state of distress, with one terrified Suruga not far away. From their accounts, she was able to put together the story as follows.\nWhile soaking in the hot spring, Owari noticed a white figure standing in the hazy steam. Assuming it to be a prank, she approached to see who it was. However, no matter how far she went, the white figure remained just as far away.\nSensing something was amiss, she called over Suruga. The two of them split up to corner the figure, but just as they were about to close in, the mysterious stranger vanished, leaving not a trace behind.\n\nAfter that, Alfredo accompanied Owari to the scene, but the two of them found nothing unusual. However, Owari and Suruga remained adamant that they had witnessed a ghost.\nTo uncover the truth, our reporter planned to launch a ghost-hunting series titled \"In Pursuit of Science, Port Edition\" but management warned that filming on the premises would incur a hefty fee.\nCurrently, we're looking for sponsors to help get this project off the ground! If you're interested in supporting this scientific initiative, please leave a comment below."
+  picture: "https://blhxusstatic.yo-star.com/pic/260917_OA14bigukrr0pziM8Jfxtto.png"
+  player_discuss: {
+    id: 20014
+    time: 0
+    text_list: "A hot spring where you get to pet foxes? That sounds great."
+    text_list: "Well, that case sure got cracked quickly..."
+    text: ""
+  }
+  npc_discuss: {
+    id: 100457
+    time: 1789682700
+    text: "That white silhouette must have been... my fox sneaking out to play! I am deeply sorry for the misunderstanding!"
+    npc_reply: 100458
+    npc_reply: 100459
+    npc_reply: 100460
+  }
+  npc_discuss: {
+    id: 100455
+    time: 1789682460
+    text: "A ghost? Psssh. You must've been fooled by my dazzling appearance!"
+    npc_reply: 100456
+  }
+  npc_discuss: {
+    id: 100454
+    time: 1789682280
+    text: "Nor was it my other Self. We were cleaning up together."
+  }
+  npc_discuss: {
+    id: 100453
+    time: 1789682160
+    text: "It wasn't Foo, either. We were watching a movie together at the time."
+  }
+  npc_discuss: {
+    id: 100452
+    time: 1789681920
+    text: "It wasn't me. I was still working at the co-op..."
+  }
+  npc_discuss: {
+    id: 100450
+    time: 1789681560
+    text: "Ohoh?! Are ghosts really real?"
+    npc_reply: 100451
+  }
+  npc_discuss: {
+    id: 100445
+    time: 1789680660
+    text: "This sounds like a case for me and Data 857!"
+    npc_reply: 100446
+    npc_reply: 100447
+    npc_reply: 100448
+    npc_reply: 100449
+  }
+  npc_discuss: {
+    id: 100442
+    time: 1789680000
+    text: "I like the sound of that series of yours, but it doesn't quite meet my investment criteria."
+    npc_reply: 100443
+    npc_reply: 100444
+  }
+  npc_discuss: {
+    id: 100441
+    time: 1789679760
+    text: "A white phantom amidst the steamy hot springs... How intriguing. I can feel the inspiration brewing~"
+  }
+  npc_discuss: {
+    id: 100436
+    time: 1789678920
+    text: "Don't care if it's a ghost, ghoul, or whatever. I'll cut it down in a single slash!"
+    npc_reply: 100437
+    npc_reply: 100438
+    npc_reply: 100439
+    npc_reply: 100440
+  }
+  npc_reply: {
+    id: 100460
+    time: 1789683180
+    text: "Of course you may. I would be happy to bring it along myself."
+  }
+  npc_reply: {
+    id: 100459
+    time: 1789683060
+    text: "If it comes over again... are we allowed to pet it?"
+  }
+  npc_reply: {
+    id: 100458
+    time: 1789682940
+    text: "Oooh, that's what it was? No worries, then!"
+  }
+  npc_reply: {
+    id: 100456
+    time: 1789682580
+    text: "I don't think the two are related..."
+  }
+  npc_reply: {
+    id: 100451
+    time: 1789681680
+    text: "If anybody could befriend a ghost, it would be Dmitri..."
+  }
+  npc_reply: {
+    id: 100449
+    time: 1789681380
+    text: "Hey, come on! This is supposed to be MY exclusive scoop!"
+  }
+  npc_reply: {
+    id: 100448
+    time: 1789681260
+    text: "Ooh! That sounds fun. I'm in!"
+  }
+  npc_reply: {
+    id: 100447
+    time: 1789681020
+    text: "I'll go, too! I can be the hero who faces the ghosts in the perilous fog!"
+  }
+  npc_reply: {
+    id: 100446
+    time: 1789680780
+    text: "I have some new gear that might help. Don't leave home without it!"
+  }
+  npc_reply: {
+    id: 100444
+    time: 1789680420
+    text: "Aliens? Brilliant! Take my money already!"
+  }
+  npc_reply: {
+    id: 100443
+    time: 1789680180
+    text: "We're actually looking to uncover a way bigger truth: it might not be ghosts that are haunting the port, but rather, ALIENS!"
+  }
+  npc_reply: {
+    id: 100440
+    time: 1789679520
+    text: "No problem. My fists work just as well!"
+  }
+  npc_reply: {
+    id: 100439
+    time: 1789679400
+    text: "You can't take blades into the hot spring! Ask me how I know..."
+  }
+  npc_reply: {
+    id: 100438
+    time: 1789679280
+    text: "Do swords work on ghosts?"
+  }
+  npc_reply: {
+    id: 100437
+    time: 1789679100
+    text: "Kii, you're a real gal's gal!"
+  }
+  good: 296
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/260917_OA14smallmhogovNq1RW3bGOF.png"
+}
+ins_message_list: {
+  id: 20015
+  time: 1791493200
+  text: "\"Everyone says they love romance, but what kind of romance are you into?\" \nLately, the director of Dash of Romance Publishing has been wanting to gather ideas for questions without a single answer!\nIs it about the sudden flutter of a heart?\nA feeling you can't put into words?\nOr something small that glows with its own secret light and is often overlooked?\nIt was with these questions in mind that editor Aoba set about her Romance Anthology Plan.\n I want to ask the readers of this article: What shape does the romance in YOUR heart take? \n The answer might be closer than you think.\nIt might be hiding in the life you're living at this very moment. Please do share your thoughts with us.\nWe'll be reading through all the replies. \n If any happen to tug at our heartstrings, we'll send you a small gift as thanks: a magazine from Dash of Romance Publishing and some merchandise♪\nThank you so much for reading this article! We are Dash of Romance Publishing. \nWe'll weave our romantic poetry through the rest of our pages!"
+  picture: "https://blhxusstatic.yo-star.com/pic/261008_OA15bigAuZ7tbQNBGWzGoJ4.png"
+  player_discuss: {
+    id: 20015
+    time: 0
+    text_list: "Looks like you've all got your own ideas about what romance is."
+    text_list: "What romance means to me, huh..."
+    text: ""
+  }
+  npc_discuss: {
+    id: 100498
+    time: 1791498120
+    text: "Hey! If you ask Contestant Kent, romance is about showing up for someone any time and any place!"
+    npc_reply: 100499
+    npc_reply: 100500
+    npc_reply: 100501
+    npc_reply: 100502
+  }
+  npc_discuss: {
+    id: 100494
+    time: 1791497520
+    text: "Yawn... Reading all your long messages is so draining... In my opinion romance means getting to stay in bed forever and ever"
+    npc_reply: 100495
+    npc_reply: 100496
+    npc_reply: 100497
+  }
+  npc_discuss: {
+    id: 100491
+    time: 1791496920
+    text: "True romance is big calibers! Overwhelming firepower! Neverending combat! And world domination! Hahaha!"
+    npc_reply: 100492
+    npc_reply: 100493
+  }
+  npc_discuss: {
+    id: 100487
+    time: 1791496260
+    text: "Um... I don't think romance has to be anything crazy."
+    npc_reply: 100488
+    npc_reply: 100489
+    npc_reply: 100490
+  }
+  npc_discuss: {
+    id: 100483
+    time: 1791495660
+    text: "Romance is an epic of a love that never loses its luster. People expend their hearts for those they love, till eventually they make the supreme sacrifice..."
+    npc_reply: 100484
+    npc_reply: 100485
+    npc_reply: 100486
+  }
+  npc_discuss: {
+    id: 100479
+    time: 1791494940
+    text: "Romance? It's all about fighting, growing, and heading for a brilliant future together!"
+    npc_reply: 100480
+    npc_reply: 100481
+    npc_reply: 100482
+  }
+  npc_discuss: {
+    id: 100475
+    time: 1791494040
+    text: "I'd say romance is giving everything you have for the person you love~"
+    npc_reply: 100476
+    npc_reply: 100477
+    npc_reply: 100478
+  }
+  npc_discuss: {
+    id: 100471
+    time: 1791493320
+    text: "Romance... To give some simple examples, it can be a piece of music, a bouquet of roses, or a wonderful candlelit dinner."
+    npc_reply: 100472
+    npc_reply: 100473
+    npc_reply: 100474
+  }
+  npc_reply: {
+    id: 100502
+    time: 1791498840
+    text: "I completely agree♪"
+  }
+  npc_reply: {
+    id: 100501
+    time: 1791498600
+    text: "Yeah, that's just what I think!"
+  }
+  npc_reply: {
+    id: 100500
+    time: 1791498420
+    text: "Right!"
+  }
+  npc_reply: {
+    id: 100499
+    time: 1791498300
+    text: "You sure said it!"
+  }
+  npc_reply: {
+    id: 100497
+    time: 1791498000
+    text: "I'm fine without a bed I can lie down wherever and that's romance too"
+  }
+  npc_reply: {
+    id: 100496
+    time: 1791497820
+    text: "You're so right..."
+  }
+  npc_reply: {
+    id: 100495
+    time: 1791497640
+    text: "Zzzz... Yep..."
+  }
+  npc_reply: {
+    id: 100493
+    time: 1791497280
+    text: "You got it! That's why this greatest and strongest Black Dragon is the most romantic thing ever♪"
+  }
+  npc_reply: {
+    id: 100492
+    time: 1791497100
+    text: "Wielding a colossal fury and utterly devastating the enemy. I believe such power to be an awe-inspiring romance also."
+  }
+  npc_reply: {
+    id: 100490
+    time: 1791496680
+    text: "In my opinion, the most romantic thing ever is the smile exchanged between the superhero and the sidekick as their eyes meet and flames rage behind them!"
+  }
+  npc_reply: {
+    id: 100489
+    time: 1791496500
+    text: "That's exactly right! Which means tokusatsu shows are romantic! Nothing more romantic than fighting to protect someone!"
+  }
+  npc_reply: {
+    id: 100488
+    time: 1791496380
+    text: "Maybe romance is also having someone who protects you and makes you feel safe... someone you want to stay close to..."
+  }
+  npc_reply: {
+    id: 100486
+    time: 1791496140
+    text: "There's waaay more to romance than just staring at someone! You gotta take part in it yourself! Make the right choices and lock in on that girl's route like in a galgame~"
+  }
+  npc_reply: {
+    id: 100485
+    time: 1791495960
+    text: "Devotion and sacrifice... It sounds wonderful. I'm prepared to offer up everything I've got to the Commander~"
+  }
+  npc_reply: {
+    id: 100484
+    time: 1791495780
+    text: "To \"keep the pledge through life or death, togetherness or separation\"... That's what you're referring to."
+  }
+  npc_reply: {
+    id: 100482
+    time: 1791495420
+    text: "Banding together and achieving magnificent things. What could be more ambitious or romantic than that?"
+  }
+  npc_reply: {
+    id: 100481
+    time: 1791495240
+    text: "You're right, Big Sis. I'll have to remember that."
+  }
+  npc_reply: {
+    id: 100480
+    time: 1791495060
+    text: "You're a legend, Cleveland! Holding no punches and lifting our spirits! You're sooo cool!"
+  }
+  npc_reply: {
+    id: 100478
+    time: 1791494700
+    text: "Exactly, nya! You've got to swing by my store for the sake of the romance industry!"
+  }
+  npc_reply: {
+    id: 100477
+    time: 1791494520
+    text: "I'd sure love to see new stores and places to eat at the port."
+  }
+  npc_reply: {
+    id: 100476
+    time: 1791494280
+    text: "I totally get you! Hanging out in town together, buying a ton of stuff, matching outfits... That's the best romance there is!"
+  }
+  npc_reply: {
+    id: 100474
+    time: 1791493800
+    text: "Heehee, if that's your definition of romance, the Sardegna Empire will come out on top every time!"
+  }
+  npc_reply: {
+    id: 100473
+    time: 1791493680
+    text: "A candlelit dinner is even more wonderful with the addition of tea."
+  }
+  npc_reply: {
+    id: 100472
+    time: 1791493500
+    text: "Speaking of roses, I've been cultivating lots of new varieties in the greenhouse~ Romance would also be watching them bloom little by little."
+  }
+  good: 205
+  is_good: 0
+  is_read: 0
+  oalist_pic: "https://blhxusstatic.yo-star.com/pic/261008_OA15smallM5StCqHmaBy2b0Or.png"
+}
+
+# 675: SC_11702 of official-avrora-20261024-122439.jsonl
+ins_message_list: {
+  id:  675
+  time:  1792691700
+  text:  "Wanted to go to the glaciers. So I did."
+  picture:  "https://blhxusstatic.yo-star.com/pic/261022_tiejiaohao4favZuPj76KqbRuX.png"
+  player_discuss:  {
+    id:  675
+    time:  0
+    text_list:  "It must be beautiful there."
+    text_list:  "Doesn't it get lonely out there?"
+    text:  ""
+  }
+  npc_discuss:  {
+    id:  7552
+    time:  1792693380
+    text:  "That's it! My next independent travel vlog is gonna be at the glaciers!"
+    npc_reply:  7553
+    npc_reply:  7554
+    npc_reply:  7555
+    npc_reply:  7556
+    npc_reply:  7557
+  }
+  npc_discuss:  {
+    id:  7549
+    time:  1792692780
+    text:  "Bring back shiny souvenirs! Things you can't find around port."
+    npc_reply:  7550
+    npc_reply:  7551
+  }
+  npc_discuss:  {
+    id:  7545
+    time:  1792691880
+    text:  "Went the wrong way. But apparently, you can get there if you just keep going. No big deal."
+    npc_reply:  7546
+    npc_reply:  7547
+    npc_reply:  7548
+  }
+  npc_reply:  {
+    id:  7557
+    time:  1792694280
+    text:  "Umm... Rodgers? You'll be back in time to cook dinner, right?"
+  }
+  npc_reply:  {
+    id:  7556
+    time:  1792694100
+    text:  "I'll go pack right away!"
+  }
+  npc_reply:  {
+    id:  7555
+    time:  1792693980
+    text:  "Of course! There are seats open on the train. I'll bring you with!"
+  }
+  npc_reply:  {
+    id:  7554
+    time:  1792693740
+    text:  "Independent travel... That sounds really cool. Could I do that?"
+  }
+  npc_reply:  {
+    id:  7553
+    time:  1792693560
+    text:  "Ooh! That's fun!"
+  }
+  npc_reply:  {
+    id:  7551
+    time:  1792693140
+    text:  "I'll pass on those, thanks. Wouldn't fit inside my room anyway."
+  }
+  npc_reply:  {
+    id:  7550
+    time:  1792693020
+    text:  "Things I can't find around the port... like polar bears?"
+  }
+  npc_reply:  {
+    id:  7548
+    time:  1792692540
+    text:  "Just going to eat whatever I can find."
+  }
+  npc_reply:  {
+    id:  7547
+    time:  1792692360
+    text:  "That sounds like a long detour. Did you take enough supplies?"
+  }
+  npc_reply:  {
+    id:  7546
+    time:  1792692120
+    text:  "Are you blazing new trails? You might find treasure along the way~"
+  }
+  good:  931
+  is_good:  0
+  is_read:  0
+  oalist_pic:  ""
+}
+
+# 20016: SC_11702 of official-avrora-20261024-122439.jsonl
+ins_message_list: {
+  id:  20016
+  time:  1792702800
+  text:  "You've probably all noticed an increase in strange happenings lately.\nShadows that disappear suddenly, floating Jack-o'-lanterns, occasional whispering voices...\nThese are all normal, so please rest assured. They're all tricks for the Halloween event.\nThere's no need to avoid them, try to fix them, or run from them. Most people will get used to them eventually. I hope you will too."
+  picture:  "https://blhxusstatic.yo-star.com/pic/261022_OA16bigyTm6ZiAcwdhexArw.png"
+  player_discuss:  {
+    id:  20016
+    time:  0
+    text_list:  "Did everyone's accounts get hacked?"
+    text_list:  "Some of you haven't adapted so well..."
+    text:  ""
+  }
+  npc_discuss:  {
+    id:  100541
+    time:  1792707060
+    text:  "Wait, there ARE still people here who haven't lost their minds yet, right?!"
+    npc_reply:  100542
+  }
+  npc_discuss:  {
+    id:  100539
+    time:  1792706700
+    text:  "Uh huh! It doesn't matter that you've lost something when you don't care!"
+    npc_reply:  100540
+  }
+  npc_discuss:  {
+    id:  100536
+    time:  1792706280
+    text:  "My shadow seems to have vanished... But somehow, I feel fine?"
+    npc_reply:  100537
+    npc_reply:  100538
+  }
+  npc_discuss:  {
+    id:  100532
+    time:  1792705560
+    text:  "Let me give it a whirl! @everyone"
+    npc_reply:  100533
+    npc_reply:  100534
+    npc_reply:  100535
+  }
+  npc_discuss:  {
+    id:  100529
+    time:  1792705020
+    text:  "I want every sane ship seeing these replies to be careful! Do not answer if you hear a voice calling your name! Do not answer!"
+    npc_reply:  100530
+    npc_reply:  100531
+  }
+  npc_discuss:  {
+    id:  100528
+    time:  1792704780
+    text:  "The whispers have begun to respond to me... It feels as though there are droves of people around me... I find it comforting..."
+  }
+  npc_discuss:  {
+    id:  100525
+    time:  1792704180
+    text:  "U-um, I feel like someone's been whispering my name... That's normal too, right?"
+    npc_reply:  100526
+    npc_reply:  100527
+  }
+  npc_discuss:  {
+    id:  100524
+    time:  1792704000
+    text:  "You have to eat the extra candy at your door the same daaay... The taste changes if you leave it overnight."
+  }
+  npc_discuss:  {
+    id:  100522
+    time:  1792703520
+    text:  "There was no one outside the door! BUT there was candy! And now it's mine. This is great!"
+    npc_reply:  100523
+  }
+  npc_discuss:  {
+    id:  100521
+    time:  1792703400
+    text:  "Just ignore the floating pumpkins! You don't want to ruin the party atmosphere♪"
+  }
+  npc_discuss:  {
+    id:  100520
+    time:  1792703280
+    text:  "Just need everyone to know I was here before this blows up~"
+  }
+  npc_discuss:  {
+    id:  100518
+    time:  1792702920
+    text:  "waaah everyones so into this im too scared to look at the comments"
+    npc_reply:  100519
+  }
+  npc_reply:  {
+    id:  100542
+    time:  1792707180
+    text:  "Analysis completed. On. Associated ships. No. Anomalies. Found."
+  }
+  npc_reply:  {
+    id:  100540
+    time:  1792706940
+    text:  "It stops being scary once you get used to it too. And when it stops being scary, it's even easier to get used to it... Hehe~"
+  }
+  npc_reply:  {
+    id:  100538
+    time:  1792706580
+    text:  "I actually feel like things are more convenient now. I can finally walk through the town openly without people calling me an outcast. Heehee♪"
+  }
+  npc_reply:  {
+    id:  100537
+    time:  1792706460
+    text:  "There is nothing to be concerned about – your shadow will return by itself. And even if it doesn't, it won't disrupt the event's progression."
+  }
+  npc_reply:  {
+    id:  100535
+    time:  1792706160
+    text:  "@Natori, s-so are you!"
+  }
+  npc_reply:  {
+    id:  100534
+    time:  1792705920
+    text:  "YOU are replying, Isuzu."
+  }
+  npc_reply:  {
+    id:  100533
+    time:  1792705680
+    text:  "N-no way anyone's gonna reply to that!"
+  }
+  npc_reply:  {
+    id:  100531
+    time:  1792705380
+    text:  "It's normal for someone to call your name. It means you still have one."
+  }
+  npc_reply:  {
+    id:  100530
+    time:  1792705260
+    text:  "Don't panic. The voices are just checking you out. They'll leave as soon as they're done~"
+  }
+  npc_reply:  {
+    id:  100527
+    time:  1792704660
+    text:  "It's very nice that someone remembers your name!"
+  }
+  npc_reply:  {
+    id:  100526
+    time:  1792704420
+    text:  "I encountered the same phenomenon. You need only to relax and accept the presence that is there."
+  }
+  npc_reply:  {
+    id:  100523
+    time:  1792703760
+    text:  "That's right! You have to take snacks when you can! It doesn't matter if you don't know who left it there!"
+  }
+  npc_reply:  {
+    id:  100519
+    time:  1792703100
+    text:  "...Guys? You're typing way too fast..."
+  }
+  good:  188
+  is_good:  0
+  is_read:  0
+  oalist_pic:  "https://blhxusstatic.yo-star.com/pic/261022_OA16smallERRvJD6eVTDwNPkJ.png"
+}
+
+# 674: SC_11702 of official-avrora-20261024-122439.jsonl
+ins_message_list: {
+  id:  674
+  time:  1792710000
+  text:  "While resting, I heard the ocean calling to me..."
+  picture:  "https://blhxusstatic.yo-star.com/pic/261022_shuixinghaoMLeBJgacmh5yF6dN.png"
+  player_discuss:  {
+    id:  674
+    time:  0
+    text_list:  "You didn't reply my message. You okay?"
+    text_list:  "I know a nice beach to relax on."
+    text:  ""
+  }
+  npc_discuss:  {
+    id:  7537
+    time:  1792711680
+    text:  "You plan to conquer the ocean? Interesting... I'm in!"
+    npc_reply:  7538
+    npc_reply:  7539
+  }
+  npc_discuss:  {
+    id:  7534
+    time:  1792711080
+    text:  "Calling to you... It must be a tsunami! Run awaaay!"
+    npc_reply:  7535
+    npc_reply:  7536
+  }
+  npc_discuss:  {
+    id:  7529
+    time:  1792710240
+    text:  "According to my divinations, that sound is dangerous. You'd better stay away."
+    npc_reply:  7530
+    npc_reply:  7531
+    npc_reply:  7532
+    npc_reply:  7533
+  }
+  npc_reply:  {
+    id:  7539
+    time:  1792712040
+    text:  "Oh, great. I'll keep dinner warm for you..."
+  }
+  npc_reply:  {
+    id:  7538
+    time:  1792711920
+    text:  "That sounds fun. Let me join!"
+  }
+  npc_reply:  {
+    id:  7536
+    time:  1792711440
+    text:  "Heheh... I just got back..."
+  }
+  npc_reply:  {
+    id:  7535
+    time:  1792711200
+    text:  "Oh, so it wasn't a sea monster? Phew... Wait, tsunamis are bad! Be careful!"
+  }
+  npc_reply:  {
+    id:  7533
+    time:  1792710840
+    text:  "Eww. Why would you eat chips that were in the water"
+  }
+  npc_reply:  {
+    id:  7532
+    time:  1792710720
+    text:  "hmm... are there potato chips in the treasure?"
+  }
+  npc_reply:  {
+    id:  7531
+    time:  1792710600
+    text:  "That is fair. Let me try another divination! Then, we can split the treasure fifty-fifty!"
+  }
+  npc_reply:  {
+    id:  7530
+    time:  1792710420
+    text:  "Nothing ventured, nothing gained. What if there's treasure down there?"
+  }
+  good:  896
+  is_good:  0
+  is_read:  0
+  oalist_pic:  ""
+}
+
+# 676: SC_11702 of official-avrora-20261024-122439.jsonl
+ins_message_list: {
+  id:  676
+  time:  1792794600
+  text:  "Heheheh... I see your fate."
+  picture:  "https://blhxusstatic.yo-star.com/pic/261022_sailimiyezNtv9tg4kvE2SFyT.png"
+  player_discuss:  {
+    id:  676
+    time:  0
+    text_list:  "What does this post even mean?"
+    text_list:  "Do you need help? You look like you need help."
+    text:  ""
+  }
+  npc_discuss:  {
+    id:  7572
+    time:  1792796400
+    text:  "You look like you got stuck in a trap. How do you plan to get down?"
+    npc_reply:  7573
+    npc_reply:  7574
+    npc_reply:  7575
+  }
+  npc_discuss:  {
+    id:  7569
+    time:  1792795740
+    text:  "This pose is written of in Nile history books! It comes from a tarot card, no?"
+    npc_reply:  7570
+    npc_reply:  7571
+  }
+  npc_discuss:  {
+    id:  7563
+    time:  1792794780
+    text:  "what hair gel do you use"
+    npc_reply:  7564
+    npc_reply:  7565
+    npc_reply:  7566
+    npc_reply:  7567
+    npc_reply:  7568
+  }
+  npc_reply:  {
+    id:  7575
+    time:  1792797000
+    text:  "Nope! Not stuck at all! I'm just having FUN here!"
+  }
+  npc_reply:  {
+    id:  7574
+    time:  1792796760
+    text:  "Are you okay? Looks to me like you're stuck."
+  }
+  npc_reply:  {
+    id:  7573
+    time:  1792796640
+    text:  "...I'll figure it out!"
+  }
+  npc_reply:  {
+    id:  7571
+    time:  1792796160
+    text:  "Wow, you know your stuff! It's exactly the one you're thinking of."
+  }
+  npc_reply:  {
+    id:  7570
+    time:  1792795980
+    text:  "I can't believe she knew..."
+  }
+  npc_reply:  {
+    id:  7568
+    time:  1792795500
+    text:  "ok so what hair gel do you use"
+  }
+  npc_reply:  {
+    id:  7567
+    time:  1792795380
+    text:  "Secret! Heheheh."
+  }
+  npc_reply:  {
+    id:  7566
+    time:  1792795260
+    text:  "What is our fate?"
+  }
+  npc_reply:  {
+    id:  7565
+    time:  1792795080
+    text:  "HEY, don't you want to know your fate?! It's hard to maintain this pose!"
+  }
+  npc_reply:  {
+    id:  7564
+    time:  1792794900
+    text:  "None at all! I was just born this fabulous."
+  }
+  good:  596
+  is_good:  0
+  is_read:  0
+  oalist_pic:  ""
+}

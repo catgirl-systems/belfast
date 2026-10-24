@@ -1,0 +1,32 @@
+{
+  "_source": "Daily challenge (expedition_daily_template) drops that only the EN wiki's Daily Raid page gives (azurlane.koumakan.jp/wiki/Daily_Raid, as pasted by the user on 2026-10-18), by expedition_data_template stage id. Only exact wiki numbers that agree with the stage's award_display are kept; the client data wins otherwise. tier_count: how many units the stage's \"N%chance\" entries give per clear when their chances add up to 100 (the tiers of a stage: each unit picks one tier at those odds), instead of one. rank_counts: the count of an award_display item (by item id) by battle rank (S, A, B), within the award_display range. Left out: Advance Mission and Fierce Assault Lv.35 (no count on the page), Fierce Assault Lv.95 (2 boxes with a T3 40% the award_display doesn't list, its chances add up to 120), Supply Line Disruption and Module Development (no exact per-stage counts), Tactical Training Lv.60 B rank (the wiki's 45 is below award_display's 46~50), every coin amount (approximate on the page, a word in award_display).",
+  "stages": {
+    "2000": {"_source": "Escort Mission Lv.10: 5 parts, T1 100%", "tier_count": 5},
+    "2001": {"_source": "Escort Mission Lv.10: 5 parts, T1 100%", "tier_count": 5},
+    "2002": {"_source": "Escort Mission Lv.25: 7 parts, T1 80% / T2 20%", "tier_count": 7},
+    "2003": {"_source": "Escort Mission Lv.25: 7 parts, T1 80% / T2 20%", "tier_count": 7},
+    "2004": {"_source": "Escort Mission Lv.35: 9 parts, T1 60% / T2 40%", "tier_count": 9},
+    "2005": {"_source": "Escort Mission Lv.35: 9 parts, T1 60% / T2 40%", "tier_count": 9},
+    "2006": {"_source": "Escort Mission Lv.50: 11 parts, T1 40% / T2 40% / T3 20%", "tier_count": 11},
+    "2007": {"_source": "Escort Mission Lv.50: 11 parts, T1 40% / T2 40% / T3 20%", "tier_count": 11},
+    "2008": {"_source": "Escort Mission Lv.70: 13 parts, T1 20% / T2 40% / T3 40%", "tier_count": 13},
+    "2009": {"_source": "Escort Mission Lv.70: 13 parts, T1 20% / T2 40% / T3 40%", "tier_count": 13},
+    "2010": {"_source": "Escort Mission Lv.95: 10 parts (+1 T4, award_display's \"1\"), T2 40% / T3 60%", "tier_count": 10},
+    "2011": {"_source": "Escort Mission Lv.95: 10 parts (+1 T4, award_display's \"1\"), T2 40% / T3 60%", "tier_count": 10},
+    "3000": {"_source": "Advance Mission Lv.10: 3 books, T1 100%", "tier_count": 3},
+    "3001": {"_source": "Advance Mission Lv.25: 3 books, T1 80% / T2 20%", "tier_count": 3},
+    "3003": {"_source": "Advance Mission Lv.50: 4 books, T1 40% / T2 40% / T3 20%", "tier_count": 4},
+    "3004": {"_source": "Advance Mission Lv.70: 5 books, T1 20% / T2 40% / T3 40%", "tier_count": 5},
+    "3005": {"_source": "Advance Mission Lv.95: 5 books, T2 60% / T3 40% (T4 0-1 and 6 T1 META books as in award_display)", "tier_count": 5},
+    "4000": {"_source": "Fierce Assault Lv.10: 3 boxes, T2 100%", "tier_count": 3},
+    "4001": {"_source": "Fierce Assault Lv.25: 3 boxes, T2 80% / T3 20%", "tier_count": 3},
+    "4003": {"_source": "Fierce Assault Lv.50: 3 boxes, T3 80% / T4 20%", "tier_count": 3},
+    "4004": {"_source": "Fierce Assault Lv.70: 3 boxes, T3 60% / T4 40%", "tier_count": 3},
+    "6000": {"_source": "Tactical Training Lv.60: Cognitive Chips S 50 / A 48 (B 45 is outside award_display's 46~50)", "rank_counts": {"15008": {"S": 50, "A": 48}}},
+    "6001": {"_source": "Tactical Training Lv.60: Cognitive Chips S 50 / A 48 (B 45 is outside award_display's 46~50)", "rank_counts": {"15008": {"S": 50, "A": 48}}},
+    "6002": {"_source": "Tactical Training Lv.60: Cognitive Chips S 50 / A 48 (B 45 is outside award_display's 46~50)", "rank_counts": {"15008": {"S": 50, "A": 48}}},
+    "6003": {"_source": "Tactical Training Lv.100: Cognitive Chips S 70 / A 68 / B 65", "rank_counts": {"15008": {"S": 70, "A": 68, "B": 65}}},
+    "6004": {"_source": "Tactical Training Lv.100: Cognitive Chips S 70 / A 68 / B 65", "rank_counts": {"15008": {"S": 70, "A": 68, "B": 65}}},
+    "6005": {"_source": "Tactical Training Lv.100: Cognitive Chips S 70 / A 68 / B 65", "rank_counts": {"15008": {"S": 70, "A": 68, "B": 65}}}
+  }
+}

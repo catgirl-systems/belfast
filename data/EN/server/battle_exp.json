@@ -1,0 +1,38 @@
+{
+  "_source": "Server-side battle exp rates, in no client table or Lua. Wiki-derived (wiki.biligame.com/blhx 战斗评分 and 升级经验, read through a summarising fetch; azurlane.koumakan.jp Morale through a search summary) and checked against the official capture (.cache/captures/official-avrora-*: two S-rank 3-ship campaign battles, commander exp 65, happy-morale ship exp = expedition exp x 1.2 x 2 x 1.2). Scores are ys.Battle.BattleConst.BattleScore letters (D 0, C 1, B 2, A 3, S 4).",
+  "ship_rank_rates": {
+    "_source": "BWIKI 战斗评分: A is the base, S x1.2, A x1.0, B x0.8, C or D x0.1",
+    "S": 1.2,
+    "A": 1.0,
+    "B": 0.8,
+    "C": 0.1,
+    "D": 0.1
+  },
+  "ship_energy_rates": {
+    "_source": "by energy_template id, others x1. 4 (121-150, 'EXP bonus' in energy_desc_4): x1.2, the capture's rate; 1 (morale 0): halved, koumakan Morale page",
+    "1": 0.5,
+    "4": 1.2
+  },
+  "player_exp": {
+    "_source": "BWIKI 升级经验: commander exp depends only on the commander - enemy level gap, the ships sortied and the rank. by_ships: A rank, gap <= 20, x1 row (2-9 ships; the page lists no 1-ship value); S = A x1.2, B = S x2/3; gap 21-40 x0.6 and gap >= 41 x0.12 of the A row whatever the rank; the page has no C/D value",
+    "by_ships": {
+      "2": 20,
+      "3": 27,
+      "4": 35,
+      "5": 42.5,
+      "6": 49.5,
+      "7": 57.5,
+      "8": 65,
+      "9": 72.5
+    },
+    "rank_rates": {
+      "S": 1.2,
+      "A": 1.0,
+      "B": 0.8
+    },
+    "level_gaps": [
+      {"over": 40, "rate": 0.12},
+      {"over": 20, "rate": 0.6}
+    ]
+  }
+}

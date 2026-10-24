@@ -9,7 +9,6 @@ config.local.toml
 # Random stuff that isn't needed in the repo
 *_old
 *.pcap*
-data/
 dump
 .vscode
 
@@ -35,3 +34,7 @@ AzurLane*
 admin/node_modules
 internal/admin/dist/*
 !internal/admin/dist/.gitkeep
+
+# Server state the back-office writes into the data dir
+data/*/server/exchange_codes.json
+data/*/server/.*
