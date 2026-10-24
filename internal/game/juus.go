@@ -16,6 +16,7 @@ import (
 	"github.com/ggmolly/belfast/internal/connection"
 	"github.com/ggmolly/belfast/internal/db"
 	"github.com/ggmolly/belfast/internal/gamedata"
+	"github.com/ggmolly/belfast/internal/logger"
 	"github.com/ggmolly/belfast/internal/protobuf"
 )
 
@@ -203,6 +204,7 @@ func (game *Game) handleJuusPostOp(client *connection.Client, req *protobuf.CS_1
 	ctx := context.Background()
 	if req.GetCmd() == juusOpUpdate {
 		if juusPosts[req.GetId()] == nil {
+			logger.WithFields("Juus", logger.FieldValue("id", req.GetId()), logger.FieldValue("cmd", req.GetCmd())).Warn("post op refused: not a known post")
 			return client.Send(&protobuf.SC_11702{Result: result(errRefused)})
 		}
 		if err := game.DB.CreateJuusPost(ctx, db.CreateJuusPostParams{CommanderID: client.CommanderID, PostID: req.GetId()}); err != nil {
@@ -221,6 +223,7 @@ func (game *Game) handleJuusPostOp(client *connection.Client, req *protobuf.CS_1
 	}
 	if errors.Is(err, sql.ErrNoRows) {
 		// not a post the commander has
+		logger.WithFields("Juus", logger.FieldValue("id", req.GetId()), logger.FieldValue("cmd", req.GetCmd())).Warn("post op refused: commander doesn't have the post")
 		return client.Send(&protobuf.SC_11702{Result: result(errRefused)})
 	} else if err != nil {
 		return err
