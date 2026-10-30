@@ -3037,3 +3037,150 @@ ins_message_list: {
   is_read:  0
   oalist_pic:  ""
 }
+
+# 677: SC_11702 of official-avrora-20261030-153601.jsonl
+ins_message_list: {
+  id:  677
+  time:  1792871400
+  text:  "This place is comfy. It's damp, cool, and full of tasty food."
+  picture:  "https://blhxusstatic.yo-star.com/pic/261022_changshehaodw4dMiaYQ4yDwEfU.png"
+  player_discuss:  {
+    id:  677
+    time:  0
+    text_list:  "Looking at this made me hungry."
+    text_list:  "I'm coming with my own rod!"
+    text:  ""
+  }
+  npc_discuss:  {
+    id:  7585
+    time:  1792872300
+    text:  "Is that rod big enough? It might break if you catch a big one."
+    npc_reply:  7586
+    npc_reply:  7587
+    npc_reply:  7588
+  }
+  npc_discuss:  {
+    id:  7581
+    time:  1792871640
+    text:  "Those fish look delicious."
+    npc_reply:  7582
+    npc_reply:  7583
+    npc_reply:  7584
+  }
+  npc_reply:  {
+    id:  7588
+    time:  1792872840
+    text:  "Hahaha! The truly strong never complain about their circumstances!"
+  }
+  npc_reply:  {
+    id:  7587
+    time:  1792872660
+    text:  "Sounds fun! I can do that with Marteau, too!"
+  }
+  npc_reply:  {
+    id:  7586
+    time:  1792872540
+    text:  "Don't worry. When a fish bites, I'll just whack it."
+  }
+  npc_reply:  {
+    id:  7584
+    time:  1792872060
+    text:  "STOP!"
+  }
+  npc_reply:  {
+    id:  7583
+    time:  1792871940
+    text:  "I already know just from the background... I'm coming, my fishies~"
+  }
+  npc_reply:  {
+    id:  7582
+    time:  1792871760
+    text:  "I'm not sharing the location. You'd eat all the fish."
+  }
+  good:  1109
+  is_good:  0
+  is_read:  0
+  oalist_pic:  ""
+}
+
+# 678: SC_11702 of official-avrora-20261030-153601.jsonl
+ins_message_list: {
+  id:  678
+  time:  1792982160
+  text:  "A trial... I will clear it deathless! (Did I use that term correctly?)"
+  picture:  "https://blhxusstatic.yo-star.com/pic/261022_leiyierbeilEvWGdYGBmStzKR1.png"
+  player_discuss:  {
+    id:  678
+    time:  0
+    text_list:  "Did you win your trial?"
+    text_list:  "I'll help next time."
+    text:  ""
+  }
+  npc_discuss:  {
+    id:  7601
+    time:  1792983300
+    text:  "Your health gauge is empty. Better eat some meat to recover!"
+    npc_reply:  7602
+    npc_reply:  7603
+    npc_reply:  7604
+  }
+  npc_discuss:  {
+    id:  7597
+    time:  1792982760
+    text:  "Whoa! It looks just like a video game~"
+    npc_reply:  7598
+    npc_reply:  7599
+    npc_reply:  7600
+  }
+  npc_discuss:  {
+    id:  7594
+    time:  1792982280
+    text:  "Your gear looks a little weak for a warrior"
+    npc_reply:  7595
+    npc_reply:  7596
+  }
+  npc_reply:  {
+    id:  7604
+    time:  1792983960
+    text:  "Good question. Someone should write a guide to what's delicious in dungeons!"
+  }
+  npc_reply:  {
+    id:  7603
+    time:  1792983780
+    text:  "Are the monsters in dungeons really edible...?"
+  }
+  npc_reply:  {
+    id:  7602
+    time:  1792983540
+    text:  "Thank you for the welcome advice. I will remember that! Now, I must head into the dungeon to hunt!"
+  }
+  npc_reply:  {
+    id:  7600
+    time:  1792983180
+    text:  "They're really fun. You'll see when we play together later~"
+  }
+  npc_reply:  {
+    id:  7599
+    time:  1792983000
+    text:  "What is a video game?"
+  }
+  npc_reply:  {
+    id:  7598
+    time:  1792982880
+    text:  "There's even an HP bar!"
+  }
+  npc_reply:  {
+    id:  7596
+    time:  1792982640
+    text:  "Sounds fun! Let me play!"
+  }
+  npc_reply:  {
+    id:  7595
+    time:  1792982400
+    text:  "My equipment was confiscated by amusement park staff... They told me to do it with \"starting gear.\""
+  }
+  good:  1058
+  is_good:  0
+  is_read:  0
+  oalist_pic:  ""
+}
