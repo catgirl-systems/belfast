@@ -66,6 +66,7 @@
 "100":{"bgm":"","date":["timer",[[2026,9,30],[0,0,0]],[[2026,10,7],[23,59,59]]],"effective_channel":0,"id":100,"login_cri":"","login_static":"login","op_play":1,"op_time":["timer",[[2026,9,30],[0,0,0]],[[2026,10,7],[23,59,59]]]},
 "101":{"bgm":"","date":["timer",[[2026,10,8],[0,0,0]],[[2026,10,15],[23,59,59]]],"effective_channel":0,"id":101,"login_cri":"","login_static":"login_260924","op_play":1,"op_time":["timer",[[2026,10,8],[0,0,0]],[[2026,10,15],[23,59,59]]]},
 "103":{"bgm":"","date":["timer",[[2026,10,8],[0,0,0]],[[2026,10,15],[10,0,0]]],"effective_channel":0,"id":103,"login_cri":"","login_static":"login_qiye","op_play":0,"op_time":["timer",[[2026,10,1],[0,0,0]],[[2026,10,8],[23,59,59]]]},
+"105":{"bgm":"","date":["timer",[[2026,10,29],[0,0,0]],[[2026,11,12],[14,59,59]]],"effective_channel":0,"id":105,"login_cri":"","login_static":"login","op_play":1,"op_time":["timer",[[2026,10,29],[0,0,0]],[[2026,11,12],[14,59,59]]]},
 "1001":{"bgm":"","date":["timer",[[2023,1,1],[0,0,0]],[[2023,1,3],[23,59,59]]],"effective_channel":0,"id":1001,"login_cri":"","login_static":"login_newyear","op_play":1,"op_time":[[[2022,12,22],[0,0,0]],[[2023,1,5],[23,59,59]]]},
 "1002":{"bgm":"","date":["timer",[[2022,12,22],[0,0,0]],[[2022,12,31],[23,59,59]]],"effective_channel":0,"id":1002,"login_cri":"","login_static":"login","op_play":1,"op_time":[[[2022,12,22],[0,0,0]],[[2023,1,5],[23,59,59]]]},
 "1003":{"bgm":"","date":"stop","effective_channel":0,"id":1003,"login_cri":"","login_static":"login","op_play":0,"op_time":"stop"},

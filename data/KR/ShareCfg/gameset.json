@@ -323,6 +323,7 @@
 "player_name_change_lv_limit":{"description":"","key_value":25},
 "player_name_cold_time":{"description":"","key_value":2592000},
 "player_name_illegal":{"description":["违规用户名"],"key_value":0},
+"profile_cv1_button_block":{"description":[20403],"key_value":0},
 "profile_cvchange_button_block":{"description":[],"key_value":0},
 "random_skin_tag":{"description":[[1,"Live 2d"],[6,"쁘띠 MOTION"],[7,"특수 MOTION"],[9,"Live 2d+"]],"key_value":0},
 "reactivity_ticket_daily":{"description":"","key_value":20},
