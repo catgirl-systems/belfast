@@ -3,7 +3,9 @@ package game
 import (
 	"encoding/json"
 	"maps"
+	"math/rand/v2"
 	"slices"
+	"sync"
 
 	"github.com/ggmolly/belfast/internal/logger"
 )
@@ -64,6 +66,8 @@ const (
 	worldEffectMoveFleet     = 20
 	worldEffectTrigger       = 21
 	worldEffectTerrain       = 23
+	worldEffectTriggerReset  = 25
+	worldEffectTriggerWait   = 26
 	worldEffectConsumeItem   = 24
 	worldEffectStoryOption   = 27
 	worldEffectFleetShipHP   = 30
@@ -202,7 +206,7 @@ func (op *worldOp) runEffect(ev *worldAttachment, id, chosen uint32) error {
 	}
 	switch effect.EffectType {
 	case worldEffectTeleport, worldEffectTeleportBack:
-		return op.teleport(params)
+		return op.teleport(ev, params)
 	case worldEffectDrop:
 		op.dropAwards(params)
 	case worldEffectDropTreasure:
@@ -341,6 +345,18 @@ func (op *worldOp) runEffect(ev *worldAttachment, id, chosen uint32) error {
 		op.happened.Accepted = append(op.happened.Accepted, first())
 	case worldEffectTrigger:
 		op.happened.Triggers = append(op.happened.Triggers, paramUints(params)...)
+	case worldEffectTriggerReset, worldEffectTriggerWait:
+		// server-only (WorldMapAttachment has no Effect for them, the
+		// client just asks for the next effect): they name type 21
+		// triggers, 25 before the events that fire them are spawned or
+		// fired (20280: 25 [202020], then the supplies firing 202020), 26
+		// after (20261: 26 [202020]; 20281: 21 [202010] then 26 [202010];
+		// 20910: 25, 21, 26 [209000]), a reset and a wait on them as far
+		// as the tables tell. Both autoactivate where their event does, so
+		// the client asks for them as soon as the event shows: a wait
+		// refused would only stall the event. They run through, the story
+		// chains they end (GWORLD104: 20260, 20261, 20280, 20281, progress
+		// 20 and task 2000) going on as their other effects say.
 	case worldEffectTerrain:
 		if worldScripted(ev.ID) {
 			op.terrain(ev, params)
@@ -637,7 +653,7 @@ func (op *worldOp) dropAwards(params []json.RawMessage) {
 // (row -1: its start cells) through the entrance given, else the same
 // entrance, or the one the map is the base of; map 0 (TeleportBack) is
 // the active entrance's base map.
-func (op *worldOp) teleport(params []json.RawMessage) error {
+func (op *worldOp) teleport(ev *worldAttachment, params []json.RawMessage) error {
 	if len(params) == 0 {
 		return nil
 	}
@@ -672,5 +688,181 @@ func (op *worldOp) teleport(params []json.RawMessage) error {
 			cell = &[2]uint32{uint32(at[0]), uint32(at[1])}
 		}
 	}
-	return op.switchMap(randomID, entrance, cell, false)
+	from := op.m
+	if err := op.switchMap(randomID, entrance, cell, false); err != nil {
+		return err
+	}
+	if ev != nil && from != op.m {
+		op.placeArrivalEvents(from, ev.ID/100)
+	}
+	return nil
 }
+
+// placeArrivalEvents puts on the map a story map's teleport led to the
+// events of that map's family (worldEventFamily, map id * 100 + n) that no
+// effect spawns and whose grid isn't on the story map's own template: they
+// are the next part of the story, on the map the fleets arrive on. Map
+// 202's 20201 sends the fleets to NY City (map 1) at progress 10, where
+// 20260 and 20261 ((9, 0), a cell template 2020 lacks) start GWORLD104,
+// accept "Chapter 1-2 Deja Vu" and bring progress 20 (SystemOutMap: the
+// world map opens, OpTransport); 235's 23531 likewise sends them to map 8,
+// 23550 at (11, 11). The tables say nothing else of where these events
+// go: the map they fit and the family's teleport points at is a reading of
+// the tables, nothing of it was captured.
+func (op *worldOp) placeArrivalEvents(from *worldMap, family uint32) {
+	if from.RandomID != family {
+		return
+	}
+	dest := worldTemplates[op.m.TemplateID]
+	if dest == nil {
+		return
+	}
+	for _, id := range worldArrivalEvents(family, from.TemplateID) {
+		if op.m.hasEvent(id) {
+			continue
+		}
+		for _, a := range spawnWorldEvent(op.m, dest, id, op.state.Fleets, op.rng) {
+			op.mark([2]uint32{a.Row, a.Column})
+		}
+	}
+}
+
+// worldArrivalEvents are the events of family (a story map, 200-999) that
+// no effect spawns and whose grid has no cell on templateID, the family's
+// own template (placeArrivalEvents).
+func worldArrivalEvents(family, templateID uint32) []uint32 {
+	own := worldTemplates[templateID]
+	if family < 200 || family >= 1000 || own == nil {
+		return nil
+	}
+	var ids []uint32
+	for _, id := range worldEventFamily(family) {
+		if worldSpawnedEvents[id] || slices.ContainsFunc(worldEvents[id].Grid, func(entry []int32) bool { return len(gridCells(own, entry)) > 0 }) {
+			continue
+		}
+		ids = append(ids, id)
+	}
+	return ids
+}
+
+// hasEvent tells whether an event attachment id is on the map.
+func (m *worldMap) hasEvent(id uint32) bool {
+	return slices.ContainsFunc(m.Attachments, func(a *worldAttachment) bool { return a.Type == worldAttachEvent && a.ID == id })
+}
+
+// eventEffects are the effects of event id of type kind, in order.
+func eventEffects(id uint32, kinds ...uint32) []worldEffect {
+	var effects []worldEffect
+	for _, effectID := range worldEvents[id].Effect {
+		if effect, ok := worldEffects[effectID]; ok && slices.Contains(kinds, effect.EffectType) {
+			effects = append(effects, effect)
+		}
+	}
+	return effects
+}
+
+// eventProgress is the highest progress event id's effects set (32), 0
+// for none.
+func eventProgress(id uint32) uint32 {
+	progress := uint32(0)
+	for _, effect := range eventEffects(id, worldEffectProgress) {
+		for _, v := range paramUints(effectParams(effect)) {
+			progress = max(progress, v)
+		}
+	}
+	return progress
+}
+
+// eventDescendants are the events id spawns (9, 10, 39), theirs, and so on.
+func eventDescendants(id uint32) map[uint32]bool {
+	seen := map[uint32]bool{}
+	queue := []uint32{id}
+	for len(queue) > 0 {
+		next := queue[0]
+		queue = queue[1:]
+		for _, effect := range eventEffects(next, worldEffectSpawnEvents, worldEffectSpawnRelative, worldEffectReplace) {
+			for _, child := range paramUints(effectParams(effect)) {
+				if _, ok := worldEvents[child]; ok && !seen[child] {
+					seen[child] = true
+					queue = append(queue, child)
+				}
+			}
+		}
+	}
+	return seen
+}
+
+// repairArrivalEvents puts back on m the arrival events a teleport of
+// before placeArrivalEvents never placed (worlds stuck in NY City at
+// progress 10, with nothing to bring progress 20 and open the world map).
+// For each story family whose events teleport to m (effect 3 to m's random
+// id), its arrival events go back when the progress is at least what the
+// teleporting event sets and below what the arrival events set, and none
+// of them nor of the events they spawn is on m (the chain not started, or
+// already done). Only arrival events that set progress are concerned.
+func repairArrivalEvents(m *worldMap, progress uint32, fleets []*worldFleet, rng *rand.Rand) bool {
+	dest := worldTemplates[m.TemplateID]
+	if dest == nil {
+		return false
+	}
+	changed := false
+	for _, family := range worldTeleportFamilies(m.RandomID) {
+		random, ok := worldRandomMaps[family.random]
+		if !ok || len(random.Templates) == 0 {
+			continue
+		}
+		arrivals := worldArrivalEvents(family.random, random.Templates[0][0])
+		target := uint32(0)
+		chain := map[uint32]bool{}
+		for _, id := range arrivals {
+			target = max(target, eventProgress(id))
+			chain[id] = true
+			for child := range eventDescendants(id) {
+				target = max(target, eventProgress(child))
+				chain[child] = true
+			}
+		}
+		if target == 0 || progress < family.progress || progress >= target ||
+			slices.ContainsFunc(m.Attachments, func(a *worldAttachment) bool { return a.Type == worldAttachEvent && chain[a.ID] }) {
+			continue
+		}
+		for _, id := range arrivals {
+			if len(spawnWorldEvent(m, dest, id, fleets, rng)) > 0 {
+				changed = true
+			}
+		}
+	}
+	return changed
+}
+
+// worldTeleportFamily is a story map one of whose events teleports to
+// another map, and the progress that event sets.
+type worldTeleportFamily struct {
+	random, progress uint32
+}
+
+// worldTeleportFamilies are the story maps whose events teleport to
+// randomID (effect 3 with an explicit map).
+func worldTeleportFamilies(randomID uint32) []worldTeleportFamily {
+	return worldTeleportsTo()[randomID]
+}
+
+// worldTeleportsTo is worldTeleportFamilies by destination, read once
+// from the tables.
+var worldTeleportsTo = sync.OnceValue(func() map[uint32][]worldTeleportFamily {
+	families := map[uint32][]worldTeleportFamily{}
+	for family := uint32(200); family < 1000; family++ {
+		for _, id := range worldEventFamily(family) {
+			for _, effect := range eventEffects(id, worldEffectTeleport) {
+				params := effectParams(effect)
+				var target []json.RawMessage
+				if len(params) == 0 || json.Unmarshal(params[0], &target) != nil || len(target) == 0 || rawUint(target[0]) == 0 {
+					continue
+				}
+				dest := rawUint(target[0])
+				families[dest] = append(families[dest], worldTeleportFamily{random: family, progress: eventProgress(id)})
+			}
+		}
+	}
+	return families
+})

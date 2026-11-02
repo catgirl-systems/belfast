@@ -273,6 +273,9 @@ func (tx *Tx) worldMap(state *worldState, randomID uint32) (*worldMap, error) {
 		return nil, err
 	}
 	if m != nil && !m.outdated(state) {
+		if repairArrivalEvents(m, state.Count.Progress, state.Fleets, worldRand(worldSeed(tx.commanderID, state.Count.Activations, m.RandomID))) {
+			return m, tx.saveWorldMap(m)
+		}
 		if m.RandomID == worldForwardBase && refreshForwardBase(m, state, worldRand(worldSeed(tx.commanderID, state.Count.Activations, m.RandomID))) {
 			return m, tx.saveWorldMap(m)
 		}

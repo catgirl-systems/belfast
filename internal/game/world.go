@@ -235,7 +235,8 @@ func (tx *Tx) worldFleets(list []*protobuf.ELITEFLEETINFO, progress uint32) ([]*
 		}
 		fleets = append(fleets, fleet)
 	}
-	if normal == 0 || uint32(normal) > worldStageFleets(progress) || submarine > 1 {
+	// the submarine fleet once SystemSubmarine is open (World:BuildFormationIds)
+	if normal == 0 || uint32(normal) > worldStageFleets(progress) || submarine > 1 || submarine > 0 && !worldSystemOpen(worldSystemSubmarine, progress) {
 		return nil, errRefused
 	}
 	return fleets, nil
