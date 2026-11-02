@@ -200,6 +200,10 @@
             { type: drop.spweapon, label: 'Augment' },
             { type: drop.equipSkin, label: 'Gear skin' },
           ]}
+          all={[
+            { label: 'Every gear', body: { type: drop.equip } },
+            { label: 'Best of each', body: { type: drop.equip, best: true } },
+          ]}
         />
         {#if selected}
           <section aria-labelledby="edit-h" class="ip-card">

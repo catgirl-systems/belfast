@@ -401,6 +401,27 @@ func (q *Queries) ListStories(ctx context.Context, commanderID uint32) ([]uint32
 	return items, nil
 }
 
+const setBagMax = `-- name: SetBagMax :exec
+UPDATE commanders SET ship_bag_max = ?, equip_bag_max = ?, commander_bag_max = ? WHERE id = ?
+`
+
+type SetBagMaxParams struct {
+	ShipBagMax      uint32
+	EquipBagMax     uint32
+	CommanderBagMax uint32
+	ID              uint32
+}
+
+func (q *Queries) SetBagMax(ctx context.Context, arg SetBagMaxParams) error {
+	_, err := q.db.ExecContext(ctx, setBagMax,
+		arg.ShipBagMax,
+		arg.EquipBagMax,
+		arg.CommanderBagMax,
+		arg.ID,
+	)
+	return err
+}
+
 const setChatRoom = `-- name: SetChatRoom :exec
 UPDATE commanders SET chat_room_id = ? WHERE id = ?
 `

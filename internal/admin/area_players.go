@@ -74,6 +74,17 @@ type playerProfile struct {
 		Oaths       int64  `json:"oaths"`
 	} `json:"counts"`
 	SecondaryPassword bool `json:"secondary_password"`
+	// the bags' capacities and the range each is set within
+	Bags playerBags `json:"bags"`
+}
+
+type playerBags struct {
+	Ship           uint32    `json:"ship_bag_max"`
+	Equip          uint32    `json:"equip_bag_max"`
+	Commander      uint32    `json:"commander_bag_max"`
+	ShipLimits     [2]uint32 `json:"ship_limits"`
+	EquipLimits    [2]uint32 `json:"equip_limits"`
+	CommanderLimit [2]uint32 `json:"commander_limits"`
 }
 
 // handlePlayerProfile is a commander's resume, what it owns and its state.
@@ -104,6 +115,9 @@ func (server *Server) handlePlayerProfile(r *http.Request) (any, error) {
 	c.Ships, c.ShipBagMax, c.Equipments, c.EquipBagMax = counts.Ships, commander.ShipBagMax, counts.Equipments, commander.EquipBagMax
 	c.Skins, c.Meowfficers, c.Friends, c.SpWeapons, c.Furniture, c.Oaths = counts.Skins, counts.Meowfficers, counts.Friends, counts.Spweapons, counts.Furniture, counts.Oaths
 	profile.SecondaryPassword = counts.SecondaryPassword > 0
+	b := &profile.Bags
+	b.Ship, b.Equip, b.Commander = commander.ShipBagMax, commander.EquipBagMax, commander.CommanderBagMax
+	b.ShipLimits, b.EquipLimits, b.CommanderLimit = game.BagLimits()
 	secretaries, err := server.Store.ListSecretaries(ctx, id)
 	if err != nil {
 		return nil, err

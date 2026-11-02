@@ -96,6 +96,7 @@
             { type: drop.islandItem, label: 'Island item' },
             { type: drop.islandDress, label: 'Island outfit' },
           ]}
+          all={[{ label: 'Every item', body: { type: drop.item } }]}
         />
         {#if selected}
           <section aria-labelledby="edit-h" class="ip-card">

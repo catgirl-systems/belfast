@@ -24,6 +24,15 @@ export interface PlayerProfile extends CommanderRow {
     oaths: number
   }
   secondary_password: boolean
+  // the bags' capacities, each set within its [min, max]
+  bags: {
+    ship_bag_max: number
+    equip_bag_max: number
+    commander_bag_max: number
+    ship_limits: [number, number]
+    equip_limits: [number, number]
+    commander_limits: [number, number]
+  }
 }
 
 export interface PlayerItem extends Amount {

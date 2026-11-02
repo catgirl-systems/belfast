@@ -30,6 +30,9 @@ UPDATE commanders SET equip_bag_max = equip_bag_max + ? WHERE id = ?;
 -- name: AddCommanderBagMax :exec
 UPDATE commanders SET commander_bag_max = commander_bag_max + ? WHERE id = ?;
 
+-- name: SetBagMax :exec
+UPDATE commanders SET ship_bag_max = ?, equip_bag_max = ?, commander_bag_max = ? WHERE id = ?;
+
 -- name: SetDormFood :exec
 UPDATE commanders SET dorm_food = ? WHERE id = ?;
 

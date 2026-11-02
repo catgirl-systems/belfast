@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"github.com/ggmolly/belfast/internal/consts"
+	"github.com/ggmolly/belfast/internal/db"
 	"github.com/ggmolly/belfast/internal/protobuf"
 )
 
@@ -98,6 +99,66 @@ func (game *Game) Grant(ctx context.Context, id uint32, drops []*protobuf.DROPIN
 		}
 	}
 	return game.AdminWrite(ctx, id, func(tx *Tx) error { return tx.grantDrops(drops) })
+}
+
+// Storable tells whether Grant can store a drop (mailStorable).
+func Storable(kind, id uint32) bool {
+	return mailStorable(kind, id)
+}
+
+// GrantWithinBags is Grant refusing drops the dock or the gear depot can't
+// hold, as a mail's claim does (bagsHold).
+func (game *Game) GrantWithinBags(ctx context.Context, id uint32, drops []*protobuf.DROPINFO) (bool, error) {
+	for _, drop := range drops {
+		kind, item, number := drop.GetType(), drop.GetId(), drop.GetNumber()
+		if number == 0 || !mailStorable(kind, item) {
+			return false, adminRefused("drop %d:%d:%d can't be stored", kind, item, number)
+		}
+	}
+	return game.AdminWrite(ctx, id, func(tx *Tx) error {
+		commander, err := tx.GetCommander(ctx, id)
+		if err != nil {
+			return err
+		}
+		if err := tx.bagsHold(commander, drops); err != nil {
+			if errors.Is(err, errRefused) {
+				return adminRefused("the dock or the gear depot can't hold them: raise its capacity first")
+			}
+			return err
+		}
+		return tx.grantDrops(drops)
+	})
+}
+
+// The bag capacities a commander starts with (the commanders table's
+// defaults), the least the back-office sets.
+const (
+	minShipBag      = 150
+	minEquipBag     = 300
+	minCommanderBag = 40
+)
+
+// BagLimits is the range of each bag capacity: from what a commander starts
+// with to Player.MAX_SHIP_BAG, MAX_EQUIP_BAG and MAX_COMMANDER_BAG.
+func BagLimits() (ship, equip, commander [2]uint32) {
+	return [2]uint32{minShipBag, maxShipBag}, [2]uint32{minEquipBag, maxEquipBag}, [2]uint32{minCommanderBag, maxCommanderBag}
+}
+
+// SetBagMax sets a commander's dock, gear depot and meowfficer bag
+// capacities, each within BagLimits.
+func (game *Game) SetBagMax(ctx context.Context, id, ship, equip, commander uint32) (bool, error) {
+	if ship < minShipBag || ship > maxShipBag {
+		return false, adminRefused("the dock holds %d to %d ships", minShipBag, maxShipBag)
+	}
+	if equip < minEquipBag || equip > maxEquipBag {
+		return false, adminRefused("the gear depot holds %d to %d pieces", minEquipBag, maxEquipBag)
+	}
+	if commander < minCommanderBag || commander > maxCommanderBag {
+		return false, adminRefused("the meowfficer bag holds %d to %d meowfficers", minCommanderBag, maxCommanderBag)
+	}
+	return game.AdminWrite(ctx, id, func(tx *Tx) error {
+		return tx.SetBagMax(ctx, db.SetBagMaxParams{ShipBagMax: ship, EquipBagMax: equip, CommanderBagMax: commander, ID: id})
+	})
 }
 
 // NotifyMail tells a commander playing that its mailbox changed (SC_30001,

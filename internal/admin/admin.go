@@ -71,6 +71,8 @@ func (server *Server) Run() error {
 	api("POST /api/commanders/{id}/kick", server.handleKick)
 	api("POST /api/commanders/{id}/mail", server.handleMail)
 	api("POST /api/commanders/{id}/grant", server.handleGrant)
+	api("POST /api/commanders/{id}/grant-all", server.handleGrantAll)
+	api("POST /api/commanders/{id}/bags", server.handleBagMax)
 	api("GET /api/catalog", server.handleCatalog)
 	api("GET /api/catalog/ships", server.handleCatalogShips)
 	api("GET /api/catalog/skins", server.handleCatalogSkins)

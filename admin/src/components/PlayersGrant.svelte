@@ -12,12 +12,15 @@
     name,
     kinds,
     owned,
+    all = [],
   }: {
     id: number
     name: string
     kinds: DropKind[]
     // what the commander has, by `${type}:${id}`, tagged in the pickers
     owned?: Set<string>
+    // whole catalogues granted in one call (/grant-all)
+    all?: { label: string; body: { type: number; count?: number; best?: boolean } }[]
   } = $props()
 
   // granted with grant-cosmetics, /grant refuses them
@@ -34,6 +37,12 @@
     },
     { success: (answer) => done('Granted', name)(answer), onSuccess: () => (queue = []) },
   )
+
+  const grantAll = createCommanderMutation(
+    () => id,
+    ({ body }: { label: string; body: unknown }) => api<Kicked>('POST', `/commanders/${id}/grant-all`, body),
+    { success: (answer, { label }) => done(`${label} granted`, name)(answer) },
+  )
 </script>
 
 <section aria-labelledby="grant-h" class="ip-card">
@@ -48,5 +57,12 @@
       <button type="button" class="ip-btn2" disabled={!queue.length} onclick={() => (queue = [])}>Clear</button>
       <button type="button" class="ip-btn" disabled={grant.isPending || !queue.length} onclick={() => grant.mutate($state.snapshot(queue))}>Grant</button>
     </div>
+    {#if all.length}
+      <div class="grid grid-cols-2 gap-3">
+        {#each all as a (a.label)}
+          <button type="button" class="ip-btn2" disabled={grantAll.isPending} onclick={() => grantAll.mutate(a)}>{a.label}</button>
+        {/each}
+      </div>
+    {/if}
   </div>
 </section>

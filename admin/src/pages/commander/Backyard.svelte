@@ -332,7 +332,8 @@
           <div class="ip-head items-center">
             <h2>Furniture</h2>
             <span class="text-[15px] text-soft"><span class="num text-xl text-white">{count(yard.furniture)}</span> owned · <span class="num text-xl text-white">{count(placedTotal)}</span> placed</span>
-            <button type="button" class="ip-btn2 ip-sm ml-auto" disabled={busy || !catalog.data} onclick={() => furniturePicker?.show()}>Add</button>
+            <button type="button" class="ip-btn2 ip-sm ml-auto" disabled={busy} onclick={() => run('/grant-all', 'Every furniture granted', { type: 5 })}>Add all</button>
+            <button type="button" class="ip-btn2 ip-sm" disabled={busy || !catalog.data} onclick={() => furniturePicker?.show()}>Add</button>
           </div>
           <VirtualGrid items={furnitureShown} key={(f) => f.id} min={300} rowHeight={54} gap={6} pad={12} overscan={3} label="Furniture" class="max-h-[420px]">
             {#snippet cell(f)}

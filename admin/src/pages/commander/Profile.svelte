@@ -36,6 +36,21 @@
   const rename = () => write.mutate({ path: '/rename', body: { name: name.trim() }, done: `Renamed to ${name.trim()}`, commander: profile?.name }, { onSuccess: () => renameModal?.close() })
   const setLevel = () => write.mutate({ path: '/level', body: { level: Number(level) }, done: `Level set to ${level}`, commander: profile?.name }, { onSuccess: () => levelModal?.close() })
 
+  let bagsModal = $state<Modal>()
+  let shipBag = $state(0)
+  let equipBag = $state(0)
+  let commanderBag = $state(0)
+  function openBags() {
+    if (!profile) return
+    ;({ ship_bag_max: shipBag, equip_bag_max: equipBag, commander_bag_max: commanderBag } = profile.bags)
+    bagsModal?.show()
+  }
+  const setBags = () =>
+    write.mutate(
+      { path: '/bags', body: { ship_bag_max: shipBag, equip_bag_max: equipBag, commander_bag_max: commanderBag }, done: 'Bag capacity set', commander: profile?.name },
+      { onSuccess: () => bagsModal?.close() },
+    )
+
   const resetPassword = () => write.mutate({ method: 'DELETE', path: '/secondary-password', done: 'Secondary password removed', commander: profile?.name })
 
   let exporting = $state(false)
@@ -171,6 +186,7 @@
               {/each}
             </dl>
             <div class="mt-auto flex flex-col gap-2.5">
+              <button type="button" class="ip-btn2 h-[46px] text-[19px]" disabled={busy} onclick={openBags}>Bag capacity</button>
               <button type="button" class="ip-btn h-[46px] text-[19px]" disabled={busy} onclick={exportSave}>Export save</button>
               <button type="button" class="ip-btn2 h-[46px] text-[19px]" disabled={busy || !profile.secondary_password} onclick={resetPassword}>Reset 2nd password</button>
               <button type="button" class="ip-danger h-[46px] text-[19px]" disabled={busy} onclick={confirmRemove}>Delete commander</button>
@@ -215,6 +231,23 @@
             <Stepper label="Level" bind:value={level} min={1} max={profile.max_level} />
           </div>
           <button type="submit" class="ip-btn h-[52px] text-[19px]" disabled={busy || level === profile.level}>Set level</button>
+        </form>
+      </Modal>
+      <Modal bind:this={bagsModal} title="{profile.name}: bag capacity">
+        <form class="flex flex-col gap-3" onsubmit={(e) => (e.preventDefault(), setBags())}>
+          {#each [{ label: 'Dock', limits: profile.bags.ship_limits }, { label: 'Gear depot', limits: profile.bags.equip_limits }, { label: 'Meowfficers', limits: profile.bags.commander_limits }] as bag, i (bag.label)}
+            <div class="flex flex-col gap-1.5 text-[15px] text-soft">
+              <span>{bag.label} <span class="num text-dim">{bag.limits[0]}-{bag.limits[1]}</span></span>
+              {#if i === 0}
+                <Stepper label={bag.label} bind:value={shipBag} min={bag.limits[0]} max={bag.limits[1]} step={1} />
+              {:else if i === 1}
+                <Stepper label={bag.label} bind:value={equipBag} min={bag.limits[0]} max={bag.limits[1]} step={1} />
+              {:else}
+                <Stepper label={bag.label} bind:value={commanderBag} min={bag.limits[0]} max={bag.limits[1]} step={1} />
+              {/if}
+            </div>
+          {/each}
+          <button type="submit" class="ip-btn h-[52px] self-end text-[19px]" disabled={busy || (shipBag === profile.bags.ship_bag_max && equipBag === profile.bags.equip_bag_max && commanderBag === profile.bags.commander_bag_max)}>Set capacity</button>
         </form>
       </Modal>
     {:else if query.error}
