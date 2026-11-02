@@ -138,4 +138,6 @@ export const dropTypes: { type: number; label: string }[] = [
   { type: 5, label: 'Furniture' },
   { type: 7, label: 'Skin' },
   { type: 8, label: 'Virtual item' },
+  { type: 41, label: 'Island item' },
+  { type: 46, label: 'Island outfit' },
 ]

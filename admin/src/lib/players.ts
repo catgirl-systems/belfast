@@ -164,6 +164,8 @@ export const drop = {
   chatFrame: 15,
   spweapon: 21,
   skinTimed: 23,
+  islandItem: 41,
+  islandDress: 46,
 } as const
 
 // AttributeType names as the client abbreviates them

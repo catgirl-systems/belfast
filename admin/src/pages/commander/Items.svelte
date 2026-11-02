@@ -93,6 +93,8 @@
             { type: drop.item, label: 'Item' },
             { type: drop.resource, label: 'Resource' },
             { type: drop.vitem, label: 'Virtual' },
+            { type: drop.islandItem, label: 'Island item' },
+            { type: drop.islandDress, label: 'Island outfit' },
           ]}
         />
         {#if selected}

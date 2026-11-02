@@ -16,6 +16,10 @@ const (
 	dropFurniture = 5
 	dropSkin      = 7
 	dropVItem     = 8
+	// DROP_TYPE_ISLAND_ITEM and DROP_TYPE_ISLAND_DRESS: the island's
+	// warehouse items and outfits, stored in its blob
+	dropIslandItem  = 41
+	dropIslandDress = 46
 )
 
 // named is a config table row's name, rarity and icon: the client bundle
@@ -37,6 +41,8 @@ type tableRow struct {
 	ItemID   uint32 `json:"itemid"`
 	// equip_data_template: an upgraded piece's +0
 	Base uint32 `json:"base"`
+	// island_dress_template's rarity
+	Quality uint32 `json:"quality"`
 }
 
 // names are the config tables' names of what a commander owns, by drop type.
@@ -44,13 +50,15 @@ type names map[uint32]map[uint32]named
 
 func (names *names) load() error {
 	tables := map[uint32]string{
-		dropResource:  "player_resource",
-		dropItem:      "item_data_statistics",
-		dropEquip:     "equip_data_statistics",
-		dropShip:      "ship_data_statistics",
-		dropFurniture: "furniture_data_template",
-		dropSkin:      "ship_skin_template",
-		dropVItem:     "item_virtual_data_statistics",
+		dropResource:    "player_resource",
+		dropItem:        "item_data_statistics",
+		dropEquip:       "equip_data_statistics",
+		dropShip:        "ship_data_statistics",
+		dropFurniture:   "furniture_data_template",
+		dropSkin:        "ship_skin_template",
+		dropVItem:       "item_virtual_data_statistics",
+		dropIslandItem:  "island_item_data_template",
+		dropIslandDress: "island_dress_template",
 	}
 	raw := make(map[uint32]map[uint32]tableRow, len(tables))
 	for kind, table := range tables {
@@ -77,6 +85,9 @@ func (names *names) load() error {
 	for kind, rows := range raw {
 		byID := make(map[uint32]named, len(rows))
 		for id, row := range rows {
+			if kind == dropIslandDress {
+				row.Rarity = row.Quality
+			}
 			row.Icon = iconBundle(kind, row, raw)
 			byID[id] = namedRow(row)
 		}
@@ -115,6 +126,14 @@ func iconBundle(kind uint32, row tableRow, raw map[uint32]map[uint32]tableRow) s
 		}
 	case dropResource:
 		return strings.ToLower(raw[dropVItem][row.ItemID].Icon)
+	case dropIslandItem:
+		// its icon field, a bundle path ("Islandprops/1")
+		return strings.ToLower(row.Icon)
+	case dropIslandDress:
+		// an atlas: IslandDressCard loads island/IslandDressIcon/<icon>
+		if row.Icon != "" {
+			return "island/islanddressicon/" + strings.ToLower(row.Icon)
+		}
 	}
 	return ""
 }

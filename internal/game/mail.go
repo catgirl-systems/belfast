@@ -132,8 +132,10 @@ type Mail struct {
 
 // mailStorable is whether claiming a mail can store an attachment: what
 // grantDrops keeps (resources, bag items, equipment, ships, furniture,
-// virtual items, ship and gear skins, meowfficers) and is in the game's
-// tables. Frames, emojis... have no storage yet.
+// virtual items, ship and gear skins, meowfficers, the island's warehouse
+// items and outfits) and is in the game's tables. Frames, emojis... have no
+// storage yet. The client adds island drops itself when it has its island
+// loaded (Drop: IslandDropHelper.AddItems), else at the next login.
 func mailStorable(kind, id uint32) bool {
 	switch kind {
 	case dropTypeResource:
@@ -144,6 +146,12 @@ func mailStorable(kind, id uint32) bool {
 		return ok
 	case dropTypeVItem:
 		_, ok := virtualItemIDs[id]
+		return ok
+	case dropTypeIslandItem:
+		_, ok := islandItems[id]
+		return ok
+	case dropTypeIslandDress:
+		_, ok := islandDresses[id]
 		return ok
 	}
 	return storableDrop(kind, id)
