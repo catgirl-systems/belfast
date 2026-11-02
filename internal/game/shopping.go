@@ -385,7 +385,7 @@ func (tx *Tx) buyGoods(id, count uint32, now time.Time) ([]*protobuf.DROPINFO, e
 		// limit_args {"count", 0, max}: bought at most max times for good
 		// (ShoppingCommand counts it in ApartmentProxy's permanent shop
 		// counts, SC_28000 gift_permanent / furniture_permanent)
-		if goods.hasCount && purchases[id] >= goods.countMax {
+		if goods.hasCount && purchases[id]+count > goods.countMax {
 			return nil, errRefused
 		}
 	case genreSkinShop, genreSkinShopTimeLimit:
