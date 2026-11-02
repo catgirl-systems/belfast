@@ -671,10 +671,13 @@ func (tx *Tx) editShip(ship db.Ship, edit ShipEdit) error {
 		ship.Energy = *edit.Energy
 	}
 	if edit.Locked != nil {
+		if ship.Propose != 0 && !*edit.Locked {
+			return adminRefused("an oathed ship stays locked")
+		}
 		ship.IsLocked = *edit.Locked
 	}
-	if ship.Propose != 0 && !ship.IsLocked {
-		return adminRefused("an oathed ship stays locked")
+	if ship.Propose != 0 {
+		ship.IsLocked = true
 	}
 	if err := tx.AdminDockSetShip(ctx, db.AdminDockSetShipParams{
 		TemplateID: ship.TemplateID, Level: ship.Level, Exp: ship.Exp, MaxLevel: ship.MaxLevel, Intimacy: ship.Intimacy,

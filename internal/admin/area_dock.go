@@ -1,6 +1,7 @@
 package admin
 
 import (
+	"context"
 	"fmt"
 	"net/http"
 	"slices"
@@ -19,6 +20,9 @@ func (server *Server) registerDock(api apiFunc) {
 	api("GET /api/commanders/{id}/dock/{ship}", server.handleDockShip)
 	api("POST /api/commanders/{id}/dock/{ship}", server.handleEditShip)
 	api("DELETE /api/commanders/{id}/dock/{ship}", server.handleRemoveShip)
+	api("POST /api/commanders/{id}/dock/{ship}/strength", server.handleMaxShipStrength)
+	api("POST /api/commanders/{id}/dock/strength", server.handleMaxDockStrength)
+	api("POST /api/commanders/{id}/dock/gear", server.handleDockGear)
 	api("GET /api/commanders/{id}/fleets", server.handleFleets)
 	api("POST /api/commanders/{id}/fleets/{fleet}", server.handleEditFleet)
 	api("DELETE /api/commanders/{id}/fleets/{fleet}", server.handleClearFleet)
@@ -460,6 +464,45 @@ func (server *Server) handleEditShip(r *http.Request) (any, error) {
 		return nil, err
 	}
 	return server.shipDetail(r, commanderID, shipID)
+}
+
+// strengthBody picks the attributes (ids 2 to 6) to max, all when empty.
+type strengthBody struct {
+	Attrs []uint32 `json:"attrs"`
+}
+
+// handleMaxShipStrength maxes a ship's attribute enhancement.
+func (server *Server) handleMaxShipStrength(r *http.Request) (any, error) {
+	commanderID, shipID, err := server.shipPath(r)
+	if err != nil {
+		return nil, err
+	}
+	var body strengthBody
+	if r.ContentLength != 0 {
+		if err := readJSON(r, &body); err != nil {
+			return nil, err
+		}
+	}
+	if _, err := server.Game.MaxShipStrength(r.Context(), commanderID, shipID, body.Attrs); err != nil {
+		return nil, err
+	}
+	return server.shipDetail(r, commanderID, shipID)
+}
+
+// handleMaxDockStrength maxes the attribute enhancement of every ship.
+func (server *Server) handleMaxDockStrength(r *http.Request) (any, error) {
+	return commanderEdit(server, r, func(ctx context.Context, id uint32, body strengthBody) (bool, error) {
+		return server.Game.MaxDockStrength(ctx, id, body.Attrs)
+	})
+}
+
+// handleDockGear sets the gear of several ships at once.
+func (server *Server) handleDockGear(r *http.Request) (any, error) {
+	return commanderEdit(server, r, func(ctx context.Context, id uint32, body struct {
+		Ships map[uint32]map[uint32]uint32 `json:"ships"`
+	}) (bool, error) {
+		return server.Game.EditDockGear(ctx, id, body.Ships)
+	})
 }
 
 // handleRemoveShip takes a ship out of the dock.

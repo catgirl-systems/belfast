@@ -274,10 +274,20 @@
                 {#if ship}
                   <button
                     type="button"
+                    aria-label="Max the enhancement of {ship.name}"
+                    title="Max enhancement"
+                    class="ml-auto grid size-10 cursor-pointer place-items-center rounded-full border-0 bg-white/10 text-white hover:bg-white/20 disabled:cursor-not-allowed disabled:opacity-50"
+                    disabled={write.isPending || ship.in_chapter}
+                    onclick={() => write.mutate({ path: `/dock/${ship!.id}/strength`, done: `${ship!.name} enhanced`, commander: summary.name })}
+                  >
+                    <svg aria-hidden="true" viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7" /></svg>
+                  </button>
+                  <button
+                    type="button"
                     aria-pressed={ship.locked}
                     aria-label={ship.locked ? 'Unlock' : 'Lock'}
                     title={ship.locked ? 'Locked' : 'Unlocked'}
-                    class={['ml-auto grid size-10 cursor-pointer place-items-center rounded-full border-0 text-white disabled:cursor-not-allowed disabled:opacity-50', ship.locked ? 'bg-cyan' : 'bg-white/10 hover:bg-white/20']}
+                    class={['grid size-10 cursor-pointer place-items-center rounded-full border-0 text-white disabled:cursor-not-allowed disabled:opacity-50', ship.locked ? 'bg-cyan' : 'bg-white/10 hover:bg-white/20']}
                     disabled={write.isPending || (ship.locked && !!ship.propose)}
                     onclick={() => write.mutate({ path: `/dock/${ship!.id}`, body: { locked: !ship!.locked }, done: `${ship!.name} ${ship!.locked ? 'unlocked' : 'locked'}`, commander: summary.name })}
                   >
@@ -374,6 +384,14 @@
           <input type="checkbox" class="size-5 accent-cyan" bind:checked={lockedOnly} />
           Locked
         </label>
+        <button
+          type="button"
+          class="ip-btn h-12 px-4 text-base"
+          disabled={write.isPending || !dock.data?.ships.length}
+          onclick={() => confirm('Max the enhancement of every ship?') && write.mutate({ path: '/dock/strength', done: 'Every ship enhanced', commander: summary.name })}
+        >
+          Max enhancement
+        </button>
         {#if dock.data}
           <span class="ml-auto text-base text-soft"
             ><span class="num text-2xl text-white">{shown.length}</span> shown · <span class="num text-2xl text-white">{dock.data.ships.length}</span><span class="num text-xl text-dim">/{dock.data.capacity}</span> in the dock</span
