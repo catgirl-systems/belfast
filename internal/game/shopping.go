@@ -32,9 +32,12 @@ const (
 	// bought through SkinShoppingCommand
 	genreSkinShop          = "skin_shop"
 	genreSkinShopTimeLimit = "skin_shop_timelimit"
+	// the Private Quarters shop (Dorm3dShopUI): its gifts (type 27) and
+	// furniture (type 26) both have this genre
+	genreDorm3dGift = "dorm3d_gift"
 )
 
-var sellableGenres = []string{genreNone, genreGemShop, genreShoppingStreet, genreArenaShop, genreBuyOil, genreGiftPackage, genreNewServerShop, genreSkinShop, genreSkinShopTimeLimit, genreBackyardUpgrade, genreBackyardFoodExtend, genreSkillRoomUpgrade}
+var sellableGenres = []string{genreNone, genreGemShop, genreShoppingStreet, genreArenaShop, genreBuyOil, genreGiftPackage, genreNewServerShop, genreSkinShop, genreSkinShopTimeLimit, genreBackyardUpgrade, genreBackyardFoodExtend, genreSkillRoomUpgrade, genreDorm3dGift}
 
 // shopTypeSkin is shop_template type of the skin goods: effect_args[1] is a
 // ship_skin_template id.
@@ -378,6 +381,13 @@ func (tx *Tx) buyGoods(id, count uint32, now time.Time) ([]*protobuf.DROPINFO, e
 		if bought := oilBought(purchases); bought >= buyOilLimit || !goods.countAllows(bought) {
 			return nil, errRefused
 		}
+	case genreDorm3dGift:
+		// limit_args {"count", 0, max}: bought at most max times for good
+		// (ShoppingCommand counts it in ApartmentProxy's permanent shop
+		// counts, SC_28000 gift_permanent / furniture_permanent)
+		if goods.hasCount && purchases[id] >= goods.countMax {
+			return nil, errRefused
+		}
 	case genreSkinShop, genreSkinShopTimeLimit:
 		if err := tx.canBuySkin(goods, count, now); err != nil {
 			return nil, err
@@ -408,6 +418,11 @@ func (tx *Tx) buyGoods(id, count uint32, now time.Time) ([]*protobuf.DROPINFO, e
 	case dropTypeResource, dropTypeItem, dropTypeShip, dropTypeVItem:
 		drops = []*protobuf.DROPINFO{dropInfo(goods.Type, goods.target, amount)}
 		err = tx.grantDrops(drops)
+	case dropTypeDorm3dFurniture, dropTypeDorm3dGift:
+		// the client adds drop_list to ApartmentProxy (Drop: changeGiftCount,
+		// AddFurnitureByID)
+		drops = []*protobuf.DROPINFO{dropInfo(goods.Type, goods.target, amount)}
+		err = tx.addDorm3dDrop(goods.Type, goods.target, amount)
 	case shopTypeSkin:
 		// SkinShoppingCommand adds the skin itself and drop_list besides:
 		// a DROP_TYPE_SKIN there would make a time-limited one permanent,
