@@ -29,7 +29,11 @@ func (server *Server) registerArchives(api apiFunc) {
 	api("POST /api/commanders/{id}/archives/frames", server.archiveFrame(server.Game.AddArchiveFrame))
 	api("POST /api/commanders/{id}/archives/frames/remove", server.archiveFrame(server.Game.RemoveArchiveFrame))
 	api("POST /api/commanders/{id}/archives/frames/wear", server.archiveFrame(server.Game.WearArchiveFrame))
+	api("POST /api/commanders/{id}/archives/memories/all", server.commanderAction(server.Game.SetAllMemoriesSeen))
 	api("POST /api/commanders/{id}/archives/memories/{group}", server.handleArchiveMemoriesSeen)
+	api("GET /api/commanders/{id}/archives/cryptolalia", server.handleArchiveCryptolalia)
+	api("POST /api/commanders/{id}/archives/cryptolalia/all", server.commanderAction(server.Game.UnlockAllCryptolalia))
+	api("POST /api/commanders/{id}/archives/cryptolalia/{story}", server.handleArchiveCryptolaliaStory)
 	api("POST /api/commanders/{id}/archives/music", server.handleArchiveMusic)
 }
 
@@ -361,6 +365,33 @@ func (server *Server) handleArchiveMemoriesSeen(r *http.Request) (any, error) {
 	}
 	return commanderEdit(server, r, func(ctx context.Context, id uint32, b body) (bool, error) {
 		return server.Game.SetMemoriesSeen(ctx, id, group, b.Memory, b.Seen)
+	})
+}
+
+// handleArchiveCryptolalia lists the Cryptolalia stories, unlocked or not.
+func (server *Server) handleArchiveCryptolalia(r *http.Request) (any, error) {
+	commander, err := server.commander(r)
+	if err != nil {
+		return nil, err
+	}
+	return server.Game.AdminCryptolaliaList(r.Context(), commander.ID)
+}
+
+// handleArchiveCryptolaliaStory unlocks a Cryptolalia story for free or
+// locks it again: {unlocked}.
+func (server *Server) handleArchiveCryptolaliaStory(r *http.Request) (any, error) {
+	story, err := pathUint(r, "story")
+	if err != nil {
+		return nil, err
+	}
+	type body struct {
+		Unlocked bool `json:"unlocked"`
+	}
+	return commanderEdit(server, r, func(ctx context.Context, id uint32, b body) (bool, error) {
+		if story == 0 {
+			return false, badRequest("no story 0")
+		}
+		return server.Game.SetCryptolaliaUnlocked(ctx, id, story, b.Unlocked)
 	})
 }
 

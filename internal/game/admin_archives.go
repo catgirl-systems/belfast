@@ -920,29 +920,55 @@ func (game *Game) SetMemoriesSeen(ctx context.Context, commanderID, group, memor
 		ids = []uint32{memory}
 	}
 	return game.AdminWrite(ctx, commanderID, func(tx *Tx) error {
-		for _, id := range ids {
-			template, ok := data.templates[id]
-			if !ok || template.IsOpen == 1 {
-				continue
-			}
-			for _, name := range template.UnlockPre {
-				story, ok := data.stories[name]
-				if !ok {
-					continue
-				}
-				if seen {
-					if err := tx.AddStory(ctx, db.AddStoryParams{CommanderID: commanderID, StoryID: story}); err != nil {
-						return err
-					}
-					break
-				}
-				if err := tx.ArchivesDeleteStory(ctx, db.ArchivesDeleteStoryParams{CommanderID: commanderID, StoryID: story}); err != nil {
-					return err
-				}
+		return tx.setMemoriesSeen(data, ids, seen)
+	})
+}
+
+// SetAllMemoriesSeen marks every memory of every group seen, in one
+// transaction.
+func (game *Game) SetAllMemoriesSeen(ctx context.Context, commanderID uint32) (bool, error) {
+	data, err := loadMemories()
+	if errors.Is(err, ErrNoStoryIndex) {
+		return false, AdminError{Msg: err.Error()}
+	}
+	if err != nil {
+		return false, err
+	}
+	return game.AdminWrite(ctx, commanderID, func(tx *Tx) error {
+		for _, id := range slices.Sorted(maps.Keys(data.groups)) {
+			if err := tx.setMemoriesSeen(data, data.groups[id].Memories, true); err != nil {
+				return err
 			}
 		}
 		return nil
 	})
+}
+
+// setMemoriesSeen marks the memories ids seen, their first unlock_pre story
+// played, or unseen, none of them played.
+func (tx *Tx) setMemoriesSeen(data *memoryData, ids []uint32, seen bool) error {
+	for _, id := range ids {
+		template, ok := data.templates[id]
+		if !ok || template.IsOpen == 1 {
+			continue
+		}
+		for _, name := range template.UnlockPre {
+			story, ok := data.stories[name]
+			if !ok {
+				continue
+			}
+			if seen {
+				if err := tx.AddStory(tx.ctx, db.AddStoryParams{CommanderID: tx.commanderID, StoryID: story}); err != nil {
+					return err
+				}
+				break
+			}
+			if err := tx.ArchivesDeleteStory(tx.ctx, db.ArchivesDeleteStoryParams{CommanderID: tx.commanderID, StoryID: story}); err != nil {
+				return err
+			}
+		}
+	}
+	return nil
 }
 
 // --- music player

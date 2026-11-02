@@ -36,6 +36,23 @@ func (q *Queries) ListCryptolalia(ctx context.Context, commanderID uint32) ([]ui
 	return items, nil
 }
 
+const lockCryptolalia = `-- name: LockCryptolalia :execrows
+DELETE FROM commander_cryptolalia WHERE commander_id = ? AND story_id = ?
+`
+
+type LockCryptolaliaParams struct {
+	CommanderID uint32
+	StoryID     uint32
+}
+
+func (q *Queries) LockCryptolalia(ctx context.Context, arg LockCryptolaliaParams) (int64, error) {
+	result, err := q.db.ExecContext(ctx, lockCryptolalia, arg.CommanderID, arg.StoryID)
+	if err != nil {
+		return 0, err
+	}
+	return result.RowsAffected()
+}
+
 const unlockCryptolalia = `-- name: UnlockCryptolalia :execrows
 INSERT INTO commander_cryptolalia (commander_id, story_id) VALUES (?, ?) ON CONFLICT DO NOTHING
 `

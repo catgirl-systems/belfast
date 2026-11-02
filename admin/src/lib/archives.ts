@@ -95,6 +95,12 @@ export interface ArchiveMemoryGroup {
   total: number
 }
 
+export interface ArchiveCryptolalia {
+  id: number
+  name: string
+  unlocked: boolean
+}
+
 export interface ArchiveDetails {
   ships: ArchiveShip[]
   groups: ArchiveGroup[]

@@ -26,6 +26,7 @@
     musicModes,
     musicNone,
     type ArchiveCollection,
+    type ArchiveCryptolalia,
     type ArchiveDetails,
     type ArchiveFrame,
     type ArchiveMedal,
@@ -149,6 +150,16 @@
   }
   const markGroup = (group: ArchiveMemoryGroup, seen: boolean) => run(`/archives/memories/${group.id}`, seen ? `${group.title}: every memory seen` : `${group.title}: memories cleared`, { memory: 0, seen })
   const markMemory = (group: ArchiveMemoryGroup, memory: ArchiveMemory) => run(`/archives/memories/${group.id}`, memory.seen ? `${memory.title} cleared` : `${memory.title} seen`, { memory: memory.id, seen: !memory.seen })
+
+  const markAllMemories = () => run('/archives/memories/all', 'Every memory seen')
+
+  // --- cryptolalia: unlocked for free, whether on sale or not
+  const cryptolalia = createQuery(() => ({
+    queryKey: keys.screen(id, 'archives', 'cryptolalia'),
+    queryFn: get<ArchiveCryptolalia[]>(`/commanders/${id}/archives/cryptolalia`),
+  }))
+  const unlockedStories = $derived((cryptolalia.data ?? []).filter((story) => story.unlocked).length)
+  const toggleStory = (story: ArchiveCryptolalia) => run(`/archives/cryptolalia/${story.id}`, story.unlocked ? `${story.name} locked` : `${story.name} unlocked`, { unlocked: !story.unlocked })
 
   // --- look: every change saved at once with the rest of the look
   const ownShips = $derived(new Map((data?.options.ships ?? []).map((ship) => [ship.id, ship])))
@@ -400,6 +411,7 @@
                 <svg aria-hidden="true" viewBox="0 0 24 24" class="absolute top-1/2 left-3 size-[18px] -translate-y-1/2" fill="none" stroke="#6b7386" stroke-width="2.4"><circle cx="11" cy="11" r="7" /><path d="M16 16l5 5" stroke-linecap="round" /></svg>
                 <input type="search" class="ip-field h-10 w-[200px] pl-[38px]" placeholder="Group" bind:value={memoryQuery} disabled={!more.memories} />
               </label>
+              <button type="button" class="ip-btn2 ip-sm" disabled={busy || !more.memories || memoryTotals[0] === memoryTotals[1]} onclick={markAllMemories}>See all</button>
             </div>
             {#if more.memories}
               <VirtualGrid items={memoryGroups} rowHeight={44} key={(g) => g.id} label="Memory groups" class="max-h-[440px] px-2.5 pt-2.5 pb-2.5">
@@ -444,6 +456,36 @@
                 <p class="m-0 text-dim">Loading</p>
               {/if}
             </Modal>
+          </section>
+
+          <section aria-label="Cryptolalia" class="ip-panel overflow-hidden">
+            <div class="ip-head items-center">
+              <h2>Cryptolalia</h2>
+              {#if cryptolalia.data}<span class="text-[15px] text-soft"><span class="num text-xl text-white">{count(unlockedStories)}</span> / <span class="num">{count(cryptolalia.data.length)}</span> unlocked</span>{/if}
+              <button type="button" class="ip-btn2 ip-sm ml-auto" disabled={busy || !cryptolalia.data || unlockedStories === cryptolalia.data.length} onclick={() => run('/archives/cryptolalia/all', 'Every story unlocked')}>Unlock all</button>
+            </div>
+            {#if cryptolalia.data}
+              <VirtualGrid items={cryptolalia.data} rowHeight={44} key={(s) => s.id} label="Cryptolalia stories" class="max-h-[440px] px-2.5 pt-2.5 pb-2.5">
+                {#snippet cell(story)}
+                  <div class="ip-row flex items-center gap-3 px-3">
+                    <span class="min-w-0 flex-1 truncate text-[16px]">{story.name || `#${story.id}`}</span>
+                    <button
+                      type="button"
+                      aria-pressed={story.unlocked}
+                      aria-label="{story.name} unlocked"
+                      class={['ip-tag cursor-pointer border-0 hover:shadow-[inset_0_0_0_2px_var(--color-cyan)] disabled:cursor-default disabled:opacity-60', story.unlocked ? 'bg-[#2f9a55] text-white' : 'bg-white/10 text-dim']}
+                      disabled={busy}
+                      onclick={() => toggleStory(story)}>{story.unlocked ? 'Unlocked' : 'Locked'}</button
+                    >
+                  </div>
+                {/snippet}
+                {#snippet empty()}
+                  <div class="ip-row px-3 py-2.5 text-dim">No story</div>
+                {/snippet}
+              </VirtualGrid>
+            {:else if cryptolalia.error}
+              <p class="m-0 px-5 py-4 text-bad">{cryptolalia.error.message}</p>
+            {/if}
           </section>
         </div>
 
