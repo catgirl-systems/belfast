@@ -156,8 +156,30 @@ func (game *Game) SetBagMax(ctx context.Context, id, ship, equip, commander uint
 	if commander < minCommanderBag || commander > maxCommanderBag {
 		return false, adminRefused("the meowfficer bag holds %d to %d meowfficers", minCommanderBag, maxCommanderBag)
 	}
+	// a bag smaller than what it holds would leave the client's screens
+	// refusing to open (the depot does), so it takes at least its contents
 	return game.AdminWrite(ctx, id, func(tx *Tx) error {
-		return tx.SetBagMax(ctx, db.SetBagMaxParams{ShipBagMax: ship, EquipBagMax: equip, CommanderBagMax: commander, ID: id})
+		if err := tx.SetBagMax(ctx, db.SetBagMaxParams{ShipBagMax: ship, EquipBagMax: equip, CommanderBagMax: commander, ID: id}); err != nil {
+			return err
+		}
+		if err := tx.dockHasRoom(0); err != nil {
+			return adminRefused("the dock already holds more than %d ships", ship)
+		}
+		pieces, err := tx.CountEquipments(ctx, id)
+		if err != nil {
+			return err
+		}
+		if pieces > int64(equip) {
+			return adminRefused("the gear depot already holds %d pieces", pieces)
+		}
+		meowfficers, err := tx.CountMeowfficers(ctx, id)
+		if err != nil {
+			return err
+		}
+		if meowfficers > int64(commander) {
+			return adminRefused("the meowfficer bag already holds %d meowfficers", meowfficers)
+		}
+		return nil
 	})
 }
 
