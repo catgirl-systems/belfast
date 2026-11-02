@@ -177,6 +177,9 @@ func (game *Game) activityList(ctx context.Context, commander db.Commander) (*pr
 				list.ValueList = values
 			}
 		}
+		if config.Type == activityTypeIslandDrawAward {
+			info.Data2List = islandDrawClaims(keyValues[config.ID])
+		}
 		reply.ActivityList = append(reply.ActivityList, info)
 	}
 	return reply, nil
@@ -234,6 +237,8 @@ func (game *Game) commanderActivity(ctx context.Context, commanderID, id uint32,
 //     sign-in of the month, once per day.
 //   - task list (cmd 1): accepts the activity's tasks.
 //   - feast: FeastOpCommand's cmds, see feastOperation.
+//   - island outfit draw: islandDrawOperation; the sixth anniversary
+//     island and its flower field: islandOperation, flowerFieldOperation.
 //
 // Anything else, or a refused operation, gets result 1 (activity_op_error).
 func (game *Game) handleActivityOperation(client *connection.Client, req *protobuf.CS_11202) error {
@@ -244,8 +249,17 @@ func (game *Game) handleActivityOperation(client *connection.Client, req *protob
 	if err != nil {
 		return err
 	}
-	if open && config.Type == activityTypeFeast {
-		return game.feastOperation(client, config, req)
+	if open {
+		switch config.Type {
+		case activityTypeFeast:
+			return game.feastOperation(client, config, req)
+		case activityTypeIslandDrawAward:
+			return game.islandDrawOperation(client, config, req)
+		case activityTypeIsland:
+			return game.islandOperation(client, config, req)
+		case activityTypeFlowerField:
+			return game.flowerFieldOperation(client, config, req)
+		}
 	}
 	activityType := config.Type
 	if !open || req.GetCmd() != 1 {

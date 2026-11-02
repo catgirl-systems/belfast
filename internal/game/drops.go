@@ -120,6 +120,11 @@ func (tx *Tx) grantDrops(drops []*protobuf.DROPINFO) error {
 			if err := tx.addAuctionGold(count); err != nil {
 				return err
 			}
+		case kind == dropTypeVItem && islandDraw.tickets[id] != 0:
+			// the island outfit draw's tickets, its activity's data1
+			if err := tx.addDrawTickets(islandDraw.tickets[id], count); err != nil {
+				return err
+			}
 		case kind == dropTypeMetaPt:
 			if err := tx.addMetaPt(id, count); err != nil {
 				return err
