@@ -262,6 +262,7 @@
 "11057":{"equip_id":15300,"gold_num":500,"id":11057,"material_id":11057,"material_num":25},
 "11058":{"equip_id":35260,"gold_num":500,"id":11058,"material_id":11058,"material_num":25},
 "11059":{"equip_id":22300,"gold_num":500,"id":11059,"material_id":11059,"material_num":25},
+"11060":{"equip_id":151280,"gold_num":120,"id":11060,"material_id":11060,"material_num":10},
 "12000":{"equip_id":2640,"gold_num":1500,"id":12000,"material_id":12000,"material_num":50},
 "13000":{"equip_id":24340,"gold_num":500,"id":13000,"material_id":13000,"material_num":25},
 "13001":{"equip_id":24160,"gold_num":500,"id":13001,"material_id":13001,"material_num":25},

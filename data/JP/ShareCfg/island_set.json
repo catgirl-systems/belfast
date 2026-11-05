@@ -97,7 +97,7 @@
 "player_movement_parameters":{"key":"player_movement_parameters","key_value_int":0,"key_value_varchar":[5,6.5,1]},
 "post_manage_operate":{"key":"post_manage_operate","key_value_int":0,"key_value_varchar":[601,602,603,604,901]},
 "post_manage_produce":{"key":"post_manage_produce","key_value_int":0,"key_value_varchar":[101,102,201,401,402,501,502,601,602,603,604,703,704,705,706,901]},
-"season_now":{"key":"season_now","key_value_int":4,"key_value_varchar":""},
+"season_now":{"key":"season_now","key_value_int":5,"key_value_varchar":""},
 "season_pt":{"key":"season_pt","key_value_int":0,"key_value_varchar":["離島開発Pt","IslandProps/season_pt"]},
 "season_pt_show":{"key":"season_pt_show","key_value_int":14,"key_value_varchar":""},
 "seek_game_reset_cd":{"key":"seek_game_reset_cd","key_value_int":2,"key_value_varchar":""},

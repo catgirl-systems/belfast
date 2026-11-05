@@ -617,7 +617,7 @@
 "80801":{"background":"","name":"P.P.O","nationality":8,"sculpture":"xukufu","sculpture_ii":"","ship_group":80801,"type":1},
 "81801":{"background":"","name":"Cherbourg ","nationality":8,"sculpture":"sebao","sculpture_ii":"","ship_group":81801,"type":1},
 "89901":{"background":"","name":"S.Louis","nationality":8,"sculpture":"luyijiushi","sculpture_ii":"","ship_group":89901,"type":1},
-"89902":{"background":"","name":"Champagne","nationality":0,"sculpture":"xiangbin","sculpture_ii":"","ship_group":89902,"type":1},
+"89902":{"background":"","name":"Champagne","nationality":8,"sculpture":"xiangbin","sculpture_ii":"","ship_group":89902,"type":1},
 "89903":{"background":"","name":"Brest","nationality":8,"sculpture":"buleisite","sculpture_ii":"","ship_group":89903,"type":1},
 "89904":{"background":"","name":"Bayard","nationality":0,"sculpture":"beiyade_2","sculpture_ii":"","ship_group":89904,"type":1},
 "90101":{"background":"","name":"LeMars ","nationality":0,"sculpture":"lemaer_4","sculpture_ii":"","ship_group":90101,"type":1},

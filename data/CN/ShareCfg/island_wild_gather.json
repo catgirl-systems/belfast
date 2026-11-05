@@ -28,5 +28,13 @@
 "1021":{"ability_id":0,"activity_id":990018,"auto_parameters":[100,10,50],"icon":"IslandProps/item_4031","id":1021,"name":"西瓜","object_list":[10010090],"refresh":1,"show":1,"time_taked":3,"type":2},
 "1022":{"ability_id":0,"activity_id":990018,"auto_parameters":[100,10,50],"icon":"IslandProps/item_4031","id":1022,"name":"西瓜","object_list":[10010095],"refresh":1,"show":1,"time_taked":3,"type":2},
 "1023":{"ability_id":0,"activity_id":990018,"auto_parameters":[100,10,50],"icon":"IslandProps/item_4032","id":1023,"name":"红米苋","object_list":[10010096],"refresh":1,"show":1,"time_taked":3,"type":2},
-"1024":{"ability_id":0,"activity_id":990018,"auto_parameters":[100,10,50],"icon":"IslandProps/item_4032","id":1024,"name":"红米苋","object_list":[10010097],"refresh":1,"show":1,"time_taked":3,"type":2}
+"1024":{"ability_id":0,"activity_id":990018,"auto_parameters":[100,10,50],"icon":"IslandProps/item_4032","id":1024,"name":"红米苋","object_list":[10010097],"refresh":1,"show":1,"time_taked":3,"type":2},
+"1025":{"ability_id":0,"activity_id":990029,"auto_parameters":[100,10,50],"icon":"IslandProps/item_4043","id":1025,"name":"梅花","object_list":[10050041],"refresh":1,"show":1,"time_taked":3,"type":2},
+"1026":{"ability_id":0,"activity_id":990029,"auto_parameters":[100,10,50],"icon":"IslandProps/item_4043","id":1026,"name":"梅花","object_list":[10050042],"refresh":1,"show":1,"time_taked":3,"type":2},
+"1027":{"ability_id":0,"activity_id":990029,"auto_parameters":[100,10,50],"icon":"IslandProps/item_4044","id":1027,"name":"水仙花","object_list":[10050043],"refresh":1,"show":1,"time_taked":3,"type":2},
+"1028":{"ability_id":0,"activity_id":990029,"auto_parameters":[100,10,50],"icon":"IslandProps/item_4044","id":1028,"name":"水仙花","object_list":[10050044],"refresh":1,"show":1,"time_taked":3,"type":2},
+"1029":{"ability_id":0,"activity_id":990029,"auto_parameters":[100,10,50],"icon":"IslandProps/item_4045","id":1029,"name":"冬菇","object_list":[10040095],"refresh":1,"show":1,"time_taked":3,"type":2},
+"1030":{"ability_id":0,"activity_id":990029,"auto_parameters":[100,10,50],"icon":"IslandProps/item_4045","id":1030,"name":"冬菇","object_list":[10040096],"refresh":1,"show":1,"time_taked":3,"type":2},
+"1031":{"ability_id":0,"activity_id":990029,"auto_parameters":[100,10,50],"icon":"IslandProps/item_4046","id":1031,"name":"马蹄","object_list":[10040097],"refresh":1,"show":1,"time_taked":3,"type":2},
+"1032":{"ability_id":0,"activity_id":990029,"auto_parameters":[100,10,50],"icon":"IslandProps/item_4046","id":1032,"name":"马蹄","object_list":[10040098],"refresh":1,"show":1,"time_taked":3,"type":2}
 }
