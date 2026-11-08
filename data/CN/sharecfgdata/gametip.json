@@ -5554,7 +5554,7 @@
 "old_class_is_close":{"tip":"大讲堂正在维护，请等待后续版本开放"},
 "one_click_retire_subtitle":{"tip":"一键退役设置"},
 "onebutton_max_tip":{"tip":"一键MAX"},
-"openGLerror_warning":{"tip":"当前机型不支持Vulkan渲染，请前往设置开启兼容渲染模式，切换模式后需要重新进入游戏"},
+"openGLerror_warning":{"tip":"当前机型不支持OpenGL渲染，请前往设置开启兼容渲染模式，切换模式后需要重新进入游戏"},
 "open_backyard_theme_template_tip":{"tip":"模板分享功能开启啦"},
 "open_skill_class_success":{"tip":"开启学院栏位成功"},
 "open_skill_pos":{"tip":"开启栏位需要消耗<icon name=diamond w=0.7 h=0.7 y=0.3 /><color=#ffde38>$1</color>\n是否确认开启？"},

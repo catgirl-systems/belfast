@@ -5643,7 +5643,7 @@
 "old_class_is_close":{"tip":"大講堂システムが更新中につき、配置できません"},
 "one_click_retire_subtitle":{"tip":"誤退役防止確認"},
 "onebutton_max_tip":{"tip":"一括分解"},
-"openGLerror_warning":{"tip":"ご利用中の端末はVulkanレンダリングを利用できません。「設定」で互換性レンダリングモードをONしてください。\n※レンダリング互換性モードの設定を切り替えると、ゲームを再度起動する必要があります"},
+"openGLerror_warning":{"tip":"ご利用中の端末はOpenGLレンダリングを利用できません。「設定」で互換性レンダリングモードをONしてください。\n※レンダリング互換性モードの設定を切り替えると、ゲームを再度起動する必要があります"},
 "open_skill_class_success":{"tip":"教室枠を追加しました"},
 "open_skill_pos":{"tip":"<icon name=diamond w=0.7 h=0.7 y=0.3 /><color=#ffde38>$1</color>を消費し\n教室枠を拡張しますか？"},
 "open_skill_pos_discount":{"tip":"<icon name=diamond w=0.7 h=0.7 y=0.3 /><color=grey>$1</color> <color=#ffde38>$2</color>を消費し\n教室枠を拡張しますか？"},
