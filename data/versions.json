@@ -1,22 +1,22 @@
 {
   "CN": {
     "client": "9.7.434",
-    "lua": "0dda2892cc"
+    "lua": "ff649231d8"
   },
   "EN": {
-    "client": "9.3.390",
-    "lua": "f5ec9aefb9"
+    "client": "9.3.392",
+    "lua": "ff649231d8"
   },
   "JP": {
-    "client": "9.3.506",
-    "lua": "0dda2892cc"
+    "client": "9.3.509",
+    "lua": "ff649231d8"
   },
   "KR": {
     "client": "8.5.83",
-    "lua": "0dda2892cc"
+    "lua": "ff649231d8"
   },
   "TW": {
-    "client": "8.5.206",
-    "lua": "f5ec9aefb9"
+    "client": "8.5.208",
+    "lua": "ff649231d8"
   }
 }

@@ -645,6 +645,8 @@
 "99999":{"background":"","name":[],"nationality":0,"sculpture":"zhihuiguan","sculpture_ii":"","ship_group":99999,"type":1},
 "110101":{"background":"","name":"Evertsen","nationality":11,"sculpture":"aifosen","sculpture_ii":"","ship_group":110101,"type":1},
 "110201":{"background":"","name":"De Zeven Provinciën","nationality":11,"sculpture":"qisheng","sculpture_ii":"","ship_group":110201,"type":1},
+"118001":{"background":"","name":"Liliel Angel Paratroopers","nationality":0,"sculpture":"lilisha","sculpture_ii":"","ship_group":118001,"type":1},
+"118002":{"background":"","name":"Miriella Angel Paratroopers","nationality":0,"sculpture":"jumeihuali","sculpture_ii":"","ship_group":118002,"type":1},
 "119901":{"background":"","name":"Gouden leeuw","nationality":11,"sculpture":"jinshi","sculpture_ii":"","ship_group":119901,"type":1},
 "301541":{"background":"","name":"Kiyonami","nationality":0,"sculpture":"qingbo","sculpture_ii":"","ship_group":301541,"type":1},
 "900939":{"background":"","name":"Kansas","nationality":0,"sculpture":"kansasi","sculpture_ii":"","ship_group":900939,"type":1},

@@ -3493,5 +3493,13 @@
 "11700021":{"breakout_id":11700022,"breakout_view":"主砲補正+5%","icon":"10001","id":11700021,"level":10,"pre_id":0,"use_char":1170002,"use_char_num":1,"use_gold":1000,"use_item":[],"weapon_ids":[12000]},
 "11700022":{"breakout_id":11700023,"breakout_view":"主砲砲座+1/主砲補正+10%","icon":"10001","id":11700022,"level":30,"pre_id":11700021,"use_char":1170002,"use_char_num":1,"use_gold":3000,"use_item":[],"weapon_ids":[12000,12000]},
 "11700023":{"breakout_id":11700024,"breakout_view":"主砲補正+15%","icon":"10001","id":11700023,"level":70,"pre_id":11700022,"use_char":1170002,"use_char_num":2,"use_gold":10000,"use_item":[],"weapon_ids":[12000,12000]},
-"11700024":{"breakout_id":0,"breakout_view":"なし","icon":"10001","id":11700024,"level":0,"pre_id":11700023,"use_char":1170002,"use_char_num":0,"use_gold":0,"use_item":[],"weapon_ids":[]}
+"11700024":{"breakout_id":0,"breakout_view":"なし","icon":"10001","id":11700024,"level":0,"pre_id":11700023,"use_char":1170002,"use_char_num":0,"use_gold":0,"use_item":[],"weapon_ids":[]},
+"11800011":{"breakout_id":11800012,"breakout_view":"戦闘機数+1/戦闘機補正+10%","icon":"10001","id":11800011,"level":10,"pre_id":0,"use_char":1180001,"use_char_num":1,"use_gold":1000,"use_item":[],"weapon_ids":[61103,54011]},
+"11800012":{"breakout_id":11800013,"breakout_view":"攻撃隊上限+1/攻撃機数+1/戦闘機補正+10%","icon":"10001","id":11800012,"level":30,"pre_id":11800011,"use_char":1180001,"use_char_num":1,"use_gold":3000,"use_item":[],"weapon_ids":[61104,54011,61104,54011]},
+"11800013":{"breakout_id":11800014,"breakout_view":"艦載機数+1/攻撃機補正+10%","icon":"10001","id":11800013,"level":70,"pre_id":11800012,"use_char":1180001,"use_char_num":2,"use_gold":10000,"use_item":[],"weapon_ids":[61105,54012,61105,54012]},
+"11800014":{"breakout_id":0,"breakout_view":"なし","icon":"10001","id":11800014,"level":0,"pre_id":11800013,"use_char":1180001,"use_char_num":0,"use_gold":0,"use_item":[],"weapon_ids":[]},
+"11800021":{"breakout_id":11800022,"breakout_view":"主砲補正+5%","icon":"10001","id":11800021,"level":10,"pre_id":0,"use_char":1180002,"use_char_num":1,"use_gold":1000,"use_item":[],"weapon_ids":[32300]},
+"11800022":{"breakout_id":11800023,"breakout_view":"主砲砲座+1/主砲補正+5%","icon":"10001","id":11800022,"level":30,"pre_id":11800021,"use_char":1180002,"use_char_num":1,"use_gold":3000,"use_item":[],"weapon_ids":[32300,32300]},
+"11800023":{"breakout_id":11800024,"breakout_view":"武器補正+5%","icon":"10001","id":11800023,"level":70,"pre_id":11800022,"use_char":1180002,"use_char_num":2,"use_gold":10000,"use_item":[],"weapon_ids":[32300,32300]},
+"11800024":{"breakout_id":0,"breakout_view":"なし","icon":"10001","id":11800024,"level":0,"pre_id":11800023,"use_char":1180002,"use_char_num":0,"use_gold":0,"use_item":[],"weapon_ids":[]}
 }
