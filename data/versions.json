@@ -1,7 +1,7 @@
 {
   "CN": {
-    "client": "9.7.429",
-    "lua": "f5ec9aefb9"
+    "client": "9.7.434",
+    "lua": "0dda2892cc"
   },
   "EN": {
     "client": "9.3.390",
@@ -9,11 +9,11 @@
   },
   "JP": {
     "client": "9.3.506",
-    "lua": "f5ec9aefb9"
+    "lua": "0dda2892cc"
   },
   "KR": {
     "client": "8.5.83",
-    "lua": "f5ec9aefb9"
+    "lua": "0dda2892cc"
   },
   "TW": {
     "client": "8.5.206",

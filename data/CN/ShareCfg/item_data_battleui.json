@@ -25,5 +25,6 @@
 "207":{"desc":"将客栈的喧闹与暖意融入界面，在烟花灯笼与爆竹声中，进行一场别开生面的新春对决吧。","display_icon":"ui_207","icon":"207","id":207,"is_unlock":1,"key":"SkinElite_20260226","name":"春满客栈","rare":4,"rare_display":[1,2,3],"scene":[],"unlock":"春满客栈战斗主题礼包获取"},
 "208":{"desc":"金色的流光勾勒出星星的轮廓，璀璨的钻石镶嵌于按键之间，让每一次交锋都如同置身于奢华梦境。","display_icon":"ui_208","icon":"208","id":208,"is_unlock":1,"key":"SkinElite_20260520","name":"奢梦浮金","rare":4,"rare_display":[1,2,3],"scene":[],"unlock":"奢梦浮金战斗主题礼包获取"},
 "209":{"desc":"单调色彩构筑的极简风格指挥界面，机械纹路与战术视窗有序展开，仿佛接入寄叶部队的作战协议之中。","display_icon":"ui_209","icon":"209","id":209,"is_unlock":1,"key":"SkinElite_20260715","name":"寄叶协议","rare":4,"rare_display":[1,2,3],"scene":[],"unlock":"寄叶协议战斗主题礼包获取"},
-"210":{"desc":"烛火在镜面间摇曳，幽影与荆棘相交织，让每一次战斗都揭开一段徘徊于虚实之间的剧目序章。","display_icon":"ui_210","icon":"210","id":210,"is_unlock":1,"key":"SkinElite_20260908","name":"烛影镜台","rare":4,"rare_display":[1,2,3],"scene":[],"unlock":"烛影镜台战斗主题礼包获取"}
+"210":{"desc":"烛火在镜面间摇曳，幽影与荆棘相交织，让每一次战斗都揭开一段徘徊于虚实之间的剧目序章。","display_icon":"ui_210","icon":"210","id":210,"is_unlock":1,"key":"SkinElite_20260908","name":"烛影镜台","rare":4,"rare_display":[1,2,3],"scene":[],"unlock":"烛影镜台战斗主题礼包获取"},
+"211":{"desc":"轻盈羽毛随光飘落，闪耀光环点亮舞台。幕后也好、台前也罢，请尽情捕捉天使降临的每一个瞬间！","display_icon":"ui_211","icon":"211","id":211,"is_unlock":1,"key":"SkinElite_20261112","name":"天使舞台","rare":4,"rare_display":[1,2,3],"scene":[],"unlock":"天使舞台战斗主题礼包获取"}
 }
