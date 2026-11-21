@@ -242,7 +242,7 @@
 "20603":{"background":"","name":"UnicornI72","nationality":0,"sculpture":"dujiaoshou","sculpture_ii":"","ship_group":20603,"type":1},
 "20604":{"background":"","name":"CenAlpha","nationality":0,"sculpture":"banrenma","sculpture_ii":"","ship_group":20604,"type":1},
 "20605":{"background":"","name":"Chaser","nationality":0,"sculpture":"zhuiganzhe","sculpture_ii":"","ship_group":20605,"type":1},
-"20606":{"background":"","name":"Per","nationality":0,"sculpture":"yingxianzuo_3","sculpture_ii":"","ship_group":20606,"type":1},
+"20606":{"background":"","name":"Per","nationality":2,"sculpture":"yingxianzuo_3","sculpture_ii":"","ship_group":20606,"type":1},
 "20607":{"background":"","name":"Albion","nationality":2,"sculpture":"aerbien_3","sculpture_ii":"","ship_group":20607,"type":1},
 "20608":{"background":"","name":"Theseus","nationality":0,"sculpture":"texiusi_2","sculpture_ii":"","ship_group":20608,"type":1},
 "20701":{"background":"","name":"Eagle","nationality":0,"sculpture":"ying","sculpture_ii":"","ship_group":20701,"type":1},

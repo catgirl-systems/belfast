@@ -23,5 +23,6 @@
 "207":{"desc":"將客棧的喧鬧與暖意融入介面，在煙火燈籠與爆竹聲中，進行一場別開生面的新春對決吧。","display_icon":"ui_207","icon":"207","id":207,"is_unlock":1,"key":"SkinElite_20260226","name":"春滿客棧","rare":4,"rare_display":[1,2,3],"scene":[],"unlock":"春滿客棧戰鬥主題禮包獲取"},
 "208":{"desc":"金色的流光勾勒出星星的輪廓，璀璨的鑽石鑲嵌於按鍵之間，讓每一次交鋒都如同置身於奢華夢境。","display_icon":"ui_208","icon":"208","id":208,"is_unlock":1,"key":"SkinElite_20260520","name":"奢夢浮金","rare":4,"rare_display":[1,2,3],"scene":[],"unlock":"奢夢浮金戰鬥主題禮包獲取"},
 "209":{"desc":"單調色彩構築的極簡風格指揮介面，機械紋路與戰術視窗有序展開，彷彿接入寄葉部隊的作戰協定之中。","display_icon":"ui_209","icon":"209","id":209,"is_unlock":1,"key":"SkinElite_20260715","name":"寄葉協議","rare":4,"rare_display":[1,2,3],"scene":[],"unlock":"寄葉協議戰鬥主題禮包獲取"},
-"210":{"desc":"燭火在鏡面間搖曳，幽影與荊棘相交織，讓每一次戰鬥都揭開一段徘徊於虛實之間的劇目序章。","display_icon":"ui_210","icon":"210","id":210,"is_unlock":1,"key":"SkinElite_20260908","name":"燭影鏡台","rare":4,"rare_display":[1,2,3],"scene":[],"unlock":"燭影鏡台戰鬥主題禮包獲取"}
+"210":{"desc":"燭火在鏡面間搖曳，幽影與荊棘相交織，讓每一次戰鬥都揭開一段徘徊於虛實之間的劇目序章。","display_icon":"ui_210","icon":"210","id":210,"is_unlock":1,"key":"SkinElite_20260908","name":"燭影鏡台","rare":4,"rare_display":[1,2,3],"scene":[],"unlock":"燭影鏡台戰鬥主題禮包獲取"},
+"211":{"desc":"輕盈羽毛隨光飄落，閃耀光環點亮舞台。幕後也好、台前也罷，請盡情捕捉天使降臨的每個瞬間！","display_icon":"ui_211","icon":"211","id":211,"is_unlock":1,"key":"SkinElite_20261112","name":"天使舞台 ","rare":4,"rare_display":[1,2,3],"scene":[],"unlock":"天使舞台戰鬥主題禮包獲取"}
 }

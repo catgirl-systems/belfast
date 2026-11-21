@@ -88,5 +88,6 @@
 "105":{"bgm":"","date":["timer",[[2026,10,22],[0,0,0]],[[2026,11,4],[23,59,59]]],"effective_channel":0,"id":105,"login_cri":"","login_static":"login","op_play":1,"op_time":["timer",[[2026,10,22],[0,0,0]],[[2026,11,4],[23,59,59]]]},
 "4001":{"bgm":"","date":"stop","effective_channel":0,"id":4001,"login_cri":"login_20231116us","login_static":"login_20231116us","op_play":0,"op_time":""},
 "4002":{"bgm":"","date":"stop","effective_channel":0,"id":4002,"login_cri":"login_20241114us","login_static":"login_20241114us","op_play":0,"op_time":""},
-"4003":{"bgm":"","date":["timer",[[2025,11,13],[0,0,0]],[[2025,11,19],[23,59,59]]],"effective_channel":0,"id":4003,"login_cri":"login_20251113us","login_static":"login_20251113us","op_play":0,"op_time":""}
+"4003":{"bgm":"","date":["timer",[[2025,11,13],[0,0,0]],[[2025,11,19],[23,59,59]]],"effective_channel":0,"id":4003,"login_cri":"login_20251113us","login_static":"login_20251113us","op_play":0,"op_time":""},
+"4004":{"bgm":"","date":["timer",[[2026,11,19],[0,0,0]],[[2026,11,23],[23,59,59]]],"effective_channel":0,"id":4004,"login_cri":"login_20261119us","login_static":"login_20261119us","op_play":0,"op_time":""}
 }

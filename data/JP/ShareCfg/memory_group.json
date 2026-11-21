@@ -284,6 +284,7 @@
 "381":{"auto_unlock":"","group_id":"","icon":"title_event","id":381,"link_event":51605,"memories":[5591,5592,5593,5594,5595,5596],"ship_group":0,"subtype":3,"title":"光と闇の物語","type":2},
 "382":{"auto_unlock":"","group_id":"","icon":"title_event","id":382,"link_event":51307,"memories":[5621,5622,5623,5624,5625],"ship_group":0,"subtype":2,"title":"開幕！天使たちのアズールステージ-「ステージ編」","type":2},
 "383":{"auto_unlock":"","group_id":"","icon":"title_event","id":383,"link_event":51307,"memories":[5631,5632],"ship_group":0,"subtype":2,"title":"開幕！天使たちのアズールステージ-「日常編」","type":2},
+"384":{"auto_unlock":"","group_id":"","icon":"title_event","id":384,"link_event":50662,"memories":[5641,5642,5643],"ship_group":0,"subtype":3,"title":"着せ替え特集：ナイトコール","type":2},
 "501":{"auto_unlock":"","group_id":"","icon":"title_chara_mingshi","id":501,"link_event":0,"memories":[62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81],"ship_group":31201,"subtype":0,"title":"明石のお願い","type":3},
 "502":{"auto_unlock":"","group_id":[10000],"icon":"title_chara_changdao","id":502,"link_event":0,"memories":[10011,10012,10013,10014,10015,10016,10017],"ship_group":10601,"subtype":0,"title":"幽霊さんはガンバラナイ","type":3},
 "503":{"auto_unlock":"","group_id":[10000],"icon":"title_chara_ruihe","id":503,"link_event":0,"memories":[246,247,248,249,250,251,252],"ship_group":30706,"subtype":0,"title":"幸運の鶴","type":3},
