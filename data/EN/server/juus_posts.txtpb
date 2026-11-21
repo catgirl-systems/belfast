@@ -3184,3 +3184,334 @@ ins_message_list: {
   is_read:  0
   oalist_pic:  ""
 }
+
+# 679: SC_11702 of official-avrora-20261121-203649.jsonl
+ins_message_list: {
+  id:  679
+  time:  1794513000
+  text:  "The designs of the outfits here at port are simply stunning! With the help of Miss @Cheshire , I bought so many clothes that my suitcase is practically overflowing! Thank you so much!"
+  picture:  "https://blhxusstatic.yo-star.com/pic/261112_lilishaY8nwVoCkBZPmjhpr.png"
+  player_discuss:  {
+    id:  679
+    time:  0
+    text_list:  "Finding stuff that fits might be a little difficult..."
+    text_list:  "Oh, by the way, I can point you to some hidden gems that offer better discounts."
+    text:  ""
+  }
+  npc_discuss:  {
+    id:  7616
+    time:  1794514200
+    text:  "So pretty... I should buy some too. Might need them for my modeling work"
+    npc_reply:  7617
+    npc_reply:  7618
+    npc_reply:  7619
+  }
+  npc_discuss:  {
+    id:  7614
+    time:  1794513840
+    text:  "Thanks for the patronyage~! As a token of my generosity, come again and I'll give you a 2% discount when you buy 10 or more things, nya~"
+    npc_reply:  7615
+  }
+  npc_discuss:  {
+    id:  7610
+    time:  1794513240
+    text:  "No need to thank me~ I also happened to have a flash of inspiration of my own while we were going around looking for clothes!"
+    npc_reply:  7611
+    npc_reply:  7612
+    npc_reply:  7613
+  }
+  npc_reply:  {
+    id:  7619
+    time:  1794514680
+    text:  "Everyone loves shopping for cute clothes, huh? We should all go together some time~♪"
+  }
+  npc_reply:  {
+    id:  7618
+    time:  1794514440
+    text:  "Amazing... I want to try wearing cute clothes too (o°▿°)o"
+  }
+  npc_reply:  {
+    id:  7617
+    time:  1794514320
+    text:  "so these are the newest, trendiest outfits, huh? time to bust my wallet out~"
+  }
+  npc_reply:  {
+    id:  7615
+    time:  1794514020
+    text:  "Ahaha... As expected of Akashi~ I'll definitely be back!"
+  }
+  npc_reply:  {
+    id:  7613
+    time:  1794513720
+    text:  "I really wanna see it when it's ready!"
+  }
+  npc_reply:  {
+    id:  7612
+    time:  1794513540
+    text:  "Heehee, that's right~ But, it's only in the early stages of development~"
+  }
+  npc_reply:  {
+    id:  7611
+    time:  1794513360
+    text:  "A flash of inspiration? Did you come up with a new kitty-themed outfit?"
+  }
+  good:  1205
+  is_good:  0
+  is_read:  0
+  oalist_pic:  ""
+}
+
+# 680: SC_11702 of official-avrora-20261121-203649.jsonl
+ins_message_list: {
+  id:  680
+  time:  1794623760
+  text:  "I was flipping through some fashion magazines at a bookstore, and couldn't help but notice – are all the models at this port so high-level?!"
+  picture:  "https://blhxusstatic.yo-star.com/pic/261112_meilihuaQPXcSnJrrgnICOZ7.png"
+  player_discuss:  {
+    id:  680
+    time:  0
+    text_list:  "Whenever it's holiday time, there's always a special edition with bonus content."
+    text_list:  "I wonder what outfits you'll be wearing... I can't wait!"
+    text:  ""
+  }
+  npc_discuss:  {
+    id:  7633
+    time:  1794625560
+    text:  "Mikari, are you interested in modeling for the magazine? I was meaning to ask you to do a cover photoshoot, but the opportunity never came around~"
+    npc_reply:  7634
+    npc_reply:  7635
+  }
+  npc_discuss:  {
+    id:  7629
+    time:  1794624780
+    text:  "Sister Sara has also featured on the cover before!"
+    npc_reply:  7630
+    npc_reply:  7631
+    npc_reply:  7632
+  }
+  npc_discuss:  {
+    id:  7627
+    time:  1794624420
+    text:  "Oh, I was a contributor for that magazine once, and I still have the outfit. Want to try it on?"
+    npc_reply:  7628
+  }
+  npc_discuss:  {
+    id:  7625
+    time:  1794624000
+    text:  "You're right! All the poses and outfits absolutely take the spotlight! This is truly inspiring..."
+    npc_reply:  7626
+  }
+  npc_reply:  {
+    id:  7635
+    time:  1794625920
+    text:  "Great, let's get you booked~"
+  }
+  npc_reply:  {
+    id:  7634
+    time:  1794625680
+    text:  "Wait, really?! I'm free! I've had all the free time in the world, actually! Let's set a date and time!"
+  }
+  npc_reply:  {
+    id:  7632
+    time:  1794625380
+    text:  "Of course. You're welcome to swing by the Eagle Union dorms whenever~"
+  }
+  npc_reply:  {
+    id:  7631
+    time:  1794625260
+    text:  "Wow, I'd like to read that one too, if you don't mind! Could you lend it to me? I'll be super careful with it!"
+  }
+  npc_reply:  {
+    id:  7630
+    time:  1794625020
+    text:  "I remember that well! I snagged up that issue the moment it hit the shelves!"
+  }
+  npc_reply:  {
+    id:  7628
+    time:  1794624660
+    text:  "I appreciate the thoughtfulness, but I think I'll pass..."
+  }
+  npc_reply:  {
+    id:  7626
+    time:  1794624180
+    text:  "If I keep learning, maybe I can become just like them..."
+  }
+  good:  1167
+  is_good:  0
+  is_read:  0
+  oalist_pic:  ""
+}
+
+# 20017: SC_11702 of official-avrora-20261121-203649.jsonl
+ins_message_list: {
+  id:  20017
+  time:  1795122000
+  text:  "After a tidal wave of requests and persistent negotiations by this channel's reporters, we finally secured an interview with Akashi. What's the secret behind her independent business?\n\"It's because I can sense the changes in the wind, of course, nya!\"\n\"The wind? What are you talking about?\" It seems the reporter doesn't really get it!\nAkashi is silent for a moment. The light in her eyes changes completely, like she's looking at both past and future.\n\"Waaay back, before the dawn of steam engines, every last ship relied on sails, nya.\"\n\"The winds that blew into the piers brought the smell of wealth with them. The merchants would set sail to follow it, delivering their wares to wherever they were needed most, nya.\"\n\"Every time the wind changed, wealth would flow alongside it. With the right timing, even a single tulip was enough to whip up a frenzy that shifted wealth in the hundreds of millions, nya.\"\n\"The same rules are in effect today. The winds shift the trends that give rise to demand. That demand is the essence of business, nya!\"\n\"To understand that wind, it's not enough just to leap into it, and you can't let it swallow you up and cloud your vision either! If you can keep a steady mind, you can make the most of the currents of wealth, nya!\"\n\"I get it!\" It seems like the reporter understands now.\n\"Nya... this part's really important, nya. I'm only telling YOU.\" Akashi stands up, closes the door, and whispers to the reporter.\n\"The recent winds all point to the new outfits I just got in stock, nya. Anyone who wears them will have an easier time reading the wind, and can rush ahead of the trends! They're only available while stocks last, so don't miss this opportunity to get rich quick!\""
+  picture:  "https://blhxusstatic.yo-star.com/pic/261119_OA17bigi0BKQRHm0jJWfgXr.png"
+  player_discuss:  {
+    id:  20017
+    time:  0
+    text_list:  "Has Akashi finally been caught?"
+    text_list:  "So it was basically an annual sale?"
+    text:  ""
+  }
+  npc_discuss:  {
+    id:  100577
+    time:  1795126200
+    text:  "A reminder from the Port Guards: Commerce carries risks. Invest carefully!"
+    npc_reply:  100578
+    npc_reply:  100579
+    npc_reply:  100580
+  }
+  npc_discuss:  {
+    id:  100574
+    time:  1795125840
+    text:  "Get rich... quick? I want to buy lots of presents for the teacher! I have to save up lots of money first"
+    npc_reply:  100575
+    npc_reply:  100576
+  }
+  npc_discuss:  {
+    id:  100570
+    time:  1795125180
+    text:  "Am I imagining it, or were designs like these popular before?"
+    npc_reply:  100571
+    npc_reply:  100572
+    npc_reply:  100573
+  }
+  npc_discuss:  {
+    id:  100566
+    time:  1795124460
+    text:  "I got it! Follow the wind to find the trends!"
+    npc_reply:  100567
+    npc_reply:  100568
+    npc_reply:  100569
+  }
+  npc_discuss:  {
+    id:  100564
+    time:  1795124160
+    text:  "The Renounced Merchant? How did they get Akashi to approve that title?"
+    npc_reply:  100565
+  }
+  npc_discuss:  {
+    id:  100561
+    time:  1795123560
+    text:  "@akashi_TUUHAN Everyone listen up! Can I get a hand for this programme's sponsor?"
+    npc_reply:  100562
+    npc_reply:  100563
+  }
+  npc_discuss:  {
+    id:  100554
+    time:  1795122180
+    text:  "The new outfits are really cute, nya! The designs are trendy they're and manufactured with real attention to detail. I just know they'll sell out in a flash!"
+    npc_reply:  100555
+    npc_reply:  100556
+    npc_reply:  100557
+    npc_reply:  100558
+    npc_reply:  100559
+    npc_reply:  100560
+  }
+  npc_reply:  {
+    id:  100580
+    time:  1795126740
+    text:  "Those are false charges, nya! It was just a figure of speech, nya!"
+  }
+  npc_reply:  {
+    id:  100579
+    time:  1795126500
+    text:  "The claim that buying your products will put you ahead of trends has been reported as wrongful advertising. I might need to ask you some questions."
+  }
+  npc_reply:  {
+    id:  100578
+    time:  1795126380
+    text:  "You're damaging my reputation, nya! I'm not offering financial products or guaranteeing any results, nya!"
+  }
+  npc_reply:  {
+    id:  100576
+    time:  1795126080
+    text:  "Marketing... I don't get it..."
+  }
+  npc_reply:  {
+    id:  100575
+    time:  1795125960
+    text:  "Don't be drawn in, Anchorage. That's just marketing talk."
+  }
+  npc_reply:  {
+    id:  100573
+    time:  1795125600
+    text:  "Yeah, that's right, nya!"
+  }
+  npc_reply:  {
+    id:  100572
+    time:  1795125480
+    text:  "Fashion comes in cycles! Trends from the past always come back if you give 'em enough time!"
+  }
+  npc_reply:  {
+    id:  100571
+    time:  1795125360
+    text:  "Uh... Um... Nya?"
+  }
+  npc_reply:  {
+    id:  100569
+    time:  1795125060
+    text:  "Such a loyal customer! I'll get them wrapped up and delivered right away, nya!"
+  }
+  npc_reply:  {
+    id:  100568
+    time:  1795124820
+    text:  "You have to head the waves if you wanna start a trend... Okay, I'll take ten!"
+  }
+  npc_reply:  {
+    id:  100567
+    time:  1795124580
+    text:  "That's right, nya! The new items in my store are at the cutting edge of the latest trends!"
+  }
+  npc_reply:  {
+    id:  100565
+    time:  1795124280
+    text:  "Wait, I misread! Renounce ME! Haha (ノ*°▽°*)"
+  }
+  npc_reply:  {
+    id:  100563
+    time:  1795123920
+    text:  "The sponsor's got a reason for not wanting that."
+  }
+  npc_reply:  {
+    id:  100562
+    time:  1795123680
+    text:  "Aren't you supposed to pin comments like that?"
+  }
+  npc_reply:  {
+    id:  100560
+    time:  1795123320
+    text:  "Yes, I will accept that answer."
+  }
+  npc_reply:  {
+    id:  100559
+    time:  1795123080
+    text:  "..."
+  }
+  npc_reply:  {
+    id:  100558
+    time:  1795122900
+    text:  "Heheh... Maybe because those outfits won't last three minutes after you put them on or something?"
+  }
+  npc_reply:  {
+    id:  100557
+    time:  1795122660
+    text:  "I'll give you three minutes. I want your answer to be a convincing one."
+  }
+  npc_reply:  {
+    id:  100556
+    time:  1795122420
+    text:  "There's a reason for that, and it's not because I'm skimping, nya! Let me give you my excuse–I mean, explanation, nya!"
+  }
+  npc_reply:  {
+    id:  100555
+    time:  1795122300
+    text:  "Oh? Is it just me, or does the fabric's surface area seem to reduce each time there are new outfits lately?"
+  }
+  good:  98
+  is_good:  0
+  is_read:  0
+  oalist_pic:  "https://blhxusstatic.yo-star.com/pic/261119_OA17smallHn6HRRTbwrL1Pc8Y.png"
+}
